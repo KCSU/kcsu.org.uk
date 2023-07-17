@@ -1,13 +1,5 @@
 ---
-export interface Props {
-	exec: {
-        role: string;
-        name: string;
-        email: string;
-    }[];
-}
-
-const { exec } = Astro.props;
+import exec from "../data/exec.json"
 ---
 
 <div class="contact-table">
@@ -15,17 +7,17 @@ const { exec } = Astro.props;
     <table>
         <thead>
             <tr>
-                <th>Name(s)</th>
                 <th>Role</th>
+                <th>Name</th>
                 <th>Email</th>
             </tr>
         </thead>
         <tbody>
-            {exec.map((exec) => (
+            {exec.map((m) => (
                 <tr>
-                    <td>{exec.name}</td>
-                    <td>{exec.role}</td>
-                    <td><a href={`mailto:${exec.email}`}>{exec.email}</a></td>
+                    <td>{m.role}</td>
+                    <td>{m.name}</td>
+                    <td><a href={`mailto:${m.email}`}>{m.email}</a></td>
                 </tr>
             ))}
         </tbody>

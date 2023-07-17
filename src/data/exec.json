@@ -1,0 +1,27 @@
+[
+	{
+		"role": "President",
+		"name": "Timi Olumide-Wahab",
+		"email": "president@kcsu.org.uk"
+	},
+	{
+		"role": "Vice-President",
+		"name": "Dan Erwig",
+		"email": "vice.president@kcsu.org.uk"
+	},
+    {
+        "role": "Chair",
+        "name": "Beth Doherty",
+        "email": "chair@kcsu.org.uk"
+    },
+    {
+        "role": "Welfare",
+        "name": "Jack Robinson",
+        "email": "welfare.a@kcsu.org.uk"
+    },
+    {
+        "role": "Welfare",
+        "name": "Brintha Yasodaran",
+        "email": "welfare.b@kcsu.org.uk"
+    }
+]

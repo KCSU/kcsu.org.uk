@@ -1,0 +1,90 @@
+---
+import ButtonLink from "../components/ButtonLink.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Freshers | King's College Student Union">
+    <main>
+        <ButtonLink href="/"><span>&larr;</span> Back Home</ButtonLink>
+        <h1>Incoming Freshers</h1>
+        <div class="info">
+            <h3>Joining King's this October?</h3>
+            <p>
+                Congratulations! We know it can be confusing trying to find all
+                of the necessary information, and we're here to help. Our
+                freshers' officer, Lauren, will be in touch with you with
+                Freshers' Week schedule closer to the start of term. There will
+                also be updates and a Q&A on @kingsfreshers2023 on instagram,
+                but everything important will be over email!
+            </p>
+            <p>
+                The Q&A will be posted on the 18th of August once you've got
+                your results and answers will be saved in a story highlight.
+            </p>
+            <p>
+                In the meantime, we recommend looking at the college-based
+                sports and societies you can join, including:
+            </p>
+            <div class="activities">
+                <span>Cricket</span>
+                <span>Football</span>
+                <span>Rugby</span>
+                <span>Rowing (we have 5 very successful teams!)</span>
+                <span> Mixed lacrosse</span>
+                <span>Tennis</span>
+                <span>Ultimate frisbee</span>
+                <span>Hockey</span>
+                <span>Badminton</span>
+                <span>Table tennis</span>
+                <span> Netball</span>
+                <span>Basketball</span>
+                <span>Yoga</span>
+                <span>Music society</span>
+                <span>Feminist society (femsoc)</span>
+                <span> History society</span>
+                <span>Medsoc (medics)</span>
+                <span>Law society (law soc)</span>
+                <span>Apiculture society (bees!)</span>
+                <span>King's politics</span>
+                <span>Allotment society</span>
+                <span>King's gambit (chess)</span>
+                <span>Mountaineering and climbing</span>
+                <span>Political rambling</span>
+                <span>Knitting (incl crocheting)</span>
+                <span>Self defence</span>
+                <span>Kayaking</span>
+                <span>Canoeing.</span>
+            </div>
+            <p>
+                And you can set up your own if you want one that you don't see
+                here!
+            </p>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .activities {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        margin-top: 10px;
+        /* justify-content: space-between; */
+    }
+
+    .activities span {
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #eee;
+        border: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+
+    .activities span:hover {
+        border: 1px solid #bbb;
+    }
+
+    main > :global(:first-child) {
+        margin-bottom: 10px;
+    }
+</style>

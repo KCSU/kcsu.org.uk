@@ -4,19 +4,7 @@ import Card from "../components/Card.astro";
 import { Image } from "@astrojs/image/components";
 import SocialCard from "../components/SocialCard.astro";
 import ContactTable from "../components/ContactTable.astro";
-
-const exec = [
-	{
-		role: "President",
-		name: "Timi Olumide-Wahab",
-		email: "president@kcsu.org.uk"
-	},
-	{
-		role: "Vice-President",
-		name: "Dan Erwig",
-		email: "vice.president@kcsu.org.uk"
-	},
-]
+import ButtonLink from "../components/ButtonLink.astro";
 ---
 
 <Layout title="KCSU | King's College Student Union">
@@ -41,11 +29,20 @@ const exec = [
             fit="cover"
         />
 		<div class="info">
-            <h3>Who are we?</h3>
-            King's College Student Union (KCSU for short) is your representative
-			body, and a student source of information, support and advice.
-			We're here to help you whether you're a fresher, a finalist, or
-			even a prospective student.
+            <h3>Welcome to the KCSU Landing Site!</h3>
+            <p>This is a temporary site while we redesign our current website.
+            Here you can find any necessary information as an incoming fresher
+            or current student. If you have any questions please get in touch
+            with us at <a href="mailto:chair@kcsu.org.uk">
+                chair@kcsu.org.uk 
+            </a> for KCSU-related questions,
+            or the college for any other queries!</p>
+            <p>KCSU is the representative body for
+            undergraduate students at King's, we run a variety of
+            campaigns and events throughout the year, as well as advocating for
+            students interests with college officials and at college committees.
+            </p>
+            <ButtonLink href="/freshers">More info for Freshers <span>&rarr;</span></ButtonLink>
         </div>
         <ul role="list" class="link-card-grid">
             <Card
@@ -54,7 +51,7 @@ const exec = [
                 body="The official King's college website!"
             />
 			<Card
-                href="https://astro.build/integrations/"
+                href="https://kords.kcsu.org.uk/"
                 title="KORDs"
                 body="Check out what King's accommodation has to offer."
             />
@@ -78,7 +75,7 @@ const exec = [
 				icon="mdi:instagram"
             />
         </ul>
-		<ContactTable exec={exec} />
+		<ContactTable />
     </main>
 	<footer>
 		<p>
@@ -88,30 +85,6 @@ const exec = [
 </Layout>
 
 <style>
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 100ch;
-    }
-
-    .hero-image {
-        margin: 1rem 0;
-        width: 100%;
-        height: auto;
-        border-radius: 0.4rem;
-    }
-
-    h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 0;
-        margin-bottom: 0.5rem;
-    }
-
-	h3 {
-		margin: 0;
-		/* color: rgb(var(--accent)); */
-	}
     .text-gradient {
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
@@ -119,26 +92,13 @@ const exec = [
         background-size: 400%;
         background-position: 0%;
     }
-    .info {
-        line-height: 1.6;
-        margin: 0.5rem 0;
-        border: 1px solid rgba(var(--accent), 25%);
-        background-color: white;
-        padding: 1rem;
-        border-radius: 0.4rem;
-    }
-    .info a {
-        color: rgb(var(--accent));
-        border-radius: 4px;
-    }
-    .info strong {
-        color: rgb(var(--accent));
-    }
+
     .link-card-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
         gap: 1rem;
         padding: 0;
+        margin-top: 2rem;
     }
 
     .socials-grid {
