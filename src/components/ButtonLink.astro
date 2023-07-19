@@ -5,10 +5,10 @@ export interface Props {
 
 const {href} = Astro.props;
 ---
-<a href={href}><slot/></a>
+<a class="link" href={href}><slot/></a>
 
 <style>
-    a {
+    a.link {
         display: inline-block;
         text-decoration: none;
         padding: 10px;
@@ -21,7 +21,7 @@ const {href} = Astro.props;
         transition: all 0.2s;
     }
 
-    a:hover {
+    a.link:hover {
         border-color: rgb(var(--accent));
         background: rgba(var(--accent), 20%);
         color: rgb(var(--accent));
