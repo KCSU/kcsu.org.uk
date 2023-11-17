@@ -23,5 +23,10 @@
         "role": "Welfare",
         "name": "Brintha Yasodaran",
         "email": "welfare.b@kcsu.org.uk"
+    },
+    {
+        "role": "Computer",
+        "name": "Nicolas Seyedzadeh",
+        "email": "computing@kcsu.org.uk"
     }
 ]
