@@ -1,12 +1,12 @@
 [
 	{
 		"role": "President",
-		"name": "Timi Olumide-Wahab",
+		"name": "Teddy Graham",
 		"email": "president@kcsu.org.uk"
 	},
 	{
 		"role": "Vice-President",
-		"name": "Dan Erwig",
+		"name": "Luca Limoncelli",
 		"email": "vice.president@kcsu.org.uk"
 	},
     {
@@ -16,14 +16,84 @@
     },
     {
         "role": "Welfare",
-        "name": "Jack Robinson",
+        "name": "Spencer James",
         "email": "welfare.a@kcsu.org.uk"
     },
     {
         "role": "Welfare",
-        "name": "Brintha Yasodaran",
+        "name": "Emilia Samborek",
         "email": "welfare.b@kcsu.org.uk"
     },
+    {
+		"role": "Domus",
+		"name": "Adnaan Ilyas",
+		"email": "domus@kcsu.org.uk"
+	},
+    {
+		"role": "Gender Equalities",
+		"name": "Brintha and Eva",
+		"email": "genderequality@kcsu.org.uk"
+	},
+    {
+		"role": "Disabilities",
+		"name": "Teddy Graham",
+		"email": "disabled.students@kcsu.org.uk"
+	},
+    {
+		"role": "BME",
+		"name": "Destiny and Maylene",
+		"email": "ethnic.minorities@kcsu.org.uk"
+	},
+    {
+		"role": "LGBTQ+",
+		"name": "Sam and Tom",
+		"email": "lgbtq@kcsu.org.uk"
+	},
+    {
+		"role": "Access",
+		"name": "Rory Chappell",
+		"email": "access@kcsu.org.uk"
+	},
+    {
+		"role": "Education",
+		"name": "Izzy and Aoife",
+		"email": "education@kcsu.org.uk"
+	},
+    {
+		"role": "Charities",
+		"name": "Eujan and Davod",
+		"email": "charities@kcsu.org.uk"
+	},
+    {
+		"role": "Coordinator",
+		"name": "Emily Shaw",
+		"email": "coordinator@kcsu.org.uk"
+	},
+    {
+		"role": "Ents",
+		"name": "Lara and Prakruti",
+		"email": "entertainments@kcsu.org.uk"
+	},
+    {
+		"role": "Sports and Societies",
+		"name": "Lauren and Mehdi",
+		"email": "sports.societies@kcsu.org.uk"
+	},
+    {
+		"role": "International",
+		"name": "Mati and Adhyan",
+		"email": "international@kcsu.org.uk"
+	},
+    {
+		"role": "Treasurers",
+		"name": "Martha and Izzy",
+		"email": "treasurer@kcsu.org.uk"
+	},
+    {
+		"role": "Greens",
+		"name": "Ash Hewett",
+		"email": "greens@kcsu.org.uk"
+	},
     {
         "role": "Computer",
         "name": "Nicolas Seyedzadeh",

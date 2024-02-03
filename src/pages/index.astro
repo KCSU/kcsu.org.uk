@@ -1,81 +1,64 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import { Image } from "@astrojs/image/components";
-import SocialCard from "../components/SocialCard.astro";
-import ContactTable from "../components/ContactTable.astro";
 import ButtonLink from "../components/ButtonLink.astro";
+import Squiggle from "../components/squiggle.astro";
 ---
 
 <Layout title="KCSU | King's College Student Union">
     <main>
-		<p class="info">
-            &#128679; A <strong>brand new KCSU website</strong> is currently under
-            construction! &#128679;
-            <br />
-            The old (and very out of date) site is still available at <a
-                href="https://old.kcsu.org.uk">old.kcsu.org.uk</a
-            >. Expect to see more content here soon, but for now you can check
-            out the information and useful links below.
-        </p>
-        <h1>Welcome to <span class="text-gradient">KCSU</span>!</h1>
-        <Image
-            format="jpg"
-            class="hero-image"
-            src="/images/kings.jpg"
-            alt="King's College in Autumn"
-            width={800}
-            height={250}
-            fit="cover"
+        <img
+            src = "/images/kingsAtNight.png";
+            alt = "Kings chapel at night";
+            class="main-image "
         />
-		<div class="info">
-            <h3>Welcome to the KCSU Landing Site!</h3>
-            <p>This is a temporary site while we redesign our current website.
-            Here you can find any necessary information as an incoming fresher
-            or current student. If you have any questions please get in touch
-            with us at <a href="mailto:chair@kcsu.org.uk">
-                chair@kcsu.org.uk 
-            </a> for KCSU-related questions,
-            or the college for any other queries!</p>
-            <p>KCSU is the representative body for
-            undergraduate students at King's, we run a variety of
-            campaigns and events throughout the year, as well as advocating for
-            students interests with college officials and at college committees.
-            </p>
-            <ButtonLink href="/freshers">More info for Freshers <span>&rarr;</span></ButtonLink>
+		<div class="need">
+            <ButtonLink href="/need" imgname="/images/usefulButton.png" arrowcol="white">INFO/CONTACT<span>&rarr;</span></ButtonLink>
+            <br/>
+            <div >
+                <p class="heading" >Need Help?</p>
+                <p>Welfare resources, Accommodation information and maintainance requests, book formals and check your EPOS balance</p>
+
+            </div>
         </div>
-        <ul role="list" class="link-card-grid">
-            <Card
-                href="https://www.kings.cam.ac.uk/"
-                title="College Site"
-                body="The official King's college website!"
-            />
-			<Card
-                href="https://kords.kcsu.org.uk/"
-                title="KORDs"
-                body="Check out what King's accommodation has to offer."
-            />
-            <Card
-                href="https://store.kcsu.org.uk/"
-                title="KiFoMaSy"
-                body="Get your formal tickets with our in-house ticketing system."
-            />
-        </ul>
-		<ul role="list" class="socials-grid">
-            <SocialCard
-                href="https://www.facebook.com/groups/895524667136537"
-                title="Facebook Group"
-                bg="#4267B2"
-				icon="mdi:facebook"
-            />
-			<SocialCard
-                href="https://www.instagram.com/kcsucambridge"
-                title="KCSU Instagram"
-                bg="#e05170"
-				icon="mdi:instagram"
-            />
-        </ul>
-		<ContactTable />
+
+        <div class="whats">
+            <div >
+                <p class="heading">Whats going on?</p>
+                <p>Find out what events are being held by the KCSU!</p>
+                
+
+            </div>
+            <br/>
+            <ButtonLink href="https://www.instagram.com/kcsucambridge?igsh=cXp2eDAzdWZ1aXZy" imgname="/images/calanderButton.png" arrowcol="white">Kings Calander<span>&rarr;</span></ButtonLink>
+
+        </div>
+    
+        <Squiggle colour_top="#36293a" colour_bottom="#184862"/>
+
+		<div class="societies">
+            <ButtonLink href="/soc" imgname="/images/socButton.png" arrowcol="white">INFO/CONTACT<span>&rarr;</span></ButtonLink>
+            <br/>            
+            <div>
+                <p class="heading">Societies!</p>
+                <p>Find out what societies kings has and get involved!</p>
+            </div>
+            
+        </div>
+
+        <Squiggle colour_top="#184862" colour_bottom="#00A8B5"/>
+
+        <div class="meet">
+            
+            <div >
+                <p class="heading">Meet the KCSU!!<p>
+                <p>Find out who represents you!</p>
+            </div>
+            <br/>
+            <ButtonLink href="/meet" imgname="/images/meetButton.png" arrowcol="#36293a">Kings Calander<span>&rarr;</span></ButtonLink>
+
+        </div>
+        <Squiggle colour_top="#00A8B5" colour_bottom="#ffaa2b"/>
+
     </main>
 </Layout>
 
@@ -111,4 +94,5 @@ import ButtonLink from "../components/ButtonLink.astro";
             height: 200px;
         }
     }
+
 </style>
