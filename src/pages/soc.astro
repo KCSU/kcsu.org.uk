@@ -1,0 +1,25 @@
+---
+import SocTable from "../components/socTable.astro";
+import Layout from "../layouts/Layout.astro";
+import BackButton from "../components/BackButton.astro";
+
+---
+<Layout title="Meet the KCSU | King's College Student Union">
+    <main class="whole">
+        <BackButton/>
+        <h1>Sports and Societies!!!</h1>
+        <p>Kings has lots of sports and societies that are waiting for you to get involved in!</p>
+        <SocTable/>
+    </main>
+</Layout>
+
+
+<style>
+    .whole{
+        padding: 1rem;
+        color: white;
+        background-color: #184862;
+    }
+
+
+</style>

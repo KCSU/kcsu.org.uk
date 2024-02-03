@@ -13,6 +13,8 @@
     "@astrojs/image": "^0.17.2",
     "astro": "^2.8.2",
     "astro-icon": "^0.8.1",
+    "astro-imagetools": "^0.9.0",
+    "firebase": "^10.6.0",
     "sharp": "^0.32.2"
   }
 }

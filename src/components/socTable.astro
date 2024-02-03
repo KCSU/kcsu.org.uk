@@ -1,23 +1,22 @@
 ---
-import exec from "../data/exec.json"
+import socInfo from "../data/socInfo.json"
 ---
 
 <div class="contact-table">
-    <h2>Your KCSU &#10084</h2>
     <table>
         <thead>
             <tr>
-                <th>Role</th>
-                <th>Name</th>
-                <th>Email</th>
+                <th>Society</th>
+                <th>Owners</th>
+                <th>Contact</th>
             </tr>
         </thead>
         <tbody>
-            {exec.map((m) => (
+            {socInfo.map((m) => (
                 <tr>
-                    <td>{m.role}</td>
-                    <td>{m.name}</td>
-                    <td><a href={`mailto:${m.email}`}>{m.email}</a></td>
+                    <td>{m.Society}</td>
+                    <td>{m.Owner}</td>
+                    <td><a href={`mailto:${m.email1}`}>{m.email1}</a> <a href={`mailto:${m.email2}`}>{m.email2}</a></td>
                 </tr>
             ))}
         </tbody>
@@ -26,7 +25,7 @@ import exec from "../data/exec.json"
 
 <style>
     .contact-table {
-        color: black;
+        color: white;
         padding: 10px 0;
         /* padding-top: 10px; */
         
@@ -48,7 +47,7 @@ import exec from "../data/exec.json"
     th {
         text-align: left;
         padding: 0.5rem 20px;
-        border-bottom: 1px solid #00A8B5;
+        border-bottom: 1px solid #184862;
     }
 
     td {
@@ -64,6 +63,6 @@ import exec from "../data/exec.json"
     }
 
     tbody tr:hover {
-        background-color: white;
+        opacity: .6;
     }
 </style>

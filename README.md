@@ -24,6 +24,13 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+Basic rundown of project:
+Pages contain the html that is shown for each of the pages and include components 
+Components are individual buttons and tables that can be resused
+layouts stores a layout component that allows us to set a standard for the metadata of every page
+data has json files that get used by the societies and meet the kcsu tables
+
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -37,6 +44,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+
+After building run 'firebase deploy' to deploy to site
 ## 👀 Want to learn more?
 
 Feel free to check the [astro documentation](https://docs.astro.build).

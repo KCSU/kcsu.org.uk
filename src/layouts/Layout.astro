@@ -11,17 +11,22 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0  " />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+        
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
         <footer>
             <p>
-                &copy; King's College Student Union 2023
+                &copy; King's College Student Union 2024 &#2022;        
+                <a href={`mailto:president@kcsu.org.uk`} style="color: black;">
+                    Any Ideas for us?
+                </a>
             </p>
+
         </footer>
 	</body>
 </html>
@@ -32,30 +37,33 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		
+        margin: 0;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 	main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 100ch;
+        /*for some reason on android theres a default margin so just compensate */
+        margin: -10px;
+        
     }
-
-    .hero-image {
-        margin: 1rem 0;
+    *{
+        margin:0;
+    }
+    .main-image {
         width: 100%;
         height: auto;
-        border-radius: 0.4rem;
+        vertical-align: middle;
     }
 
     h1 {
         font-size: 3rem;
         font-weight: 800;
         margin: 0;
-        margin-bottom: 0.5rem;
+    
+    
     }
 
 	h3 {
@@ -63,9 +71,44 @@ const { title } = Astro.props;
 		/* color: rgb(var(--accent)); */
 	}
 
+    .need{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 8fr 1fr 15fr;
+        padding: 12%;
+        background-color: #36293a;
+        color: white;
+        
+    }
+    .whats{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 15fr 1fr  8fr;
+        padding: 12%;
+        background-color: #36293a;
+        color: white;
+    }
+    .societies{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 8fr 1fr  15fr;
+        padding: 12%;
+        background-color: #184862;
+        color: white;
+    }
+    .meet{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 15fr 1fr 8fr;
+        padding: 12%;
+        background-color: #00A8B5;
+        color: #36293a;
+    }
+    
+
 	.info {
         line-height: 1.6;
-        margin: 0.5rem 0;
+        margin: 0.2rem 0;
         border: 1px solid rgba(var(--accent), 25%);
         background-color: white;
         padding: 1rem;
@@ -82,13 +125,21 @@ const { title } = Astro.props;
     .info p {
         margin-bottom: 0;
     }
+    .heading {
+        padding: 1rem;
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
 
     footer {
-		margin-top: 2rem;
-		color: #888;
+		
+		background-color: #ffaa2b;
 		text-align: center;
 	}
-
+    .hovercontainer:hover{
+        opacity:0.6;
+    }
     @media screen and (max-width: 568px) {
         main {
             padding: 0.5rem;

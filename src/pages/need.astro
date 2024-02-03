@@ -1,0 +1,89 @@
+---
+import BackButton from "../components/BackButton.astro";
+import OldButton from "../components/Oldbutton.astro";
+import Squiggle from "../components/squiggle.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Need Help? | King's College Student Union">
+    <main class="whole">
+        <div style="background-color:#36293a"><BackButton /></div>
+        
+        <div class="Welfare">
+            
+            <p class="heading">Welfare and support</p>
+            <img
+                src = "/images/heart.png";
+                alt = "heart icon";
+                class="minor_image"
+            />
+            <p/>
+            <OldButton href="https://www.kings.cam.ac.uk/intranet/staff-galleries" text="Contact Staff"/>
+            <OldButton href="https://www.kings.cam.ac.uk/intranet/health-wellbeing" text="College resources"/>
+            <OldButton href="https://www.studentsupport.cam.ac.uk/get-support" text="University resources"/>
+
+        </div>
+
+        <Squiggle colour_top="#36293a" colour_bottom="#184862"/>
+        
+        <div class="Accom">
+            <p class="heading">Accommodation resources</p>
+            <img
+                src = "/images/house.png";
+                alt = "House Icon";
+                class="minor_image"
+            />
+            <p/>
+            <OldButton href="https://kords.kcsu.org.uk/" text="Choosing Accommodation"/>
+            <OldButton href="https://connect.blue.cam.ac.uk/adfs/ls/idpinitiatedsignon.aspx?LoginToRP=urn%3Akingsemaint&RelayState" text="Reporting issues"/>
+        </div>
+        <Squiggle colour_top="#184862" colour_bottom="#00A8B5"/>
+        
+
+        <div class="Socials">
+            <p class="heading">Socials and other College services</p>
+            <img
+                src = "/images/socials.png";
+                alt = "cocktail icon";
+                class="minor_image"
+            />
+            <p/>
+            <OldButton href="https://epos.kings.cam.ac.uk/secure/" text="See your EPOS balance"/>
+            <OldButton href="https://store.kcsu.org.uk/" text="Book formals"/>
+            <OldButton href="https://app.casc.cam.ac.uk/rms_live/InstHome.aspx" text="CASC - book meeting rooms or check room licence"/>
+
+        </div>
+        <Squiggle colour_top="#00A8B5" colour_bottom="#ffaa2b"/>
+
+
+
+
+
+
+    </main>
+</Layout>
+<style>
+    .whole{
+
+    }
+    .minor_image{
+        width: 10%;
+    }
+    .Welfare{
+        padding: 5%;
+        color: white;
+        background-color: #36293a;
+    }
+    .Accom{
+        padding: 5%;
+        color: white;
+        background-color: #184862;
+    }    
+    .Socials{
+        padding: 5%;
+        color: white;
+        background-color: #00A8B5;
+    }
+    
+
+</style>
+

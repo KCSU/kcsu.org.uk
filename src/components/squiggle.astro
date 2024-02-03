@@ -1,0 +1,20 @@
+---
+export interface Props {
+    colour_top: string;
+    colour_bottom: string;
+
+}
+
+const {colour_top} = Astro.props;
+const {colour_bottom} = Astro.props;
+
+---
+<div style={`background-color:${colour_top}`} >
+<svg height="200" width="100%" viewBox="0 0 500 100" preserveAspectRatio="none" style="display: block;">
+    <path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style={`stroke: none;fill:${colour_bottom}`}></path>
+</svg>
+</div>
+
+<style>
+    
+</style>

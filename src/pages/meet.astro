@@ -1,0 +1,27 @@
+---
+import ContactTable from "../components/ContactTable.astro";
+import BackButton from "../components/BackButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Meet the KCSU | King's College Student Union">
+    <main class="whole">
+        <BackButton/>
+        <h1>Who are we?</h1>
+        <p>
+            The KCSU is a group of students who work to represent and improve the lives of the students at kings. Each officer is responsible for representing students in any way that they can, so if you have any problems then don't hesitate to send a relevant officer an email.
+        </p>
+        <br/>
+        <ContactTable/>
+    </main>
+</Layout>
+
+<style>
+    .whole{
+        padding: 1rem;
+
+        background-color: #00A8B5;
+    }
+
+
+</style>
+

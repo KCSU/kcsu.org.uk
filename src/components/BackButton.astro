@@ -1,0 +1,32 @@
+
+<a class="link" href="..">  
+    <div class="triangle"></div>
+</a>
+<style>
+    .triangle {
+        border-right: 5px solid; 
+        border-bottom: 5px solid;
+        height: 30px;
+        width: 30px;
+        transform: rotate(135deg);
+        float:left;
+
+    }
+    a.link {
+        display: grid;
+        align-items: center; 
+
+        grid-template-columns: 20fr 1fr  5fr;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 4px;
+        
+        transition: all 0.2s;
+        color: white;
+        overflow: auto;
+    }
+    a.link:hover {
+        
+        opacity: .4;
+    }
+</style>
