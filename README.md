@@ -45,7 +45,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 
-After building run 'firebase deploy' to deploy to site
+After building to dist run 'firebase deploy' to deploy to site (install firebase first)
 ## 👀 Want to learn more?
 
 Feel free to check the [astro documentation](https://docs.astro.build).
