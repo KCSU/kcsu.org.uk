@@ -1,30 +1,53 @@
 ---
 import ButtonLink from "../components/ButtonLink.astro";
+import BackButton from "../components/BackButton.astro";
 import Layout from "../layouts/Layout.astro";
+import Squiggle from "../components/squiggle.astro";
 ---
 
 <Layout title="Freshers | King's College Student Union">
-    <main>
-        
-        <h1>Incoming Freshers</h1>
+    <main style="background-color:#36293a" >
+        <div style="background-color:#36293a"><BackButton /></div>
         <div class="info">
+
+            
+
+            <h1>Incoming Freshers</h1>
+            <br/>
             <h3>Joining King's this October?</h3>
-            <p>
+            
+            <p> 
                 Congratulations! We know it can be confusing trying to find all
                 of the necessary information, and we're here to help. Our
-                freshers' officer, Lauren, will be in touch with you with
+                freshers' officers, Lauren & Medhi, will be in touch with you with
                 Freshers' Week schedule closer to the start of term. There will
-                also be updates and a Q&A on @kingsfreshers2023 on instagram,
+                also be updates and a Q&A on @kingsfreshers2024 on instagram,
                 but everything important will be over email!
             </p>
+        </div>
+        
+        <Squiggle colour_top="#36293a" colour_bottom="#184862"/>
+            
+        <div class="QnA">
+            <h3><a href={`https://docs.google.com/forms/d/e/1FAIpQLSc8cM__tBbEhF7et7JsrTt8dewgwWcVSk0400Vx5V31ytjxtA/viewform`} style="color: white;">
+                Join the Whatsapp Group!
+            </a></h3>
+            <br/>
             <p>
-                The Q&A will be posted on the 18th of August once you've got
-                your results and answers will be saved in a story highlight.
+                This is the group chat for this years kings freshers, all you need is your name, number and a screenshot of your offer (with your name visable).
             </p>
+        </div>
+
+        <Squiggle colour_top="#184862" colour_bottom="#00A8B5"/>
+
+        <div class="activitiesheader">
             <p>
                 In the meantime, we recommend looking at the college-based
                 sports and societies you can join, including:
             </p>
+        </div>
+
+        <div class="activitiesbackground">
             <div class="activities">
                 <span>Cricket</span>
                 <span>Football</span>
@@ -53,17 +76,36 @@ import Layout from "../layouts/Layout.astro";
                 <span>Knitting (incl crocheting)</span>
                 <span>Self defence</span>
                 <span>Kayaking</span>
-                <span>Canoeing.</span>
+                <span>Canoeing</span>
             </div>
+        </div>
+
+        <div class="activitiesheader">
             <p>
-                And you can set up your own if you want one that you don't see
-                here!
+                The full list including contact details can be found on the societies page of this website.
             </p>
         </div>
+
+        <Squiggle colour_top="#00A8B5" colour_bottom="#ffaa2b"/>
+
     </main>
 </Layout>
 
 <style>
+    .whole{
+        padding: 1rem;
+}
+    .info{
+        
+        padding: 5%;
+        color: white;
+        background-color: #36293a;
+    }
+    .QnA{
+        padding: 5%;
+        color: white;
+        background-color: #184862;
+    }
     .activities {
         display: flex;
         flex-wrap: wrap;
@@ -71,7 +113,16 @@ import Layout from "../layouts/Layout.astro";
         margin-top: 10px;
         /* justify-content: space-between; */
     }
-
+    .activitiesheader{
+        padding: 5%;
+        color: white;
+        background-color: #00A8B5;
+    }
+    .activitiesbackground{
+        padding: 5%;
+        color: black;
+        background-color: #00A8B5;
+    }
     .activities span {
         padding: 5px 10px;
         border-radius: 5px;
