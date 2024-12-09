@@ -1,0 +1,71 @@
+---
+import exec from "../data/exec.json"
+import "../styles/global.css";
+---
+
+<div class="contact-table">
+    <h2>Your KCSU</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Role</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {exec.map((m) => (
+                <tr>
+                    <td>{m.role}</td>
+                    <td>{m.name}</td>
+                    <td><a href={`mailto:${m.email}`}>{m.email}</a></td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .contact-table {
+        background-color: var(--background);
+        color: var(--grey-800);
+        padding: 10px 0;
+        /* padding-top: 10px; */
+        
+        overflow-x: auto;
+		box-shadow: 0 4px 6px -1px var(--grey-400), 0 2px 4px -2px var(--grey-400);
+    }
+
+    h2 {
+        margin: 0 0 10px 0;
+        padding: 0 20px;
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: left;
+        padding: 0.5rem 20px;
+        border-bottom: 1px solid var(--kings-purple);
+    }
+
+    td {
+        padding: 0.5rem 20px;
+    }
+
+    tr {
+        transition: background-color 0.1s;
+    }
+
+    a {
+        color: rgb(var(--accent));
+    }
+
+    tbody tr:hover {
+        background-color: var(--grey-50);
+    }
+</style>

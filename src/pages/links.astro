@@ -1,0 +1,86 @@
+---
+import Main from '../layouts/Main.astro';
+---
+
+<Main title="KCSU | Links">
+	<br/>
+    <div class="links_head">
+        <h1 class="links__title">College Links</h1>
+        <p class="links__description">
+          These include resources from the college, university, and KCSU!
+        </p>
+      </div>
+    
+      <ol class="links">
+        <li class="links__list">
+          <a href="" class="blog__link"
+            >Contact College Staff</a
+          >
+        </li>
+    
+        <li class="links__list">
+          <a href="" class="blog__link"
+            >College Intranet</a
+          >
+        </li>
+    
+        <li class="links__list">
+          <a href="" class="blog__link"
+            >University Wellbeing Resources</a
+          >
+        </li>
+
+        <li class="links__list">
+            <a href="" class="blog__link"
+              >Formal Booking</a
+            >
+          </li>
+
+          <li class="links__list">
+            <a href="" class="blog__link"
+              >EPOS Balance</a
+            >
+          </li>
+      </ol>
+    
+</Main>
+
+<style is:global>
+    .links_head {
+    margin: 0;
+    padding: 3rem 0 0 0;
+  }
+  .links__title {
+    font-size: 2rem;
+    color: var(--gray-900);
+  }
+
+  .links__description {
+    margin-top: -1.2rem;
+  }
+
+  .links {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .links__list {
+    border-bottom: 1px solid;
+    border-color: var(--gray-200);
+  }
+
+  .blog__link {
+    opacity: 1;
+    height: 100%;
+    display: block;
+    padding: 1rem 0;
+    color: var(--gray-200);
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .blog__link:hover {
+    opacity: 0.7;
+  }
+  </style>
+</style>

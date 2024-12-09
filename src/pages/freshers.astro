@@ -1,0 +1,35 @@
+---
+import Main from '../layouts/Main.astro';
+import data from '../data/exec.json'
+
+const SSF = data
+  .filter(officer => officer.role === "Sports and Societies") // Only "BME Officer"
+  .map(officer => officer.name) // Extract the names
+  .join(",");
+---
+
+
+<Main title="KCSU | Freshers">
+    <h1>Incoming Freshers</h1>
+
+    <h3>Joining King's this October?</h3>
+
+    <p> 
+        Congratulations! We know it can be confusing trying to find all of the necessary information, and we're here to help. Our freshers' officers, {SSF}, will be in touch with you with
+        Freshers' Week schedule closer to the start of term. There will
+        also be updates and a Q&A on @kingsfreshers2024 on instagram,
+        but everything important will be over email!
+    </p>
+
+    <h3><a href={`https://docs.google.com/forms/d/e/1FAIpQLSc8cM__tBbEhF7et7JsrTt8dewgwWcVSk0400Vx5V31ytjxtA/viewform`} style="color: var(--grey-400);">
+        Join the Whatsapp Group!
+    </a></h3>
+    <p>
+        This is the group chat for this years kings freshers, all you need is your name, number and a screenshot of your offer (with your name visable).
+    </p>
+
+    <p>
+        In the meantime, we recommend looking at the college-based sports and societies you can join, including:
+    </p>
+
+</Main>

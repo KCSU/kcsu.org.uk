@@ -1,0 +1,73 @@
+---
+import ThemeToggler from "./ThemeToggler.astro";
+---
+
+<nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/societies">Societies</a>
+      </li>
+      <li>
+        <a href="/exec">The Exec</a>
+      </li>
+      <li>
+        <a href="https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London">Calander</a>
+      </li>
+      <li>
+        <a href="/history">KCSU History</a>
+      </li>
+    </ul>
+    <ThemeToggler />
+</nav>
+
+<script>
+    const { pathname } = window.location;
+    const activeNavigationElement = document.querySelector(
+      `nav a[href="${pathname}"]`
+    );
+  
+    if (activeNavigationElement) {
+      activeNavigationElement.classList.add("active");
+    }
+  </script>
+
+<style>
+    nav {
+      background-color: var(--grey-50);
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem ;
+      box-sizing: border-box;
+    }
+  
+    ul {      
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0 auto 0 0;
+    }
+  
+    nav li {
+      opacity: 0.8;
+      list-style: none;
+      font-size: 0.95rem;
+    }
+  
+    a {
+    color: var(--grey-400);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: var(--grey-900);
+    }
+    a.active {
+    background: var(--kings-purple);
+    color: var(--background);
+    }
+</style>

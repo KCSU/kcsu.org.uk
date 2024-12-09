@@ -1,0 +1,102 @@
+[
+	{
+		"role": "President",
+		"name": "Benjamin Warner",
+		"email": "president@kcsu.org.uk"
+	},
+	{
+		"role": "Vice-President",
+		"name": "Ubayd Ajanaku",
+		"email": "vice.president@kcsu.org.uk"
+	},
+    {
+        "role": "Chair",
+        "name": "Dan Erwig",
+        "email": "chair@kcsu.org.uk"
+    },
+    {
+        "role": "Welfare",
+        "name": "Sophie Fernig",
+        "email": "welfare.a@kcsu.org.uk"
+    },
+    {
+        "role": "Welfare",
+        "name": "Gary Chowdhury",
+        "email": "welfare.b@kcsu.org.uk"
+    },
+    {
+		"role": "Domus",
+		"name": "Evan Taylor",
+		"email": "domus@kcsu.org.uk"
+	},
+    {
+		"role": "Gender Equalities",
+		"name": "Eva Lemmy",
+		"email": "genderequality@kcsu.org.uk"
+	},
+    {
+		"role": "Disabled Students",
+		"name": "Lonny Mckiernan",
+		"email": "disabled.students@kcsu.org.uk"
+	},
+    {
+		"role": "BME",
+		"name": "Destiny and Maylene",
+		"email": "ethnic.minorities@kcsu.org.uk"
+	},
+    {
+		"role": "LGBTQ+",
+		"name": "Gary Chowdhury",
+		"email": "lgbtq@kcsu.org.uk"
+	},
+    {
+		"role": "Access",
+		"name": "Zaheda & Davod",
+		"email": "access@kcsu.org.uk"
+	},
+    {
+		"role": "Education",
+		"name": "Ewan & Ritu",
+		"email": "education@kcsu.org.uk"
+	},
+    {
+		"role": "Charities",
+		"name": "Mariam Al-Badry and Zinzi Sibanda",
+		"email": "charities@kcsu.org.uk"
+	},
+    {
+		"role": "Coordinator",
+		"name": "Sophia O'Callaghan",
+		"email": "coordinator@kcsu.org.uk"
+	},
+    {
+		"role": "Ents",
+		"name": "Cara Chandler and Alice Benzikie",
+		"email": "entertainments@kcsu.org.uk"
+	},
+    {
+		"role": "Sports and Societies",
+		"name": "Phoebe Zhang and Eugene Kang",
+		"email": "sports.societies@kcsu.org.uk"
+	},
+    {
+		"role": "International",
+		"name": "Gabby Kurniawan",
+		"email": "international@kcsu.org.uk"
+	},
+    {
+		"role": "Treasurers",
+		"name": "Rowan Hector-Turnbull and Jasmine Covell",
+		"email": "treasurer@kcsu.org.uk"
+	},
+    {
+		"role": "Greens",
+		"name": "Alexus Lambert-Dowell",
+		"email": "greens@kcsu.org.uk"
+	},
+    {
+        "role": "Computer",
+        "name": "Philip Couldery",
+        "email": "computing@kcsu.org.uk"
+    }
+]

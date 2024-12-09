@@ -1,0 +1,81 @@
+---
+import Main from '../layouts/Main.astro';
+---
+
+<Main title="KCSU | Accomodation">
+	<br/>
+    <div class="links_head">
+        <h1 class="links__title">College Links</h1>
+        <p class="links__description">
+          These can help you find accomodation to choose for next year, and report issues with current accomodation.
+        </p>
+      </div>
+    
+      <ol class="links">
+        <li class="links__list">
+          <a href="" class="blog__link"
+            >KORDs - The site containing images for every undergraduate room in Kings</a
+          >
+        </li>
+    
+        <li class="links__list">
+          <a href="https://fms.kings.cam.ac.uk/Kingsfms/" class="blog__link"
+            >Facility Management System - For tracking parcels and registering bikes</a
+          >
+        </li>
+    
+        <li class="links__list">
+          <a href="https://uk41.emaint.com/wc.dll?X3~emproc~x3Hubv2" class="blog__link"
+            >Register issues with accomodation</a
+          >
+        </li>
+
+        <li class="links__list">
+            <a href="https://app.casc.cam.ac.uk/rms_live/default.aspx?ReturnUrl=%2frms_live%2fInstHome.aspx&ckck=445169105" class="blog__link"
+              >CASC - Book meeting rooms and check accomodation lisences</a
+            >
+          </li>
+
+      </ol>
+    
+</Main>
+
+<style is:global>
+    .links_head {
+    margin: 0;
+    padding: 3rem 0 0 0;
+  }
+  .links__title {
+    font-size: 2rem;
+    color: var(--gray-900);
+  }
+
+  .links__description {
+    margin-top: -1.2rem;
+  }
+
+  .links {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .links__list {
+    border-bottom: 1px solid;
+    border-color: var(--gray-200);
+  }
+
+  .blog__link {
+    opacity: 1;
+    height: 100%;
+    display: block;
+    padding: 1rem 0;
+    color: var(--gray-200);
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .blog__link:hover {
+    opacity: 0.7;
+  }
+  </style>
+</style>

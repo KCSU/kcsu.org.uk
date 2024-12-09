@@ -1,0 +1,30 @@
+---
+import Main from '../layouts/Main.astro';
+import Cards from "../components/Cards.astro";
+---
+
+<Main title="KCSU | King's College Student Union">
+	<br/>
+	<Cards
+    cards={[
+      {
+        title: "Freshers Information",
+        gradientFrom: "#818cf8",
+        gradientTo: "#d8b4fe",
+        to: "/freshers",
+      },
+      {
+        title: "College Links & Formal Booking",
+        gradientFrom: "#fde68a",
+        gradientTo: "#fca5a5",
+        to: "/links",
+      },
+      {
+        title: "Accomodation & CASC",
+        gradientFrom: "#6ee7b7",
+        gradientTo: "#9333ea",
+        to: "/accom",
+      },
+    ]}
+  />
+</Main>
