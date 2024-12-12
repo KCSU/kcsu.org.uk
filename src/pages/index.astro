@@ -5,6 +5,10 @@ import Cards from "../components/Cards.astro";
 
 <Main title="KCSU | King's College Student Union">
 	<br/>
+  <h1>King's College Student Union</h1>
+  <p>
+    Welcome to the KCSU website, here you can find information on KCSU events, societies, business, as well as a bunch of links to college websites and resources you might find useful!
+  </p>
 	<Cards
     cards={[
       {
@@ -27,4 +31,21 @@ import Cards from "../components/Cards.astro";
       },
     ]}
   />
+  <br>
+  <img src="/images/kings.jpg" alt="Image of Kings College from the backs" class="image" aria-label="Image of Kings College from the backs">
 </Main>
+
+<style>
+  .image{
+    display: block; /* Ensures the image is treated as a block-level element for centering */
+    margin: 0 auto; /* Horizontally centers the image */
+    max-width: 95%; /* Ensures the image scales down to fit within 80% of the page width */
+    height: auto; /* Maintains the aspect ratio */
+    border: 5px solid var(--grey-600); /* Adds a solid border with light gray color */
+    border-radius: 10px; /* Rounds the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
+    padding: 5px; /* Adds some spacing between the image and its border */
+    background-color: var(--background); /* Ensures a clean background behind the image */
+
+  }
+</style>
