@@ -3,7 +3,7 @@ html {
     --grey-50: #d5d5d5;
     --grey-200: #222222;
     --grey-400: #444444;
-    --grey-600: #333333;
+    --grey-600: #282828;
     --grey-900: #111111;
     --kings-purple:#59276C;
   }
@@ -38,7 +38,7 @@ font-weight: 400;
 }
 
 main {
-max-width: 45rem;
+max-width: 55rem;
 margin: auto;
 }
 p,

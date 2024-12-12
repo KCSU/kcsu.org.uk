@@ -1,27 +1,34 @@
 ---
 import ThemeToggler from "./ThemeToggler.astro";
 ---
-
-<nav>
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/societies">Societies</a>
-      </li>
-      <li>
-        <a href="/exec">The Exec</a>
-      </li>
-      <li>
-        <a href="https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London">Calander</a>
-      </li>
-      <li>
-        <a href="/history">KCSU History</a>
-      </li>
-    </ul>
-    <ThemeToggler />
-</nav>
+<div class="navbar-container">
+  <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/societies">Societies</a>
+        </li>
+        <li>
+          <a href="/exec">The Exec</a>
+        </li>
+        <li>
+          <a href="https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London">Calander&nbsp;&nbsp;&rarr;</a>
+        </li>
+        <li>
+          <a href="/docs">Minutes & Documents</a>
+        </li>
+        <li>
+          <a href="/history">KCSU History</a>
+        </li>
+        <li>
+          <a href="https://kcgs.org.uk/">KCGS&nbsp;&nbsp;&rarr;</a>
+        </li>
+      </ul>
+      <ThemeToggler />
+  </nav>
+</div>
 
 <script>
     const { pathname } = window.location;
@@ -35,39 +42,63 @@ import ThemeToggler from "./ThemeToggler.astro";
   </script>
 
 <style>
-    nav {
-      background-color: var(--grey-50);
-      display: flex;
-      align-items: flex-start;
-      padding: 1rem ;
-      box-sizing: border-box;
-    }
-  
-    ul {      
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0;
-      margin: 0 auto 0 0;
-    }
-  
-    nav li {
-      opacity: 0.8;
-      list-style: none;
-      font-size: 0.95rem;
-    }
-  
-    a {
+  .navbar-container {
+    background-color: var(--grey-50); /* Full-width background color */
+  }
+  nav {
+    display: flex;
+    justify-content: center; /* Center the nav on the page */
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Limit the max width on larger screens */
+    margin: 0 auto; /* Center the navbar horizontally */
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items in the nav */
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    opacity: 0.8;
+    list-style: none;
+    font-size: 0.95rem;
+    margin: 0.5rem 0.5rem; /* Adds spacing between the list items */
+  }
+
+  a {
     color: var(--grey-400);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    }
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth hover transition */
+  }
 
-    a:hover {
+  a:hover {
     color: var(--grey-900);
-    }
-    a.active {
+  }
+
+  a.active {
     background: var(--kings-purple);
     color: var(--background);
+  }
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    nav {
+      max-width: 100%; /* Allow full width on smaller screens */
+      padding: 0.5rem; /* Reduce padding for smaller devices */
     }
+    ul {
+      justify-content: flex-start; /* Align items to the left */
+    }
+    nav li {
+      margin: 0.5rem 0; /* Add vertical spacing between items */
+    }
+  }
 </style>

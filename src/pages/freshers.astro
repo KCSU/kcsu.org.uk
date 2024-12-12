@@ -3,10 +3,10 @@ import Main from '../layouts/Main.astro';
 import data from '../data/exec.json'
 
 const SSF = data
-  .filter(officer => officer.role === "Sports and Societies") // Only "BME Officer"
-  .map(officer => officer.name) // Extract the names
-  .join(",");
+  .filter(officer => officer.role === "Sports and Societies")
+  .map(officer => officer.name)
 ---
+<!--Make sure you update this every year for stuff like the instagram handle and link to the whatsapp group-->
 
 
 <Main title="KCSU | Freshers">
@@ -29,7 +29,7 @@ const SSF = data
     </p>
 
     <p>
-        In the meantime, we recommend looking at the college-based sports and societies you can join, including:
+        In the meantime, we recommend looking at the college-based sports and societies you can join, found on the societies page!
     </p>
 
 </Main>
