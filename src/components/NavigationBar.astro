@@ -14,7 +14,7 @@ import ThemeToggler from "./ThemeToggler.astro";
           <a href="/exec">The Exec</a>
         </li>
         <li>
-          <a href="https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London">Calander&nbsp;&nbsp;&rarr;</a>
+          <a href="https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London">Calendar&nbsp;&nbsp;&rarr;</a>
         </li>
         <li>
           <a href="/docs">Minutes & Documents</a>
@@ -31,15 +31,18 @@ import ThemeToggler from "./ThemeToggler.astro";
 </div>
 
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
     const { pathname } = window.location;
+    const formattedPathname = pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
     const activeNavigationElement = document.querySelector(
-      `nav a[href="${pathname}"]`
+      `nav a[href="${formattedPathname}"], nav a[href="${formattedPathname}/"]`
     );
-  
+
     if (activeNavigationElement) {
       activeNavigationElement.classList.add("active");
     }
-  </script>
+  });
+</script>
 
 <style>
   .navbar-container {
