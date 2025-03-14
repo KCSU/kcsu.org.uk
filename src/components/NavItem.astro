@@ -1,0 +1,34 @@
+---
+interface Props {
+  href: string;
+  label: string;
+  dropdownItems?: {
+    href: string;
+    label: string;
+  }[];
+}
+
+const { href, label, dropdownItems = [] } = Astro.props;
+---
+
+<li class="relative group">
+  <a href={href} class="text-white px-3 py-2 rounded-md text-lg font-normal hover:bg-white/10 transition-colors inline-flex items-center">
+    {label}
+    {dropdownItems.length > 0 && (
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    )}
+  </a>
+  {dropdownItems.length > 0 && (
+    <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out border border-gray-200/20" style="background-color: var(--purple2);">
+      <div class="py-1">
+        {dropdownItems.map(item => (
+          <a href={item.href} class="block px-4 py-2 text-sm text-white hover:bg-white/10" aria-label={item.label}>
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+</li> 

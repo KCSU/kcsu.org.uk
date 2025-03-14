@@ -1,107 +1,71 @@
 ---
-import ThemeToggler from "./ThemeToggler.astro";
+import "../styles/global.scss";
+import NavItem from "./NavItem.astro";
+
+const navItems = [
+  {
+    href: "/",
+    label: "News",
+    dropdownItems: [
+      { href: "/latest", label: "Latest" },
+      { href: "/announcements", label: "Announcements" }
+    ]
+  },
+  {
+    href: "/events",
+    label: "Events",
+    dropdownItems: [
+      { href: "/events/upcoming", label: "Upcoming Events" },
+      { href: "/events/past", label: "Past Events" },
+      // TODO: figure out what this calendar actually does
+      { href: "https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London", label: "Calendar" }
+    ]
+  },
+  {
+    href: "/societies",
+    label: "Societies",
+    dropdownItems: [
+      { href: "/societies/academic/list", label: "Academic Societies" },
+      { href: "/societies/sports/list", label: "Sports Societies" },
+      { href: "/societies/other/list", label: "Other Societies" },
+      { href: "/societies/create", label: "Create a Society" }
+    ]
+  },
+  {
+    href: "/about-us",
+    label: "About Us",
+    dropdownItems: [
+      { href: "/about-us/team", label: "The Exec" },
+      { href: "/about-us/constitution", label: "Constitution" },
+      { href: "/about-us/history", label: "History" }
+    ]
+  },
+  {
+    href: "/links",
+    label: "Links",
+    dropdownItems: [
+      { href: "/servery-menu", label: "Servery Menu" },
+      { href: "https://store.kcsu.org.uk/login", label: "Formal Booking" },
+      { href: "https://www.kings.cam.ac.uk/intranet", label: "College Intranet" },
+      { href: "https://epos.kings.cam.ac.uk/", label: "EPOS Top-up" },
+      { href: "https://kcgs.org.uk/", label: "Graduate Society"}
+    ]
+  }
+];
 ---
-<div class="navbar-container">
-  <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/societies">Societies</a>
-        </li>
-        <li>
-          <a href="/exec">The Exec</a>
-        </li>
-        <li>
-          <a href="https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London">Calendar&nbsp;&nbsp;&rarr;</a>
-        </li>
-        <li>
-          <a href="/docs">Minutes & Documents</a>
-        </li>
-        <li>
-          <a href="/history">KCSU History</a>
-        </li>
-        <li>
-          <a href="https://kcgs.org.uk/">KCGS&nbsp;&nbsp;&rarr;</a>
-        </li>
+
+<nav class="shadow-md sticky top-0 z-50" style="background-color: var(--purple);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="flex items-center">
+        <img src="/src/assets/logo.png" alt="KCSU Logo" class="h-8 w-auto" />
+      </a>
+
+      <ul class="hidden md:flex space-x-8">
+        {navItems.map(item => (
+          <NavItem {...item} />
+        ))}
       </ul>
-      <ThemeToggler />
-  </nav>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const { pathname } = window.location;
-    const formattedPathname = pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
-    const activeNavigationElement = document.querySelector(
-      `nav a[href="${formattedPathname}"], nav a[href="${formattedPathname}/"]`
-    );
-
-    if (activeNavigationElement) {
-      activeNavigationElement.classList.add("active");
-    }
-  });
-</script>
-
-<style>
-  .navbar-container {
-    background-color: var(--grey-50); /* Full-width background color */
-  }
-  nav {
-    display: flex;
-    justify-content: center; /* Center the nav on the page */
-    align-items: center;
-    padding: 1rem;
-    box-sizing: border-box;
-    width: 100%; /* Ensure full width */
-    max-width: 1200px; /* Limit the max width on larger screens */
-    margin: 0 auto; /* Center the navbar horizontally */
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the items in the nav */
-    padding: 0;
-    margin: 0;
-  }
-
-  nav li {
-    opacity: 0.8;
-    list-style: none;
-    font-size: 0.95rem;
-    margin: 0.5rem 0.5rem; /* Adds spacing between the list items */
-  }
-
-  a {
-    color: var(--grey-400);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth hover transition */
-  }
-
-  a:hover {
-    color: var(--grey-900);
-  }
-
-  a.active {
-    background: var(--kings-purple);
-    color: var(--background);
-  }
-
-  /* Media query for small screens */
-  @media (max-width: 768px) {
-    nav {
-      max-width: 100%; /* Allow full width on smaller screens */
-      padding: 0.5rem; /* Reduce padding for smaller devices */
-    }
-    ul {
-      justify-content: flex-start; /* Align items to the left */
-    }
-    nav li {
-      margin: 0.5rem 0; /* Add vertical spacing between items */
-    }
-  }
-</style>
+    </div>
+  </div>
+</nav>

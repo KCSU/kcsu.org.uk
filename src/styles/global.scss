@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/Proxima-Nova-Regular.woff2') format('woff2'),
+       url('/fonts/Proxima-Nova-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/Proxima-Nova-Semibold.woff2') format('woff2'),
+       url('/fonts/Proxima-Nova-Semibold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/Proxima-Nova-Bold.woff2') format('woff2'),
+       url('/fonts/Proxima-Nova-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    --purple: #59276c;
+    --purple2: #642c79;
+}
+
+// :root.light {
+
+// }
+
+// :root.dark {
+
+// }
+
+@layer base {
+  html {
+    font-family: 'Proxima Nova', system-ui, sans-serif;
+  }
+}

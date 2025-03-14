@@ -1,52 +1,162 @@
 ---
 import Main from '../layouts/Main.astro';
-import Cards from "../components/Cards.astro";
+import { Image } from 'astro:assets';
+import Logo from '../assets/kings_college_logo.png';
+
+import KingsCollege1 from '../assets/kings_college/1.jpg';
+import KingsCollege2 from '../assets/kings_college/2.jpg';
+
+const carouselImages = [
+  { src: KingsCollege1, alt: "King's College" },
+  { src: KingsCollege2, alt: "King's College" },
+];
 ---
 
-<Main title="KCSU | King's College Student Union">
-	<br/>
-  <h1>King's College Student Union</h1>
-  <p>
-    Welcome to the KCSU website, here you can find information on KCSU events, societies, business, as well as a bunch of links to college websites and resources you might find useful! Most links are along the top, but some are found in cards below.
-    <br/>
-  </p>
-	<Cards
-    cards={[
-      {
-        title: "Freshers Information",
-        gradientFrom: "#818cf8",
-        gradientTo: "#d8b4fe",
-        to: "/freshers",
-      },
-      {
-        title: "College Links & Formal Booking",
-        gradientFrom: "#fde68a",
-        gradientTo: "#fca5a5",
-        to: "/links",
-      },
-      {
-        title: "Accomodation & CASC",
-        gradientFrom: "#6ee7b7",
-        gradientTo: "#9333ea",
-        to: "/accom",
-      },
-    ]}
-  />
-  <br>
-  <img src="/images/kings.jpg" alt="Image of Kings College from the backs" class="image" aria-label="Image of Kings College from the backs">
+<Main title="KCSU">
+  <section class="relative h-[75vh] group">
+    <div class="absolute inset-0">
+      <div class="relative w-full h-full overflow-hidden">
+        <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-container">
+          {carouselImages.map((image) => (
+            <div class="w-full h-full flex-shrink-0">
+              <Image 
+                src={image.src}
+                alt={image.alt}
+                class="w-full h-full object-cover object-center"
+                width={1600}
+                height={900}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <button 
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+      id="prev-button"
+      aria-label="Previous image"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    
+    <button 
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+      id="next-button"
+      aria-label="Next image"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div class="absolute inset-0 bg-black/60 flex items-center justify-center z-20 pointer-events-none">
+      <div class="flex items-center gap-8 px-4 pointer-events-auto">
+        <Image 
+          src={Logo}
+          alt="KCSU Logo"
+          class="w-36 h-36 object-contain pointer-events-none"
+        />
+        <div class="text-white">
+          <h1 class="text-5xl font-bold mb-4 pointer-events-none">King's College SU</h1>
+          <p class="text-xl mb-4 pointer-events-none">Your undergraduate representative body</p>
+          <a 
+            href="/about-us" 
+            class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-200"
+          >
+            Learn more about us
+            <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">About KCSU</h2>
+        <p class="max-w-2xl text-xl text-gray-600 lg:mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin
+            metus. Ut cursus eu purus ac aliquam. Donec posuere nec mauris eu iaculis. In hac
+            habitasse platea dictumst. Curabitur vulputate, sem sit amet semper hendrerit, elit erat
+            laoreet turpis, vel bibendum mi lacus nec ex. Fusce diam augue, semper ac justo sed,
+            laoreet suscipit justo. 
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {[
+          {
+            icon: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z",
+            title: "Lorem ipsum",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus."
+          },
+          {
+            icon: "M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7",
+            title: "Lorem ipsum",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus."
+          },
+          {
+            icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
+            title: "Lorem ipsum",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus."
+          }
+        ].map(item => (
+          <div class="relative">
+            <div class="mb-4">
+              <div class="flex items-center justify-center w-12 h-12 rounded-md bg-purple-600 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={item.icon} />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+            <p class="text-gray-600">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 </Main>
 
-<style>
-  .image{
-    display: block; /* Ensures the image is treated as a block-level element for centering */
-    margin: 0 auto; /* Horizontally centers the image */
-    max-width: 95%; /* Ensures the image scales down to fit within 80% of the page width */
-    height: auto; /* Maintains the aspect ratio */
-    border: 5px solid var(--grey-600); /* Adds a solid border with light gray color */
-    border-radius: 10px; /* Rounds the corners of the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
-    padding: 5px; /* Adds some spacing between the image and its border */
-    background-color: var(--background); /* Ensures a clean background behind the image */
+<script is:inline src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  }
-</style>
+<script define:vars={{ imageCount: carouselImages.length }}>
+  $(document).ready(function() {
+    let currentIndex = 0;
+    const $container = $('#carousel-container');
+    const $prevButton = $('#prev-button');
+    const $nextButton = $('#next-button');
+    
+    function updateCarousel() {
+      $container.css('transform', `translateX(-${currentIndex * 100}%)`);
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % imageCount;
+      updateCarousel();
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+      updateCarousel();
+    }
+
+    $prevButton.on('click', prevImage);
+    $nextButton.on('click', nextImage);
+
+    let autoScrollInterval = setInterval(nextImage, 5000);
+
+    $container
+      .on('mouseenter', () => clearInterval(autoScrollInterval))
+      .on('mouseleave', () => {
+        autoScrollInterval = setInterval(nextImage, 5000);
+      });
+  });
+</script>

@@ -1,34 +1,88 @@
 ---
-import "../styles/global.css";
+interface FooterItem {
+  text: string;
+  href?: string;
+}
+
+interface FooterSection {
+  title: string;
+  items: FooterItem[];
+  isAddress?: boolean;
+  address?: string;
+}
+
+const currentYear = new Date().getFullYear();
+
+const sections: FooterSection[] = [
+  {
+    title: "Contact Us",
+    items: [],
+    isAddress: true,
+    address: "King's College\nKing's Parade\nCambridge\nCB2 1ST"
+  },
+  {
+    title: "Quick Links",
+    items: [
+      { text: "Welfare", href: "/welfare" },
+      { text: "Servery Menu", href: "/servery-menu" },
+      { text: "Accommodation", href: "/accommodation" },
+      { text: "College Map", href: "/map" }
+    ]
+  },
+  {
+    title: "Resources",
+    items: [
+      { text: "Documents", href: "/documents" },
+      { text: "Meeting Minutes", href: "/minutes" },
+      { text: "Policies", href: "/policies" },
+      { text: "Student Guides", href: "/guides" }
+    ]
+  },
+  {
+    title: "Follow Us",
+    items: [
+      { text: "Facebook", href: "#" },
+      { text: "Instagram", href: "#" },
+    ]
+  }
+];
 ---
 
-<footer>
-
-    <p>
-        <a href={`https://www.instagram.com/kcsucambridge/?hl=en`}
-            style="color:--kings-purple;" 
-            aria-label="Link to the KCSU Instagram"
-            >
-            Instagram
-        </a>
-        &copy; King's College Student Union 2024 &#2022;        
-        <a href={`https://docs.google.com/forms/d/1ofL0ne-eGh534SzosgOwSWiRL44pUR0h2SXYbeTKk1Q/viewform?edit_requested=true`}
-            style="color:--kings-purple;" 
-            aria-label="Link to Google Feedback Form"
-            >
-            Any Ideas for us?
-        </a>
-    </p>
-
+<footer class="text-white">
+  <div class="bg-[#272727] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {sections.map(section => (
+          <div>
+            <h3 class="text-lg font-semibold mb-4">{section.title}</h3>
+            {section.isAddress ? (
+              <p class="text-gray-300 whitespace-pre-line leading-relaxed">
+                {section.address}
+              </p>
+            ) : (
+              <ul class="space-y-2 text-gray-300">
+                {section.items.map(item => (
+                  <li>
+                    {item.href ? (
+                      <a href={item.href} class="hover:text-white">{item.text}</a>
+                    ) : (
+                      <p>{item.text}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-[#151515] w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <p class="text-gray-400 text-center">
+        &copy; {currentYear} King's College Student Union. All rights reserved.
+      </p>
+    </div>
+  </div>
 </footer>
-
-<style>
-    footer {
-      padding: 3rem 0;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    a {
-        color:var(--kings-purple);
-    }
-  </style>

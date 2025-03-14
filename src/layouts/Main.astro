@@ -1,7 +1,8 @@
 ---
-import "../styles/global.css";
+import "../styles/global.scss";
 import Footer from "../components/Footer.astro";
 import NavigationBar from "../components/NavigationBar.astro";
+
 type Props = {
   title: string
 }
@@ -15,14 +16,7 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-		  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-		  rel="stylesheet"
-		/>
+
 		<title>{title}</title>
 
 		<script is:inline>
@@ -61,9 +55,9 @@ const { title } = Astro.props;
 
 	</head>
 
-	<body>
+	<body class="flex flex-col min-h-screen">
 		<NavigationBar />
-		<main>
+		<main class="flex-grow -mt-16 pt-16">
 			<slot />	
 		</main>
 		<Footer />
