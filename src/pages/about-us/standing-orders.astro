@@ -1,0 +1,52 @@
+---
+import Main from '../../layouts/Main.astro';
+
+---
+
+<Main title="KCSU Standing Orders">
+  <div class="bg-gradient-to-b from-purple-50 to-white min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+
+      <!-- Header Section -->
+      <div class="text-center max-w-3xl mb-10 mx-auto pt-8">
+        <h1 class="text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          KCSU Standing Orders
+        </h1>
+        <div class="h-1.5 w-32 bg-purple-600 mx-auto mb-10"></div>
+        <p class="text-xl text-gray-600 italic">
+          Last updated: 15 March 2025
+        </p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="bg-white rounded-xl shadow-sm p-8 lg:p-12">
+        <div class="prose prose-lg max-w-none">
+          <!-- stuff -->
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-16 pt-8 border-t border-gray-200">
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <p>
+              This document is subject to change. For any queries, please contact
+              <a href="mailto:president@kcsu.org.uk" class="text-purple-700 hover:text-purple-900">the KCSU President</a>.
+            </p>
+            <a 
+              href="#" 
+              class="inline-flex items-center text-purple-600 hover:text-purple-800"
+            >
+              Back to top
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Main>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

@@ -5,52 +5,72 @@ import Logo from '../assets/kings_college_logo.png';
 
 import KingsCollege1 from '../assets/kings_college/1.jpg';
 import KingsCollege2 from '../assets/kings_college/2.jpg';
+import KingsCollege3 from '../assets/kings_college/3.jpg';
 
 const carouselImages = [
   { src: KingsCollege1, alt: "King's College" },
   { src: KingsCollege2, alt: "King's College" },
+  { src: KingsCollege3, alt: "King's College" },
+];
+
+const aboutUsCards = [
+  {
+    icon: "fa-users",
+    title: "Student Community",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus.",
+    href: "/community"
+  },
+  {
+    icon: "fa-graduation-cap",
+    title: "Academic Support",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus.",
+    href: "/academic"
+  },
+  {
+    icon: "fa-utensils",
+    title: "Servery Menu",
+    description: "Check out the latest menu from the college servery!",
+    href: "/servery-menu"
+  }
 ];
 ---
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <Main title="KCSU">
   <section class="relative h-[75vh] group">
-    <div class="absolute inset-0">
-      <div class="relative w-full h-full overflow-hidden">
-        <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-container">
-          {carouselImages.map((image) => (
-            <div class="w-full h-full flex-shrink-0">
-              <Image 
-                src={image.src}
-                alt={image.alt}
-                class="w-full h-full object-cover object-center"
-                width={1600}
-                height={900}
-              />
-            </div>
-          ))}
-        </div>
+    <div class="relative w-full h-full overflow-hidden">
+      <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-container">
+        {carouselImages.map((image) => (
+          <div class="w-full h-full flex-shrink-0">
+            <Image 
+              src={image.src}
+              alt={image.alt}
+              class="w-full h-full object-cover object-center"
+              width={1600}
+              height={900}
+            />
+          </div>
+        ))}
       </div>
     </div>
     
     <!-- Navigation Arrows -->
     <button 
-      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
       id="prev-button"
       aria-label="Previous image"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
+      <i class="fas fa-chevron-left text-2xl"></i>
     </button>
     
     <button 
-      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
       id="next-button"
       aria-label="Next image"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
+      <i class="fas fa-chevron-right text-2xl"></i>
     </button>
 
     <div class="absolute inset-0 bg-black/60 flex items-center justify-center z-20 pointer-events-none">
@@ -64,13 +84,11 @@ const carouselImages = [
           <h1 class="text-5xl font-bold mb-4 pointer-events-none">King's College SU</h1>
           <p class="text-xl mb-4 pointer-events-none">Your undergraduate representative body</p>
           <a 
-            href="/about-us" 
+            href="/about-us/team" 
             class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-200"
           >
             Learn more about us
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+            <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
       </div>
@@ -80,7 +98,7 @@ const carouselImages = [
   <section class="py-24 bg-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">About KCSU</h2>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
         <p class="max-w-2xl text-xl text-gray-600 lg:mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin
             metus. Ut cursus eu purus ac aliquam. Donec posuere nec mauris eu iaculis. In hac
@@ -91,40 +109,26 @@ const carouselImages = [
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {[
-          {
-            icon: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z",
-            title: "Lorem ipsum",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus."
-          },
-          {
-            icon: "M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7",
-            title: "Lorem ipsum",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus."
-          },
-          {
-            icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
-            title: "Lorem ipsum",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus."
-          }
-        ].map(item => (
-          <div class="relative">
-            <div class="mb-4">
-              <div class="flex items-center justify-center w-12 h-12 rounded-md bg-purple-600 text-white">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={item.icon} />
-                </svg>
-              </div>
+        {aboutUsCards.map(item => (
+          <article class="relative">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-purple-600 text-white mb-4">
+              <i class={`fas ${item.icon} text-xl`}></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+            <h3 class="text-xl font-bold mb-2">
+              <a href={item.href} class="inline-flex items-center text-gray-900 hover:text-purple-600 transition-colors duration-200">
+                {item.title}
+                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </h3>
             <p class="text-gray-600">{item.description}</p>
-          </div>
+          </article>
         ))}
       </div>
     </div>
   </section>
 </Main>
 
+<!-- jQuery -->
 <script is:inline src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script define:vars={{ imageCount: carouselImages.length }}>

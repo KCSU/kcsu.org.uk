@@ -1,6 +1,5 @@
 ---
 interface Props {
-  href: string;
   label: string;
   dropdownItems?: {
     href: string;
@@ -8,11 +7,11 @@ interface Props {
   }[];
 }
 
-const { href, label, dropdownItems = [] } = Astro.props;
+const { label, dropdownItems = [] } = Astro.props;
 ---
 
 <li class="relative group">
-  <a href={href} class="text-white px-3 py-2 rounded-md text-lg font-normal hover:bg-white/10 transition-colors inline-flex items-center">
+  <a class="text-white px-3 py-2 rounded-md text-lg font-normal hover:bg-white/10 transition-colors inline-flex items-center">
     {label}
     {dropdownItems.length > 0 && (
       <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
