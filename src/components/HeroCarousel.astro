@@ -1,0 +1,103 @@
+---
+import { Image } from 'astro:assets';
+
+interface CarouselImage {
+  src: any;
+  alt: string;
+}
+
+interface Props {
+  images: CarouselImage[];
+  logo?: any;
+  title?: string;
+  subtitle?: string;
+}
+
+const { images, logo, title, subtitle } = Astro.props;
+---
+
+<section class="relative h-[75vh] group">
+  <div class="relative w-full h-full overflow-hidden">
+    <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-container">
+      {images.map((image) => (
+        <div class="w-full h-full flex-shrink-0">
+          <Image 
+            src={image.src}
+            alt={image.alt}
+            class="w-full h-full object-cover object-center"
+            width={1600}
+            height={900}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+  
+  <!-- Navigation Arrows -->
+  <button 
+    class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+    id="prev-button"
+    aria-label="Previous image"
+  >
+    <i class="fas fa-chevron-left text-2xl"></i>
+  </button>
+  
+  <button 
+    class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+    id="next-button"
+    aria-label="Next image"
+  >
+    <i class="fas fa-chevron-right text-2xl"></i>
+  </button>
+
+  <!-- Hero content -->
+  <div class="absolute inset-0 bg-black/60 flex items-center justify-center z-20 pointer-events-none">
+    <div class="flex items-center gap-8 px-4 pointer-events-auto">
+      {logo && (
+        <Image 
+          src={logo}
+          alt="Logo"
+          class="w-36 h-36 object-contain pointer-events-none"
+        />
+      )}
+      <div class="text-white">
+        {title && <h1 class="text-5xl font-bold mb-4 pointer-events-none">{title}</h1>}
+        {subtitle && <p class="text-xl mb-4 pointer-events-none">{subtitle}</p>}
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ imageCount: images.length }}>
+  $(document).ready(() => {
+    let currentIndex = 0;
+    const $container = $('#carousel-container');
+    const $prevButton = $('#prev-button');
+    const $nextButton = $('#next-button');
+    
+    const updateCarousel = () => 
+      $container.css('transform', `translateX(-${currentIndex * 100}%)`);
+    
+    const nextImage = () => {
+      currentIndex = (currentIndex + 1) % imageCount;
+      updateCarousel();
+    }
+
+    const prevImage = () => {
+      currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+      updateCarousel();
+    }
+
+    $prevButton.on('click', prevImage);
+    $nextButton.on('click', nextImage);
+
+    let autoScrollInterval = setInterval(nextImage, 5000);
+
+    $container
+      .on('mouseenter', () => clearInterval(autoScrollInterval))
+      .on('mouseleave', () => {
+        autoScrollInterval = setInterval(nextImage, 5000);
+      });
+  });
+</script> 

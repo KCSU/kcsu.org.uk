@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  icon?: string;
+}
+
+const { title, icon = "fa-info-circle" } = Astro.props;
+---
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+  <div class="flex items-center mb-4">
+    <i class={`fas ${icon} text-xl text-gray-700 mr-3`}></i>
+    <h2 class="text-xl font-bold text-gray-900">{title}</h2>
+  </div>
+  <ul class="space-y-2">
+    <slot />
+  </ul>
+</div> 

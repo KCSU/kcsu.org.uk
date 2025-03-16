@@ -44,7 +44,6 @@ const navItems = [
       { href: "https://store.kcsu.org.uk/login", label: "Formal Booking" },
       { href: "https://www.kings.cam.ac.uk/intranet", label: "College Intranet" },
       { href: "https://epos.kings.cam.ac.uk/", label: "EPOS Top-up" },
-      { href: "https://kcgs.org.uk/", label: "Graduate Society"}
     ]
   }
 ];
@@ -57,11 +56,73 @@ const navItems = [
         <img src="/src/assets/logo.png" alt="KCSU Logo" class="h-8 w-auto" />
       </a>
 
+      <!-- Desktop Navigation -->
       <ul class="hidden md:flex space-x-8">
         {navItems.map(item => (
           <NavItem {...item} />
         ))}
       </ul>
+
+      <!-- Mobile Navigation Button -->
+      <div class="md:hidden">
+        <button 
+          type="button" 
+          id="mobile-menu-button" 
+          class="text-white hover:bg-black/30 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+          aria-controls="mobile-menu" 
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon -->
+          <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- X icon for closing -->
+          <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state -->
+  <div id="mobile-menu" class="hidden md:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+      {navItems.map((item, index) => (
+        <div class="mobile-dropdown">
+          <button class="mobile-dropdown-button w-full text-left px-3 py-2 text-gray-800 rounded-md hover:bg-gray-100">
+            {item.label}
+            <svg class="mobile-dropdown-icon ml-1 w-4 h-4 inline-block transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="mobile-dropdown-content hidden pl-4">
+            {item.dropdownItems.map(subItem => (
+              <a href={subItem.href} class="rounded-md block px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                {subItem.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 </nav>
+
+<script>
+  $(document).ready(function() {
+    // Toggle mobile menu
+    $('#mobile-menu-button').on('click', function() {
+      $('#mobile-menu').toggleClass('hidden');
+      $('#hamburger-icon').toggleClass('hidden');
+      $('#close-icon').toggleClass('hidden');
+    });
+
+    // Handle mobile dropdowns
+    $('.mobile-dropdown-button').on('click', function() {
+      $(this).next('.mobile-dropdown-content').toggleClass('hidden');
+      $(this).find('.mobile-dropdown-icon').toggleClass('rotate-180');
+    });
+  });
+</script>

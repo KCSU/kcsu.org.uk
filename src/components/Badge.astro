@@ -1,0 +1,28 @@
+---
+interface Props {
+  label: string;
+  color: keyof typeof colorMap;
+}
+
+const { label, color } = Astro.props;
+
+const colorMap = {
+  "green": {
+    "light": {
+      bg: "bg-green-100",
+      text: "text-green-800"
+    },
+    "dark": {
+      bg: "bg-green-900",
+      text: "text-green-300"
+    }
+  }
+}
+
+const textColor = colorMap[color]["light"].text;
+const bgColor = colorMap[color]["light"].bg;
+---
+
+<span class={`${bgColor} ${textColor} text-xs font-medium me-2 px-1.5 py-0.5 rounded-md`}>
+  {label}
+</span>

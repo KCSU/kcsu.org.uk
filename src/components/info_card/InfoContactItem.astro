@@ -1,0 +1,29 @@
+---
+interface Props {
+  label: string;
+  value: string;
+  href?: string;
+  icon?: string;
+  disabled?: boolean;
+}
+
+const { label, value, href, icon = "fa-phone", disabled = false } = Astro.props;
+---
+
+<li>
+  <span class="inline-block">{label}:</span>
+  <span class="inline-block">
+    {href && !disabled ? (
+      <a 
+        href={href} 
+        class="text-blue-600 hover:underline visited:text-purple-800 flex items-center"
+        aria-disabled={disabled}
+      >
+        {value}
+        <i class={`fas ${icon} ml-1 text-xs`}></i>
+      </a>
+    ) : (
+      <span class="flex items-center opacity-50 cursor-not-allowed">{value}</span>
+    )}
+  </span>
+</li> 

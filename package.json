@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@types/jquery": "^3.5.32",
     "astro": "^5.0.5",
     "sass-embedded": "^1.85.1"
   },

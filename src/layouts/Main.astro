@@ -12,55 +12,60 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
 
-		<title>{title}</title>
+    <!-- jQuery -->
+    <script is:inline src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-		<script is:inline>
-			const DARK_THEME_CLASS = "dark";
-			const COLOUR_MODE = "COLOUR_MODE";
-			const LIGHT_THEME = "LIGHT";
-			const DARK_THEME = "DARK";
-			const rootEl = document.documentElement;
-			const getInitialColourMode = () => {
-				const previouslySavedColourMode = window.localStorage.getItem(COLOUR_MODE);
-				
-				if (previouslySavedColourMode) {
-				return previouslySavedColourMode;
-				}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-				if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-				return DARK_THEME;
-				}
+    <script is:inline>
+      const DARK_THEME_CLASS = "dark";
+      const COLOUR_MODE = "COLOUR_MODE";
+      const LIGHT_THEME = "LIGHT";
+      const DARK_THEME = "DARK";
+      const rootEl = document.documentElement;
+      const getInitialColourMode = () => {
+        const previouslySavedColourMode = window.localStorage.getItem(COLOUR_MODE);
+        
+        if (previouslySavedColourMode) {
+        return previouslySavedColourMode;
+        }
 
-				return LIGHT_THEME;
-				};
-				
-			const initialColourMode = getInitialColourMode();
-			
-			const setInitialColourMode = (mode) => {
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return DARK_THEME;
+        }
 
-				if (mode === LIGHT_THEME) {
-				rootEl.classList.remove(DARK_THEME_CLASS);
-				} else {
-				rootEl.classList.add(DARK_THEME_CLASS);
-				}
-			};
-						
-			setInitialColourMode(initialColourMode);
-		</script>
+        return LIGHT_THEME;
+        };
+        
+      const initialColourMode = getInitialColourMode();
+      
+      const setInitialColourMode = (mode) => {
 
-	</head>
+        if (mode === LIGHT_THEME) {
+        rootEl.classList.remove(DARK_THEME_CLASS);
+        } else {
+        rootEl.classList.add(DARK_THEME_CLASS);
+        }
+      };
+            
+      setInitialColourMode(initialColourMode);
+    </script>
 
-	<body class="flex flex-col min-h-screen">
-		<NavigationBar />
-		<main class="flex-grow -mt-16 pt-16">
-			<slot />	
-		</main>
-		<Footer />
-	</body>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <NavigationBar />
+    <main class="flex-grow -mt-16 pt-16">
+      <slot />	
+    </main>
+    <Footer />
+  </body>
 
 </html>

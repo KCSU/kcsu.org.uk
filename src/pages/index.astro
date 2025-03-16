@@ -1,11 +1,16 @@
 ---
 import Main from '../layouts/Main.astro';
-import { Image } from 'astro:assets';
 import Logo from '../assets/kings_college_logo.png';
 
 import KingsCollege1 from '../assets/kings_college/1.jpg';
 import KingsCollege2 from '../assets/kings_college/2.jpg';
 import KingsCollege3 from '../assets/kings_college/3.jpg';
+
+import HeroCarousel from '../components/HeroCarousel.astro';
+import InfoGridColumn from '../components/info_card/InfoGridColumn.astro';
+import InfoCard from '../components/info_card/InfoCard.astro';
+import InfoLink from '../components/info_card/InfoLink.astro';
+import InfoContactItem from '../components/info_card/InfoContactItem.astro';
 
 const carouselImages = [
   { src: KingsCollege1, alt: "King's College" },
@@ -13,141 +18,123 @@ const carouselImages = [
   { src: KingsCollege3, alt: "King's College" },
 ];
 
-const aboutUsCards = [
-  {
-    icon: "fa-users",
-    title: "Student Community",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus.",
-    href: "/community"
-  },
-  {
-    icon: "fa-graduation-cap",
-    title: "Academic Support",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin metus.",
-    href: "/academic"
-  },
-  {
-    icon: "fa-utensils",
-    title: "Servery Menu",
-    description: "Check out the latest menu from the college servery!",
-    href: "/servery-menu"
-  }
-];
 ---
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 <Main title="KCSU">
-  <section class="relative h-[75vh] group">
-    <div class="relative w-full h-full overflow-hidden">
-      <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-container">
-        {carouselImages.map((image) => (
-          <div class="w-full h-full flex-shrink-0">
-            <Image 
-              src={image.src}
-              alt={image.alt}
-              class="w-full h-full object-cover object-center"
-              width={1600}
-              height={900}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-    
-    <!-- Navigation Arrows -->
-    <button 
-      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
-      id="prev-button"
-      aria-label="Previous image"
+  <HeroCarousel 
+    images={carouselImages} 
+    logo={Logo}
+    title="King's College SU"
+    subtitle="Your undergraduate representative body"
+  >
+    <a 
+      href="/about-us/team" 
+      class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 
+      border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-200"
     >
-      <i class="fas fa-chevron-left text-2xl"></i>
-    </button>
-    
-    <button 
-      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
-      id="next-button"
-      aria-label="Next image"
-    >
-      <i class="fas fa-chevron-right text-2xl"></i>
-    </button>
+      Learn more about us
+      <i class="fas fa-arrow-right ml-2"></i>
+    </a>
+  </HeroCarousel>
 
-    <div class="absolute inset-0 bg-black/60 flex items-center justify-center z-20 pointer-events-none">
-      <div class="flex items-center gap-8 px-4 pointer-events-auto">
-        <Image 
-          src={Logo}
-          alt="KCSU Logo"
-          class="w-36 h-36 object-contain pointer-events-none"
-        />
-        <div class="text-white">
-          <h1 class="text-5xl font-bold mb-4 pointer-events-none">King's College SU</h1>
-          <p class="text-xl mb-4 pointer-events-none">Your undergraduate representative body</p>
-          <a 
-            href="/about-us/team" 
-            class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-200"
-          >
-            Learn more about us
-            <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-24 bg-slate-100">
+  <section class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-        <p class="max-w-2xl text-xl text-gray-600 lg:mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed sollicitudin
-            metus. Ut cursus eu purus ac aliquam. Donec posuere nec mauris eu iaculis. In hac
-            habitasse platea dictumst. Curabitur vulputate, sem sit amet semper hendrerit, elit erat
-            laoreet turpis, vel bibendum mi lacus nec ex. Fusce diam augue, semper ac justo sed,
-            laoreet suscipit justo. 
+      <div class="bg-white p-6 rounded-md shadow-md mb-8 border-l-[6px] border-purple-500">
+        <p class="text-gray-900">
+          Welcome to the KCSU website! We are the student-elected representatives for the
+          undergraduate students here at King's. This platform serves as a place for resources,
+          support, and information you may need throughout your time here.
         </p>
       </div>
+  
+      <!-- Information Grid - Column Layout -->
+      <div class="flex flex-col md:flex-row gap-8">
+        <InfoGridColumn>
+          <!-- Food and Menu -->
+          <InfoCard title="Food and Menus" icon="fa-utensils">
+            <InfoLink href="/servery-menu" label="Servery Menu" />
+            <InfoLink href="#" label="Formal Booking" />
+            <InfoLink href="#" label="EPOS Top-up" />
+          </InfoCard>
+    
+          <!-- Contact List -->
+          <InfoCard title="Contact List" icon="fa-phone">
+            <InfoContactItem label="Porters" value="+44 (0)1223 331100" href="tel:01223331100" />
+            <InfoContactItem label="important person" value="+44 (0)1234 567890" href="tel:01234567890" disabled={true} />
+          </InfoCard>
+    
+          <!-- Transport -->
+          <InfoCard title="Transport" icon="fa-bus">
+            <InfoLink href="https://smartcambridge.org/transport/map/" label="Real-time Bus Information" />
+            <InfoLink href="https://www.realtimetrains.co.uk/search/simple/gb-nr:CBG" label="Train Arrivals & Departures" />
+          </InfoCard>
+        </InfoGridColumn>
+    
+        <InfoGridColumn>
+          <!-- Welfare Contacts -->
+          <InfoCard title="Welfare Contacts" icon="fa-hands-helping">
+            <InfoLink href="https://www.kings.cam.ac.uk/study/life-at-kings/student-support" label="King's Student Support" />
+            <InfoLink href="https://www.studentsupport.cam.ac.uk/individual-counselling" label="University Counselling Service" />
+            <InfoLink href="https://www.cambridgesu.co.uk/advice/student-advice-service/" label="Cambridge SU Advice Service" />
+          </InfoCard>
+    
+          <!-- College Websites -->
+          <InfoCard title="Websites" icon="fa-globe">
+            <InfoLink href="https://store.kcsu.org.uk/" label="Formal Booking (KiFoMaSy)" />
+            <InfoLink href="https://www.casc.cam.ac.uk/" label="Accommodation View" />
+            <InfoLink href="https://kings.cam.ac.uk/intranet" label="College Intranet" />
+            <InfoLink href="https://fms.kings.cam.ac.uk/" label="Facility Management System (FMS)" />
+            <InfoLink href="https://app.casc.cam.ac.uk/rms_live/InstHome.aspx" label="Room Management System (RMS)" />
+            <InfoLink href="https://kcgs.org.uk/" label="King's Graduate Society" />
+          </InfoCard>
+        </InfoGridColumn>
+    
+        <InfoGridColumn>
+          <!-- Maintenance -->
+          <InfoCard title="Maintenance" icon="fa-tools">
+            <InfoLink href="#" label="what do i even put here" disabled={true}/>
+            <InfoLink href="#" label="who do i email if my room is broken" isEmail={true} disabled={true} />
+          </InfoCard>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {aboutUsCards.map(item => (
-          <article class="relative">
-            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-purple-600 text-white mb-4">
-              <i class={`fas ${item.icon} text-xl`}></i>
-            </div>
-            <h3 class="text-xl font-bold mb-2">
-              <a href={item.href} class="inline-flex items-center text-gray-900 hover:text-purple-600 transition-colors duration-200">
-                {item.title}
-                <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
-            </h3>
-            <p class="text-gray-600">{item.description}</p>
-          </article>
-        ))}
-      </div>
+          <!-- Email upport -->
+          <InfoCard title="Email Support" icon="fa-envelope">
+            <InfoLink href="/about-us/team?view=table" label="KCSU Exec Emails" icon="" />
+            <InfoLink href="mailto:it.support@kings.cam.ac.uk" label="College IT Support" isEmail={true} />
+          </InfoCard>
+          
+          <!-- KCSU Forms -->
+          <InfoCard title="KCSU Forms" icon="fa-file-alt">
+            <InfoLink 
+              href="https://docs.google.com/forms/d/1ofL0ne-eGh534SzosgOwSWiRL44pUR0h2SXYbeTKk1Q/viewform"
+              label="old kcsu form found on prev website"
+            />
+            <InfoLink href="#" label="maybe issues/complaint form?" />
+            <InfoLink href="#" label="placeholder form" disabled={true} />
+            <InfoLink href="#" label="placeholder form 2" disabled={true}/>
+          </InfoCard>
+        </InfoGridColumn>
+      </InfoGrid>
     </div>
-  </section>
+  </section> 
 </Main>
 
-<!-- jQuery -->
-<script is:inline src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
 <script define:vars={{ imageCount: carouselImages.length }}>
-  $(document).ready(function() {
+  $(document).ready(() => {
     let currentIndex = 0;
     const $container = $('#carousel-container');
     const $prevButton = $('#prev-button');
     const $nextButton = $('#next-button');
     
-    function updateCarousel() {
+    const updateCarousel = () => 
       $container.css('transform', `translateX(-${currentIndex * 100}%)`);
-    }
+    
 
-    function nextImage() {
+    const nextImage = () => {
       currentIndex = (currentIndex + 1) % imageCount;
       updateCarousel();
     }
 
-    function prevImage() {
+    const prevImage = () => {
       currentIndex = (currentIndex - 1 + imageCount) % imageCount;
       updateCarousel();
     }
