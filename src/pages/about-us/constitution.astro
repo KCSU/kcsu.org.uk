@@ -1,6 +1,9 @@
 ---
 import Main from '../../layouts/Main.astro';
-import constitutionData from '../../data/fake_constitution.json';
+import DocumentHeader from '../../components/DocumentHeader.astro';
+import DocumentFooter from '../../components/DocumentFooter.astro';
+import PageNavigation from '../../components/PageNavigation.astro';
+import constitutionData from '../../data/constitution.json';
 
 interface Section {
   id: string;
@@ -9,67 +12,59 @@ interface Section {
 };
 
 const sections: Section[] = constitutionData;
+
+// Map sections to nav items for the sidebar
+const navItems = sections.map(section => ({
+  id: section.id,
+  title: section.title
+}));
 ---
 
-<Main title="KCSU Constitution">
+<Main title="Constitution">
   <div class="bg-gradient-to-b from-purple-50 to-white min-h-screen">
-    <div class="max-w-4xl mx-auto px-4 py-16">
+    <div class="container mx-auto px-4 py-16">
 
-      <!-- Header Section -->
-      <div class="text-center max-w-3xl mb-10 mx-auto pt-8">
-        <h1 class="text-6xl font-bold text-gray-900 mb-8 leading-tight">
-          KCSU Constitution
-        </h1>
-        <div class="h-1.5 w-32 bg-purple-600 mx-auto mb-10"></div>
-        <p class="text-xl text-gray-600 italic">
-          Last updated: 15 March 2025
-        </p>
-      </div>
+      <!-- Header section -->
+      <DocumentHeader title="KCSU Constitution" />
 
-      <!-- Main Content -->
-      <div class="bg-white rounded-xl shadow-md p-8 lg:p-12">
-        <div class="prose prose-lg max-w-none">
-          {sections.map((section) => (
-            <div class="mb-16 scroll-mt-24" id={section.id}>
-              <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-                <span>{section.id}.</span> {section.title}
-              </h2>
-              <div class="space-y-4">
-                {section.content.map((item, itemIndex) => (
-                  <div>
-                    <p class="text-gray-700 leading-relaxed">
-                      <span class="w-5 inline-block">{itemIndex + 1}.</span>  {item.text}
-                    </p>
-                    {item.list && (
-                      <ul class="list-none pl-8 mt-2 space-y-2">
-                        {item.list.map((subItem) => (
-                          <li class="text-gray-700">
-                            {subItem}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+      <!-- Main content -->
+      <div class="flex flex-col lg:flex-row gap-8 mt-10 relative">
+        <!-- Navigation sidebar -->
+        <PageNavigation items={navItems} showId={true} />
+
+        <!-- Constitution content -->
+        <div class="lg:w-3/4">
+          <div class="bg-white rounded-xl shadow-md p-8 lg:p-12">
+            <div class="prose prose-lg max-w-none">
+              {sections.map((section) => (
+                <div class="mb-16 scroll-mt-24" id={section.id}>
+                  <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+                    <span class="mr-2.5">{section.id}.</span>{section.title}
+                  </h2>
+                  <div class="space-y-4">
+                    {section.content.map((item, itemIndex) => (
+                      <div>
+                        <p class="text-gray-700 leading-relaxed">
+                          <span class="w-5 inline-block">{itemIndex + 1}.</span> {item.text}
+                        </p>
+                        {item.list && (
+                          <ul class="list-none pl-8 mt-2 space-y-2">
+                            {item.list.map((subItem) => (
+                              <li class="text-gray-700">
+                                {subItem}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        <!-- Footer Note -->
-        <div class="mt-16 pt-8 border-t border-gray-200">
-          <div class="flex items-center justify-between text-sm text-gray-500">
-            <p>
-              This document is subject to change. For any queries, please contact
-              <a href="mailto:president@kcsu.org.uk" class="text-purple-700 hover:text-purple-900">the KCSU President</a>.
-            </p>
-            <a 
-              href="#" 
-              class="inline-flex items-center text-purple-600 hover:text-purple-800"
-            >
-              Back to top
-              <i class="fa-solid fa-arrow-up ml-1"></i>
-            </a>
+            <!-- UPDATE ME!!! -->
+            <DocumentFooter lastUpdated="23/03/2025" />
           </div>
         </div>
       </div>
@@ -82,11 +77,11 @@ const sections: Section[] = constitutionData;
     scroll-behavior: smooth;
   }
 
-  /* Custom list styling */
-  ul li {
+  /* Custom list styling - scoped to document content only */
+  .prose ul li {
     position: relative;
   }
-  ul li::before {
+  .prose ul li::before {
     content: "";
     position: absolute;
     left: -1.5rem;

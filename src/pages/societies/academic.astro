@@ -1,0 +1,103 @@
+---
+import Main from '../../layouts/Main.astro';
+import DocumentHeader from '../../components/DocumentHeader.astro';
+import DocumentFooter from '../../components/DocumentFooter.astro';
+import PageNavigation from '../../components/PageNavigation.astro';
+import societiesData from '../../data/societies.json';
+
+interface Contact {
+  name: string;
+  role: string;
+  email: string;
+}
+
+interface Society {
+  id: string;
+  name: string;
+  description: string;
+  contacts: Contact[];
+  image: string;
+}
+
+const academicSocieties: Society[] = societiesData;
+
+// Map societies to nav items for the sidebar
+const navItems = academicSocieties.map(society => ({
+  id: society.id,
+  title: society.name
+}));
+---
+
+<Main title="Academic Societies">
+  <div class="bg-gradient-to-b from-purple-50 to-slate-50 min-h-screen">
+    <div class="container mx-auto px-4 py-16">
+      <DocumentHeader title="Academic Societies" />
+
+      <div class="flex flex-col lg:flex-row gap-8 mt-12 relative">
+        <!-- Navigation sidebar -->
+        <PageNavigation items={navItems} />
+
+        <!-- Societies list -->
+        <div class="lg:w-3/4 space-y-16">
+          {academicSocieties.map((society) => (
+            <div id={society.id} class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl scroll-mt-28">
+              <div class="flex flex-col md:flex-row">
+                <!-- Society Details -->
+                <div class="p-8 md:w-3/5">
+                  <h2 class="text-3xl font-bold text-gray-900 mb-4">{society.name}</h2>
+                  
+                  <p class="text-gray-700 mb-6">{society.description}</p>
+                  
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Contact Information</h3>
+                    <ul class="space-y-2">
+                      {society.contacts.map((contact) => (
+                        <li>
+                          <span class="font-medium">{contact.name}</span> - {contact.role}
+                          <a href={`mailto:${contact.email}`} class="block text-purple-700 hover:text-purple-900">
+                            {contact.email}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                
+                <!-- Society Image -->
+                <div class="md:w-2/5">
+                  <img 
+                    src={society.image} 
+                    alt={`${society.name} Photo`}
+                    class="w-full h-full object-cover object-center min-h-[300px]"
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Create a new society section -->
+      <div class="mt-24 bg-white p-8 rounded-md shadow-md border-l-[6px] border-purple-500">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Start Your Own Society</h2>
+        <p class="text-gray-700 mb-6">
+          Interested in starting a new society at King's? The KCSU is always happy to welcome new initiatives.
+          Contact the KCSU Sports & Societies Officer for guidance on how to establish and fund your society.
+        </p>
+        <a href="/societies/create" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+          Learn More
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+
+      <!-- UPDATE ME!!! -->
+      <DocumentFooter lastUpdated="19/03/2025" />
+    </div>
+  </div>
+</Main>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

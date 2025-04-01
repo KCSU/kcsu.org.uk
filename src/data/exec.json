@@ -1,135 +1,135 @@
 [
   {
     "role": "President",
-    "name": "Benjamin Warner",
-    "email": "president@kcsu.org.uk",
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=BW",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "names": ["Benjamin Warner"],
+    "emails": ["president@kcsu.org.uk"],
+    "image": "/images/exec/president.png",
+    "description": "Halloj! I'm Benjamin (Beni), your KCSU President. I'm a second-year HSPSer focusing on Politics and IR. Principally, I manage and represent the entire KCSU on college committees, council and the governing body. If you need something done, I probably know who to ask or where to find the information. My proverbial door is always open to have a chat about key issues in College, help you write a committee/council paper, or anything you want really. I am your key representative to College, and am always working as hard as I can on your behalf, so feel free to reach out at any time, day or night!"
   },
   {
-    "role": "Vice-President",
-    "name": "Ubayd Ajanaku",
-    "email": "vice.president@kcsu.org.uk",
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=UA",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "role": "Vice-President (Interim)",
+    "names": ["Dan Erwig"],
+    "emails": ["vice.president@kcsu.org.uk"],
+    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=DE",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Chair",
-    "name": "Philip Couldery",
-    "email": "chair@kcsu.org.uk",
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=PC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "names": ["Philip Couldery"],
+    "emails": ["chair@kcsu.org.uk"],
+    "image": "/images/exec/chair.png",
+    "description": "Hi, I'm Philip, a second year Nat Sci and your KCSU Chair. As Chair my role is to run the exec and open meetings, organise elections, and generally look after the exec. I'll be your port of call if there's something you want to change about the KCSU, if you want to run for a position, if you have a problem with any of the current officers or if you don't know who to contact about something. My job really varies with what the KCSU needs so reach out about anything and if I can't help you myself, I'll make sure I find someone who can!"
   },
   {
     "role": "Welfare",
-    "name": "Sophie Ferni and Gary Chowdhury",
-    "email": "welfare.a@kcsu.org.uk, welfare.b@kcsu.org.uk",
+    "names": ["Sophie Ferni", "Gary Chowdhury"],
+    "emails": ["welfare.a@kcsu.org.uk", "welfare.b@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=SF",
-    "description": "How to distinguish between A and B? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Domus",
-    "name": "Rachel Elliman",
-    "email": "domus@kcsu.org.uk",
+    "names": ["Rachel Elliman"],
+    "emails": ["domus@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=RE",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Hi, I am Rachel, a second year History and Politics student and your Domus officer! I am responsible for representing students wants, needs and concerns in anything related to accommodation and catering. Please email me if there is anything you want to talk about or issues you'd like to raise!"
   },
   {
     "role": "Gender Equalities",
-    "name": "Eva Lemmy",
-    "email": "genderequality@kcsu.org.uk",
+    "names": ["Eva Lemmy"],
+    "emails": ["genderequality@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=EL",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Disabled Students",
-    "name": "Lonny Mckiernan",
-    "email": "disabled.students@kcsu.org.uk",
+    "names": ["Lonny McKiernan"],
+    "emails": ["disabled.students@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=LM",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "BME",
-    "name": "Imisi Alake and Elizabeth Omondi",
-    "email": "ethnic.minorities@kcsu.org.uk",
+    "names": ["Imisi Alake", "Elizabeth Omondi"],
+    "emails": ["ethnic.minorities@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=IA",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "LGBTQ+",
-    "name": "Max Carter and Ainoa Cernohorsky",
-    "email": "lgbtq@kcsu.org.uk",
+    "names": ["Max Carter", "Ainoa Cernohorsky"],
+    "emails": ["lgbtq@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=MC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Access",
-    "name": "Zaheda Hussain and Davod Shah",
-    "email": "access@kcsu.org.uk",
+    "names": ["Frances Walmsley", "Eleanor Lewis"],
+    "emails": ["access@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=ZH",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Hi everyone! We’re Frances (first year history-and-politics student) and Eleanor (first year historian), your new access officers for 2025-26. Our role is to advocate for equal accessibility to higher education. We organise and volunteer within the Access Bus, Shadowing Schemes, Residentials and Interview Help Desk to provide information and raise the aspirations of outreach and prospective students. We also work with college officers and staff regarding access initiatives, and we hope to work more closely with the current student body to recognise and challenge barriers to accessibility faced during university."
   },
   {
     "role": "Education",
-    "name": "Iris Tadie",
-    "email": "education@kcsu.org.uk",
+    "names": ["Iris Tadie"],
+    "emails": ["education@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=IT",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Charities",
-    "name": "Mariam Al-Badry and Zinzi Sibanda",
-    "email": "charities@kcsu.org.uk",
+    "names": ["Mariam Al-Badry", "Zinzi Sibanda"],
+    "emails": ["charities@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=MA",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Coordinator",
-    "name": "Sophia O'Callaghan",
-    "email": "coordinator@kcsu.org.uk",
+    "names": ["Sophia O'Callaghan"],
+    "emails": ["coordinator@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=SO",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Ents",
-    "name": "Cara Chandler and Alice Benzikie",
-    "email": "entertainments@kcsu.org.uk",
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=CC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "names": ["Cara Chandler", "Alice Benzikie"],
+    "emails": ["entertainments@kcsu.org.uk"],
+    "image": "/images/exec/ents.png",
+    "description": "Hey, we're Alice & Cara, second year theology and classics students. Our role as KCSU ents officers includes planning and organising formals (coming up with themes, decorations, and entertainment) as well as organising weekly college entertainment like karaoke. We also plan Fun Day, which will be happening after exams, so look out for emails regarding that! Feel free to get in contact whenever if you have any suggestions or questions :)"
   },
   {
     "role": "Sports and Societies",
-    "name": "Phoebe Zhang and Eugene Kang",
-    "email": "sports.societies@kcsu.org.uk",
+    "names": ["Phoebe Zhang", "Eugene Kang"],
+    "emails": ["sports.societies@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=PZ",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "International",
-    "name": "Gabby Kurniawan",
-    "email": "international@kcsu.org.uk",
+    "names": ["Gabby Kurniawan"],
+    "emails": ["international@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=GK",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Treasurers",
-    "name": "Rowan Hector-Turnbull and Jasmine Covell",
-    "email": "treasurer@kcsu.org.uk",
+    "names": ["Rowan Hector-Turnbull", "Jasmine Covell"],
+    "emails": ["treasurer@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=RH",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Greens",
-    "name": "Alexus Lambert-Dowell",
-    "email": "greens@kcsu.org.uk",
+    "names": ["Alexus Lambert-Dowell"],
+    "emails": ["greens@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=AL",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
   },
   {
     "role": "Computer",
-    "name": "Lucas Ma",
-    "email": "computing@kcsu.org.uk",
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=LM",
-    "description": "Hello there! I made this website."
+    "names": ["Lucas Ma"],
+    "emails": ["computing@kcsu.org.uk"],
+    "image": "/images/exec/computer.png",
+    "description": "Hello, I'm Lucas, I'm a first year Computer Science student. As your Computer Officer, I'm responsible for the maintenance of the KCSU website (this one!), KiFoMaSy, and other online platforms that KCSU runs. I attend college IT committee meetings to advocate for any IT-related issues that you may have. Do not hesitate to contact me if you face any technical issues; I'll do my best to help you out!"
   }
 ]

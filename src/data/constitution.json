@@ -1,0 +1,201 @@
+[
+    {
+        "id": "I",
+        "title": "Preamble",
+        "content": [
+            {
+                "text": "The King’s College Student Union shall be an association of undergraduate students at the King’s College of Our Lady and Saint Nicholas in Cambridge."
+            },
+            {
+                "text": "Hereinafter King’s College Student Union shall be referred to as KCSU, the King’s College of Our Lady and Saint Nicholas in Cambridge as the College, undergraduate students of the College in statu pupillari as College undergraduates, and the University of Cambridge as the University."
+            },
+            {
+                "text": "KCSU shall be a full and integral part of the College."
+            },
+            {
+                "text": "KCSU shall be a Students’ Union and a Charity as defined in law, and governed as such." 
+            }
+        ]
+    },
+    {
+        "id": "II",
+        "title": "Objects",
+        "content": [
+            {
+                "text": "To represent the views of College undergraduates;"
+            }, 
+            {
+                "text": "To operate fairly, democratically and transparently;"
+            }, 
+            {
+                "text": "To develop the intellectual, educational, social, political, and athletic aspects of College life;"
+            }, 
+            {
+                "text": "To support and promote the education, welfare and interests of college undergraduates;"
+            }, 
+            {
+                "text": "To oppose and eliminate all prejudice, discrimination and inequality within the College, including (but not limited to) racism, sexism, and heterosexism;"
+            }, 
+            {
+                "text": "To ensure College undergraduates are properly represented on any College or University bodies should this further KCSU’s other objects." 
+            }
+        ]
+    },
+    {
+        "id": "III",
+        "title": "Membership",
+        "content": [
+            {
+                "text": "All College undergraduates shall automatically be Members of KCSU, unless they resign their Membership."
+            }, 
+            {
+                "text": "Any Member may resign their Membership by given written notice to the KCSU Executive Committee. Those who resign their membership shall not be unfairly disadvantaged by their decision. Any College undergraduate may reverse their decision to resign through giving further written notice to the KCSU Executive Committee."
+            },
+            {
+                "text": "The Executive Committee shall advertise to the right to resign Membership to all Members at least annually."
+            },
+            {
+                "text": "All Members of KCSU shall be entitled to:",
+                "list": [
+                    "Speak and propose motions at its Open Meetings and vote on motions afterwards, save that the chair of the Meeting may not take part in the debate or vote except in case of a tie.",
+                    "Stand and vote in its elections, in accordance with processes of checking eligibility in the Standing Orders.",
+                    "Everyone in the College community (including, but not limited to, all College undergraduates whether Members or not, graduate students, fellows, staff, and any Members who are currently serving as an Officer of Cambridge University Students’ Union or the National Union of Students) shall be entitled to use KCSU Facilities and take part in KCSU activities. However, College undergraduate shall be given priority if necessary."
+                ]    
+            }
+        ]
+    },
+    {
+        "id": "IV",
+        "title": "Workings and Structure",
+        "content": [
+            {
+                "text": "KCSU shall be governed by this Constitution and such Standing Orders and Policy as it may create. In the event of a contradiction, the order of precedence from most binding to least shall be: the Constitution, the Standing Orders, and then Policy."
+            },
+            {
+                "text": "KCSU shall call at least two Open Meetings in Michaelmas and Lent Term and one in Easter Term, to which all Members are invited."
+            },
+            {
+                "text": "Standing Orders may be created and amended by a two-thirds majority voting in favor of a motion after an Open Meeting; the voting threshold shall be at least 30 Members and at least two day’s notice of any proposed changes shall be given to all Members. Notice of any changes to the Standing Orders shall be given to the College Council."
+            },
+            {
+                "text": "Policy may be created and amended by Open Meetings and any other democratic means as provided for by the Standing Orders. After Open Meetings, Policy may be changed by a simple majority voting in favor of a motion; the voting threshold shall be at least 25 Members."
+            },
+            {
+                "text": "Policy shall be valid until the end of the Academic Year in which it was created and for three further Academic Years, or until explicitly rescinded by further Policy."
+            },
+            {
+                "text": "The day-to-day running of KCSU, and the enaction of its Policy, shall be the responsibility of an Executive Committee (also called the Exec), which shall consist of:",
+                "list": [
+                    "The Chair;",
+                    "The President;",
+                    "The Treasurer;",
+                    "Any other Officers as specified in the Standing Orders."
+                ]
+            },
+            {
+                "text": "The Officers of the Executive Committee shall be elected annually in a secret ballot under the direction of a Returning Officer. The Returning Officer, who shall not be a Member of KCSU, shall be the College Chaplain or another person appointed by College Council and agreed upon with the Executive Committee. The Standing Orders shall make provision for these elections, for removing incumbent Officers from their role and for holding bye-elections when required."
+            },
+            {
+                "text": "College Council shall appoint a Senior Treasurer, agreed upon with the Executive Committee, who shall not be a Member of KCSU. The Senior Treasurer shall advise KCSU on finances and report to College Council. They shall have full access to all accounts, papers and meetings of KCSU."
+            },
+            {
+                "text": "The Junior Treasurer and the Senior Treasurer shall present audited accounts for KCSU to the College Council and the KCSU Membership. The Accounts for each fiscal year will be presented before the last meeting of Council during Michaelmas Term."
+            }
+        ]
+    },
+    {
+        "id": "V",
+        "title": "Subcommittees",
+        "content": [
+            {
+                "text": "Subcommittees shall be established and governed by the Standing Orders."
+            },
+            {
+                "text": "Subcommittees shall have a defined purpose."
+            },
+            {
+                "text": "Subcommittee shall be under the responsibility of an Officer of the Exec."
+            },
+            {
+                "text": "Members of Subcommittees shall be appointed by the Exec, and shall serve at the pleasure of the Exec."
+            },
+            {
+                "text": "Unless otherwise established by the Standing Orders, Membership of a Subcommittee shall be for one year and be renewable."
+            },
+            {
+                "text": "In pursuit of the Subcommittee’s purpose, specific criteria for membership of the Subcommittee may be defined in the relevant Standing Order. Membership of Subcommittees need not be restricted to Members (of KCSU)."
+            },
+            {
+                "text": "Subcommittees shall operate under the direction of KCSU’s Governance and Policy. Subcommittees shall hold no authority of their own over KCSU or its Exec."
+            },
+            {
+                "text": "The Officer responsible for a Subcommittee must produce a report if requested by the Exec. Such a requirement must be given one week’s notice."
+            },
+            {
+                "text": "The Exec is required to keep an up-to-date list of all Subcommittees and their members. Whenever this information changes, the responsible Exec Officer must provide the Exec with details of the changes."
+            },
+            {
+                "text": "All meetings of a Subcommittee must be minuted by a specified member of the Subcommittee. These minutes must be made available to the next Exec meeting."
+            }
+        ]
+    },
+    {
+        "id": "VI",
+        "title": "Responsibilities of the Executive Committee",
+        "content": [
+            {
+                "text": "The Officers of the Executive shall be the Trustees of KCSU. The Senior Treasurer shall not be a Trustee."
+            },
+            {
+                "text": "The Trustees shall be individually and collectively responsible for:",
+                "list": [
+                    "Ensuring that KCSU pursues its Objects and fulfils its legal obligations as a Students’ Union and a Charity.",
+                    "Ensuring that KCSU, and all its societies and organisations, operate in accordance with this Constitution, the Standing Orders and Policy.",
+                    "Maintaining full and accurate accounts;"
+                ]
+            },
+            {
+                "text": "The Trustees shall retain the authority over Standing Orders and Policy to prevent KCSU taking any action that would contravene their responsibilities. Any such intervention must be agreed upon by a simple majority of all Trustees."
+            }
+        ]
+    },
+    {
+        "id": "VII",
+        "title": "Affiliation",
+        "content": [
+            {
+                "text": "KCSU may affiliate or disaffiliate to any external organisation by the decision of an Affiliation Referendum."
+            },
+            {
+                "text": "An Affiliation Referendum shall be called by the Executive Committee on the receipt of a petition calling for affiliation or disaffiliation signed by 5% of the Membership. So far as is possible, Affiliation Referendums shall be conducted in accordance to the same regulations as an Election to the Executive Committee. An Affiliation Referendum regarding any particular organisation may not be called more frequently than annually."
+            },
+            {
+                "text": "The Executive Committee shall annually present to an Open Meeting for approval a list of any organisations to whom KCSU is currently affiliated, including details of any subscriptions or donations made to these organisations. A vote passed by a simple majority of those present may call an Affiliation Referendum regarding any organisation; the quorum for this vote shall be the same as for changing Policy."
+            }
+        ]
+    },
+    {
+        "id": "VIII",
+        "title": "Amending this Constitution",
+        "content": [
+            {
+                "text": "Amendments to this Constitution shall only be adopted when both passed by a two-thirds majority after an Open Meeting and approved by the College Council. The voting threshold for the Open Meeting vote shall be at least 30 Members and at least one week’s notice of any proposed changes shall be given to all Members."
+            },
+            {
+                "text": "This Constitution shall be regularly reviewed by the Executive Committee, the Senior Treasurer and the College’s Senior Tutor and First Bursar at intervals of not more than five years."
+            },
+            {
+                "text": "A proposal to dissolve KCSU shall be treated as a Constitutional Amendment. In the event of a dissolution, the total assets of KCSU shall be given over to the College to be used for the benefit of undergraduate students (e.g. for the formation of a successor association)."
+            }
+        ]
+    },
+    {
+        "id": "IX",
+        "title": "Interpretation",
+        "content": [
+            {
+                "text": "In case of doubt, the Chair shall interpret this Constitution, the Standing Orders and Policy. However, the Chair’s interpretation may be overruled by two-thirds majority of all Trustees."
+            }
+        ]
+    }
+]

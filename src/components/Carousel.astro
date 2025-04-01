@@ -16,9 +16,9 @@ interface Props {
 const { images, logo, title, subtitle } = Astro.props;
 ---
 
-<section class="relative h-[75vh] group">
-  <div class="relative w-full h-full overflow-hidden">
-    <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-container">
+<section id="carousel-section" class="relative h-[75vh] group"> <!-- adjust height of carousel here -->
+  <div class="relative w-full h-full overflow-hidden pointer-events-none">
+    <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-image-container">
       {images.map((image) => (
         <div class="w-full h-full flex-shrink-0">
           <Image 
@@ -33,7 +33,7 @@ const { images, logo, title, subtitle } = Astro.props;
     </div>
   </div>
   
-  <!-- Navigation Arrows -->
+  <!-- Navigation arrows -->
   <button 
     class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
     id="prev-button"
@@ -50,7 +50,7 @@ const { images, logo, title, subtitle } = Astro.props;
     <i class="fas fa-chevron-right text-2xl"></i>
   </button>
 
-  <!-- Hero content -->
+  <!-- Carousel content -->
   <div class="absolute inset-0 bg-black/60 flex items-center justify-center z-20 pointer-events-none">
     <div class="flex items-center gap-8 px-4 pointer-events-auto">
       {logo && (
@@ -63,7 +63,14 @@ const { images, logo, title, subtitle } = Astro.props;
       <div class="text-white">
         {title && <h1 class="text-5xl font-bold mb-4 pointer-events-none">{title}</h1>}
         {subtitle && <p class="text-xl mb-4 pointer-events-none">{subtitle}</p>}
-        <slot />
+        <a 
+          href="/about-us/team" 
+          class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 
+          border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-200"
+          >
+          Learn more about us
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -72,9 +79,10 @@ const { images, logo, title, subtitle } = Astro.props;
 <script define:vars={{ imageCount: images.length }}>
   $(document).ready(() => {
     let currentIndex = 0;
-    const $container = $('#carousel-container');
+    const $container = $('#carousel-image-container');
     const $prevButton = $('#prev-button');
     const $nextButton = $('#next-button');
+    const $carouselSection = $('#carousel-section'); // Get the entire carousel section
     
     const updateCarousel = () => 
       $container.css('transform', `translateX(-${currentIndex * 100}%)`);
@@ -89,15 +97,23 @@ const { images, logo, title, subtitle } = Astro.props;
       updateCarousel();
     }
 
+    // bind function to buttons
     $prevButton.on('click', prevImage);
     $nextButton.on('click', nextImage);
 
+    // todo: do we want auto scroll?
     let autoScrollInterval = setInterval(nextImage, 5000);
-
-    $container
-      .on('mouseenter', () => clearInterval(autoScrollInterval))
+    
+    // pause auto-scroll when hovering over the entire carousel section, including buttons
+    $carouselSection
+      .on('mouseover', () => {
+        clearInterval(autoScrollInterval);
+        autoScrollInterval = null;
+      })
       .on('mouseleave', () => {
-        autoScrollInterval = setInterval(nextImage, 5000);
+        if (!autoScrollInterval) {
+          autoScrollInterval = setInterval(nextImage, 5000);
+        }
       });
   });
 </script> 

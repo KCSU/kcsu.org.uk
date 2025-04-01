@@ -4,17 +4,19 @@ import NavItem from "./NavItem.astro";
 
 const navItems = [
   {
-    label: "News",
+    label: "About Us",
     dropdownItems: [
-      { href: "/latest", label: "Latest" },
-      { href: "/announcements", label: "Announcements" }
+      { href: "/about-us/team", label: "The Exec" },
+      { href: "/about-us/constitution", label: "Constitution" },
+      { href: "https://docs.google.com/document/d/1izkmCH05plGgLAjIcfJlkFFyhPhyTBwxBygc3YXoc8Y", label: "Standing Orders" },
+      { href: "/about-us/history", label: "History" }
     ]
   },
   {
     label: "Events",
     dropdownItems: [
-      { href: "/events/upcoming", label: "Upcoming Events" },
-      { href: "/events/past", label: "Past Events" },
+      // { href: "/events/upcoming", label: "Upcoming Events" },
+      // { href: "/events/past", label: "Past Events" },
       // TODO: figure out what this calendar actually does
       { href: "https://calendar.google.com/calendar/u/0/embed?src=events@kcsu.org.uk&ctz=Europe/London", label: "Calendar" }
     ]
@@ -22,19 +24,20 @@ const navItems = [
   {
     label: "Societies",
     dropdownItems: [
-      { href: "/societies/academic/list", label: "Academic Societies" },
-      { href: "/societies/sports/list", label: "Sports Societies" },
-      { href: "/societies/other/list", label: "Other Societies" },
+      { href: "/societies/academic", label: "Academic Societies" },
+      { href: "/societies/sports", label: "Sports Societies" },
+      { href: "/societies/other", label: "Other Societies" },
       { href: "/societies/create", label: "Create a Society" }
     ]
   },
   {
-    label: "About Us",
+    label: "Resources",
     dropdownItems: [
-      { href: "/about-us/team", label: "The Exec" },
-      { href: "/about-us/constitution", label: "Constitution" },
-      { href: "/about-us/standing-orders", label: "Standing Orders" },
-      { href: "/about-us/history", label: "History" }
+      { href: "https://docs.google.com/document/d/12-Jy5xKr6Pa4tNveaJyEHECNGHNNQv7NtNNDAGd9tv4/edit?tab=t.0#heading=h.ict5vuxw9vdv", label: "Booking the Hall" },
+      // { href: "/", label: "something2" },
+      // { href: "/", label: "something3" },
+      // { href: "/", label: "something4" },
+      // { href: "/", label: "something5" },
     ]
   },
   {
@@ -43,7 +46,7 @@ const navItems = [
       { href: "/servery-menu", label: "Servery Menu" },
       { href: "https://store.kcsu.org.uk/login", label: "Formal Booking" },
       { href: "https://www.kings.cam.ac.uk/intranet", label: "College Intranet" },
-      { href: "https://epos.kings.cam.ac.uk/", label: "EPOS Top-up" },
+      { href: "https://epos.kings.cam.ac.uk/", label: "EPOS Top-up" }
     ]
   }
 ];

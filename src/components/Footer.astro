@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
 
 const sections: FooterSection[] = [
   {
-    title: "Contact Us",
+    title: "Address",
     items: [],
     isAddress: true,
     address: "King's College\nKing's Parade\nCambridge\nCB2 1ST"
@@ -23,10 +23,9 @@ const sections: FooterSection[] = [
   {
     title: "Quick Links",
     items: [
-      { text: "Welfare", href: "/welfare" },
-      { text: "Servery Menu", href: "/servery-menu" },
-      { text: "Accommodation", href: "/accommodation" },
-      { text: "College Map", href: "/map" }
+      { text: "About Us", href: "/about-us/team" },
+      { text: "College Map", href: "https://www.kings.cam.ac.uk/sites/default/files/documents/3d-map-kings-college-cambridge.pdf" },
+      { text: "College Website", href: "https://www.kings.cam.ac.uk/" }
     ]
   },
   {
@@ -34,8 +33,6 @@ const sections: FooterSection[] = [
     items: [
       { text: "Documents", href: "/documents" },
       { text: "Meeting Minutes", href: "/minutes" },
-      { text: "Policies", href: "/policies" },
-      { text: "Student Guides", href: "/guides" }
     ]
   },
   {
@@ -54,7 +51,7 @@ const sections: FooterSection[] = [
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         {sections.map(section => (
           <div>
-            <h3 class="text-lg font-semibold mb-4">{section.title}</h3>
+            <h3 class="text-lg font-semibold mb-2">{section.title}</h3>
             {section.isAddress ? (
               <p class="text-gray-300 whitespace-pre-line leading-relaxed">
                 {section.address}
@@ -80,9 +77,19 @@ const sections: FooterSection[] = [
   
   <div class="bg-[#151515] w-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-      <p class="text-gray-400 text-center">
-        &copy; {currentYear} King's College Student Union. All rights reserved.
-      </p>
+      <div class="text-center flex flex-wrap justify-center items-center gap-3">
+        <p class="text-gray-400">
+          &copy; {currentYear} King's College Student Union. All rights reserved.
+        </p>
+        <div class="h-4 border-l border-gray-600"></div>
+        <a href="https://docs.google.com/document/d/1TdlqKOIATj2MuTaNxr6W52P9B_6yNuvy/edit" class="text-gray-400 hover:text-white transition-colors duration-200">
+          Privacy Policy
+        </a>
+        <div class="h-4 border-l border-gray-600"></div>
+        <a href="/sitemap" class="text-gray-400 hover:text-white transition-colors duration-200">
+          Sitemap
+        </a>
+      </div>
     </div>
   </div>
 </footer>

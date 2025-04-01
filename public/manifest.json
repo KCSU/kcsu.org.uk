@@ -1,0 +1,19 @@
+{
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+        {
+            "sizes": "192x192",
+            "src": "/favicon-192x192.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "/android-icon-512x512.png",
+            "type": "image/png"
+        }
+    ],
+    "name": "King's College SU",
+    "short_name": "KCSU",
+    "theme_color": "#ffffff"
+}

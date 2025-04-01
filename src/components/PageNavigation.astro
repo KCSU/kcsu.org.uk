@@ -1,0 +1,121 @@
+---
+interface NavItem {
+  id: string;
+  title: string;
+  [key: string]: any; // Allow for other properties
+}
+
+interface Props {
+  items: NavItem[];
+  title?: string;
+  showId?: boolean; // Option to show or hide the ID prefix
+}
+
+const { items, title = "On This Page", showId = false } = Astro.props;
+---
+
+<div class="hidden lg:block lg:w-1/4 h-fit mt-2 sticky top-28">
+  <div class="pl-6">
+    <h3 class="text-lg font-bold text-gray-800 mb-3 ml-1.5">{title}</h3>
+    <ul class="space-y-2">
+      {items.map((item) => (
+        <li class="nav-item" data-target-id={item.id}>
+          <a 
+            href={`#${item.id}`} 
+            class="block py-1 pl-2 text-gray-600 hover:text-purple-700 transition-colors duration-200 nav-link"
+            data-nav-id={item.id}
+          >
+            {showId && item.id && <span class="mr-2">{item.id}.</span>}{item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style>
+  /* Navigation sidebar styling */
+  .nav-item {
+    position: relative;
+    margin-left: -2px;
+    padding-left: 2px;
+    border-left: 2px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+  
+  .nav-item.active-nav-item {
+    border-left: 2px solid theme('colors.purple.600');
+  }
+  
+  .nav-item.active-nav-item a {
+    color: theme('colors.purple.800');
+    font-weight: 500;
+  }
+
+  /* Override any bullet styling */
+  .nav-item::before {
+    content: none !important;
+  }
+</style>
+
+<script>
+  $(document).ready(() => {
+    const $sections = $('[id]');
+    const $navLinks = $('.nav-link');
+    const $navItems = $('.nav-item');
+    
+    // Highlight the active navigation link
+    const highlightActiveLink = (id: string) => {
+      $navItems.removeClass('active-nav-item');
+      $(`[data-target-id="${id}"]`).addClass('active-nav-item');
+    };
+    
+    // Set up Intersection Observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            if (id) highlightActiveLink(id);
+          }
+        });
+      },
+      {
+        rootMargin: `0px 0px -${window.innerHeight / 2}px 0px`,
+        threshold: 0
+      }
+    );
+    
+    // Observe all sections
+    $sections.each(function() {
+      observer.observe(this);
+    });
+    
+    // Smooth scroll to section when clicking on nav links
+    $navLinks.on('click', function(e) {
+      e.preventDefault();
+      
+      const id = $(this).data('nav-id');
+      if (id) {
+        const headerHeight = 85;
+        const $targetSection = $(`#${id}`);
+        
+        if ($targetSection.length) {
+          $('html, body').animate({
+            scrollTop: $targetSection.offset()?.top ? $targetSection.offset()!.top - headerHeight : 0
+          }, {
+            duration: 75
+          });
+        }
+      }
+    });
+    
+    // Default highlight first navigation item on page load
+    if ($navItems.length > 0) {
+      const firstItemId = $navItems.first().data('target-id');
+      if (firstItemId) {
+        highlightActiveLink(firstItemId);
+      }
+    }
+  });
+</script> 

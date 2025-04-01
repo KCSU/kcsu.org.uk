@@ -1,0 +1,49 @@
+---
+export interface ContentItem {
+  id?: string;
+  title?: string;
+  text?: string;
+  content?: ContentItem[];
+  list?: string[];
+}
+
+interface Props {
+  items: ContentItem[];
+  level?: number
+}
+
+const { items, level = 0 } = Astro.props;
+---
+
+{items.map((item) => {
+  const indentSpacing = level > 0 ? "ml-4" : "";
+  const sectionSpacing = level === 0 ? "mb-8" : level === 1 ? "mb-3" : "mb-2";
+  
+  return (
+    <div class={`${sectionSpacing}`}>
+      {item.title && level === 0 && (
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+          {item.id && <span class="mr-2">{item.id}.</span>}{item.title}
+        </h3>
+      )}
+      
+      {item.text && (
+        <p class={`text-gray-700 leading-relaxed ${indentSpacing} ${item.content ? 'mb-2' : ''}`}>
+          {item.id && <span class="font-medium mr-2">{item.id}.</span>}{item.text}
+        </p>
+      )}
+
+      {item.content && (
+        <div class={`${indentSpacing}`}>
+          <Astro.self items={item.content} level={level + 1} />
+        </div>
+      )}
+    </div>
+  );
+})}
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style> 

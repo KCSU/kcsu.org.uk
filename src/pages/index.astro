@@ -6,7 +6,7 @@ import KingsCollege1 from '../assets/kings_college/1.jpg';
 import KingsCollege2 from '../assets/kings_college/2.jpg';
 import KingsCollege3 from '../assets/kings_college/3.jpg';
 
-import HeroCarousel from '../components/HeroCarousel.astro';
+import Carousel from '../components/Carousel.astro';
 import InfoGridColumn from '../components/info_card/InfoGridColumn.astro';
 import InfoCard from '../components/info_card/InfoCard.astro';
 import InfoLink from '../components/info_card/InfoLink.astro';
@@ -20,22 +20,13 @@ const carouselImages = [
 
 ---
 
-<Main title="KCSU">
-  <HeroCarousel 
+<Main title="Home">
+  <Carousel 
     images={carouselImages} 
     logo={Logo}
     title="King's College SU"
     subtitle="Your undergraduate representative body"
-  >
-    <a 
-      href="/about-us/team" 
-      class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 
-      border-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-200"
-    >
-      Learn more about us
-      <i class="fas fa-arrow-right ml-2"></i>
-    </a>
-  </HeroCarousel>
+  />
 
   <section class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,38 +38,40 @@ const carouselImages = [
         </p>
       </div>
   
-      <!-- Information Grid - Column Layout -->
+      <!-- column layout -->
       <div class="flex flex-col md:flex-row gap-8">
         <InfoGridColumn>
-          <!-- Food and Menu -->
+          <!-- Food and menus -->
           <InfoCard title="Food and Menus" icon="fa-utensils">
             <InfoLink href="/servery-menu" label="Servery Menu" />
             <InfoLink href="#" label="Formal Booking" />
             <InfoLink href="#" label="EPOS Top-up" />
           </InfoCard>
     
-          <!-- Contact List -->
+          <!-- Contact list -->
           <InfoCard title="Contact List" icon="fa-phone">
             <InfoContactItem label="Porters" value="+44 (0)1223 331100" href="tel:01223331100" />
-            <InfoContactItem label="important person" value="+44 (0)1234 567890" href="tel:01234567890" disabled={true} />
+            <!-- <InfoContactItem label="important person" value="+44 (0)1234 567890" href="tel:01234567890" disabled={true} /> -->
           </InfoCard>
     
           <!-- Transport -->
           <InfoCard title="Transport" icon="fa-bus">
             <InfoLink href="https://smartcambridge.org/transport/map/" label="Real-time Bus Information" />
             <InfoLink href="https://www.realtimetrains.co.uk/search/simple/gb-nr:CBG" label="Train Arrivals & Departures" />
+            <!-- todo: download this file and host it ourselves -->
+            <InfoLink href="https://www.kings.cam.ac.uk/sites/default/files/documents/3d-map-kings-college-cambridge.pdf" label="College Map" />
           </InfoCard>
         </InfoGridColumn>
     
         <InfoGridColumn>
-          <!-- Welfare Contacts -->
+          <!-- Welfare contacts -->
           <InfoCard title="Welfare Contacts" icon="fa-hands-helping">
             <InfoLink href="https://www.kings.cam.ac.uk/study/life-at-kings/student-support" label="King's Student Support" />
             <InfoLink href="https://www.studentsupport.cam.ac.uk/individual-counselling" label="University Counselling Service" />
             <InfoLink href="https://www.cambridgesu.co.uk/advice/student-advice-service/" label="Cambridge SU Advice Service" />
           </InfoCard>
     
-          <!-- College Websites -->
+          <!-- College websites -->
           <InfoCard title="Websites" icon="fa-globe">
             <InfoLink href="https://store.kcsu.org.uk/" label="Formal Booking (KiFoMaSy)" />
             <InfoLink href="https://www.casc.cam.ac.uk/" label="Accommodation View" />
@@ -90,64 +83,24 @@ const carouselImages = [
         </InfoGridColumn>
     
         <InfoGridColumn>
-          <!-- Maintenance -->
-          <InfoCard title="Maintenance" icon="fa-tools">
-            <InfoLink href="#" label="what do i even put here" disabled={true}/>
-            <InfoLink href="#" label="who do i email if my room is broken" isEmail={true} disabled={true} />
-          </InfoCard>
-
-          <!-- Email upport -->
+          <!-- Email support -->
           <InfoCard title="Email Support" icon="fa-envelope">
             <InfoLink href="/about-us/team?view=table" label="KCSU Exec Emails" icon="" />
             <InfoLink href="mailto:it.support@kings.cam.ac.uk" label="College IT Support" isEmail={true} />
           </InfoCard>
+
+          <!-- Maintenance -->
+          <InfoCard title="Maintenance" icon="fa-tools">
+            <InfoLink href="#" label="check back later!" disabled={true}/>
+            <!-- <InfoLink href="#" label="who do i email if my room is broken" isEmail={true} disabled={true} /> -->
+          </InfoCard>
           
-          <!-- KCSU Forms -->
+          <!-- KCSU forms -->
           <InfoCard title="KCSU Forms" icon="fa-file-alt">
-            <InfoLink 
-              href="https://docs.google.com/forms/d/1ofL0ne-eGh534SzosgOwSWiRL44pUR0h2SXYbeTKk1Q/viewform"
-              label="old kcsu form found on prev website"
-            />
-            <InfoLink href="#" label="maybe issues/complaint form?" />
-            <InfoLink href="#" label="placeholder form" disabled={true} />
-            <InfoLink href="#" label="placeholder form 2" disabled={true}/>
+            <InfoLink href="https://docs.google.com/forms/d/e/1FAIpQLScMROYSHkN8-zhdUpSlg7iiPbneCPHxYxKzy-Gt4Sk-WUA54w/viewform" label="Continuous Feedback Form" />
           </InfoCard>
         </InfoGridColumn>
-      </InfoGrid>
+      </div>
     </div>
   </section> 
 </Main>
-
-<script define:vars={{ imageCount: carouselImages.length }}>
-  $(document).ready(() => {
-    let currentIndex = 0;
-    const $container = $('#carousel-container');
-    const $prevButton = $('#prev-button');
-    const $nextButton = $('#next-button');
-    
-    const updateCarousel = () => 
-      $container.css('transform', `translateX(-${currentIndex * 100}%)`);
-    
-
-    const nextImage = () => {
-      currentIndex = (currentIndex + 1) % imageCount;
-      updateCarousel();
-    }
-
-    const prevImage = () => {
-      currentIndex = (currentIndex - 1 + imageCount) % imageCount;
-      updateCarousel();
-    }
-
-    $prevButton.on('click', prevImage);
-    $nextButton.on('click', nextImage);
-
-    let autoScrollInterval = setInterval(nextImage, 5000);
-
-    $container
-      .on('mouseenter', () => clearInterval(autoScrollInterval))
-      .on('mouseleave', () => {
-        autoScrollInterval = setInterval(nextImage, 5000);
-      });
-  });
-</script>

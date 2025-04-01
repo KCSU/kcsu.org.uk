@@ -1,0 +1,656 @@
+[
+    {
+        "id": "I",
+        "title": "Open Meetings",
+        "content": [
+            {
+                "id": "a",
+                "title": "Powers",
+                "content": [
+                    {
+                        "id": "1",
+                        "text": "Open Meetings shall be the supreme policy-making body, and shall therefore have the authority to deal with all matters relating to KCSU."
+                    },
+                    {
+                        "id": "2",
+                        "text": "Motions passed by an Open Meeting will remain in force until overturned by an explicitly contradictory policy. Only those sections of a Motion which are explicitly contradicted by a Motion shall be overturned (in order to overturn a whole Motion, the new Motion should clearly contain a resolution to do so)."
+                    }
+                ]
+            },
+            {
+                "id": "b",
+                "title": "Timing and Accessibility",
+                "content": [
+                    {
+                        "id": "3",
+                        "text": "There shall be at least two Open Meetings each in the Michaelmas and Lent terms and at least one in the Easter Term."
+                    },
+                    {
+                        "id": "4",
+                        "text": "At least one week's notice of the date, time and venue of any Open Meeting shall be given to all Members, and the Agenda shall be circulated at least 48 hours before the meeting. Extraordinary Open Meetings shall not be subject to this requirement (Cf: ‘Extraordinary Open Meetings’)."
+                    },
+                    {
+                        "id": "5",
+                        "text": "All Open Meetings shall be held in College during Full Term, in a room accessible to all Members, unless under extraordinary circumstances, in which case they shall be held on an online platform accessible to all Members."
+                    }
+                ]
+            },
+            {
+                "id": "c",
+                "title": "Extraordinary Open Meetings",
+                "content": [
+                    {
+                        "id": "6",
+                        "text": "Extraordinary Open Meetings of the Union can be called by the Exec at any time or by the Coordinator upon receipt of a written request. Any such request must specify the motions or subjects to be discussed, and be signed by enough Members to constitute a quorum for all matters specified."
+                    },
+                    {
+                        "id": "7",
+                        "text": "Notice of an Extraordinary Open Meeting, together with the agenda, must be circulated to all members of the Union at least 24 hours before it takes place."
+                    }
+                ]
+            },
+            {
+                "id": "d",
+                "title": "Agenda",
+                "content": [
+                    {
+                        "id": "8",
+                        "text": "The Order of Business at Open Meetings shall be decided upon by the Chair and set out in an Agenda, including the following items as applicable to the meeting:",
+                        "content": [
+                            {
+                                "id": "i",
+                                "text": "Matters Relating to the Minutes of the Last Meeting;"
+                            },
+                            {
+                                "id": "ii",
+                                "text": "Reports, Announcements and Questions;"
+                            },
+                            {
+                                "id": "iii",
+                                "text": "Emergency Motions;"
+                            },
+                            {
+                                "id": "iv",
+                                "text": "Ordinary Motions;"
+                            },
+                            {
+                                "id": "v",
+                                "text": "Ratification of nominations made by the Executive;"
+                            },
+                            {
+                                "id": "vi",
+                                "text": "Any other business."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "e",
+                "title": "Ordinary Motions, Emergency Motions and Amendments",
+                "content": [
+                    {
+                        "id": "9",
+                        "text": "Ordinary Motions must be submitted to the Chair, in person or by email. Emergency Motions may be submitted in advance, but need not be."
+                    },
+                    {
+                        "id": "10",
+                        "text": "The Chair must include Motions in the Agenda (except in cases covered by point 9) if they are submitted at least 72 hours before the relevant meeting, but may also include Motions submitted after this point at their discretion. Ordinary Motions must have been included on the circulated Agenda in order to be considered at an Open Meeting."
+                    },
+                    {
+                        "id": "11",
+                        "text": "The Chair may rule a motion to be out of order if they deem it to be contrary to the Aims and Objective of KCSU. The Chair must announce this ruling to the Open Meeting, and a two-thirds majority of those present may overrule the Chair on this matter."
+                    },
+                    {
+                        "id": "12",
+                        "text": "An Open Meeting may allow motions not on the Agenda to be discussed as emergency motions. The Chair may refuse to accept an Emergency Motion if the substance of the motion has not arisen after the deadline for the submission of Ordinary Motions. Emergency Motions may not call for the removal of an Officer."
+                    },
+                    {
+                        "id": "13",
+                        "text": "Amendments to Motions may be proposed at any time, and shall require a simple majority to be adopted, unless accepted by the proposer of the motion as 'friendly'."
+                    },
+                    {
+                        "id": "14",
+                        "text": "Motions mandating the provision of loans may only be proposed under the following conditions:",
+                        "content": [
+                            {
+                                "id": "i",
+                                "text": "The recipient of the loan is an organisation formally affiliated with KCSU;"
+                            },
+                            {
+                                "id": "ii",
+                                "text": "The terms of repayment have been formally agreed upon by the recipient and the Exec;"
+                            },
+                            {
+                                "id": "iii",
+                                "text": "The feasibility of the loan has been approved by the Senior Treasurer of KCSU."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "f",
+                "title": "Procedural Motions",
+                "content": [
+                    {
+                        "id": "15",
+                        "text": "The following Procedural Motions may be proposed by any Member at any point during an Open Meeting:",
+                        "content": [
+                            {
+                                "id": "i",
+                                "text": "That the Chair cede to a nominated Member;"
+                            },
+                            {
+                                "id": "ii",
+                                "text": "That (a) specified section(s) of the Standing Orders be temporarily suspended;"
+                            },
+                            {
+                                "id": "iii",
+                                "text": "That an indicative (non-binding) vote be taken to gauge opinion on any issue whatsoever;"
+                            },
+                            {
+                                "id": "iv",
+                                "text": "That the meeting move immediately to a vote on the Motion being considered;"
+                            },
+                            {
+                                "id": "v",
+                                "text": "That a time limit (known as a ‘guillotine’) may be put on any agenda item or that a pre-existing guillotine be altered;"
+                            },
+                            {
+                                "id": "vi",
+                                "text": "That the Motion being considered be adjourned to the next meeting;"
+                            },
+                            {
+                                "id": "vii",
+                                "text": "That a Motion may be voted on in parts."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "16",
+                        "text": "Any Procedural Motion that the Chair cede to a nominated Member, that any of the Standing Orders be suspended, that a guillotine be put on a Motion or Ratification, or that the meeting move immediately to a vote requires a two-thirds majority of Members present to be passed."
+                    },
+                    {
+                        "id": "17",
+                        "text": "The Chair may choose to unilaterally accept a Procedural Motion that they cede to a nominated Member or that an indicative vote be taken."
+                    }
+                ]
+            },
+            {
+                "id": "g",
+                "title": "Speaking and Voting Rights",
+                "content": [
+                    {
+                        "id": "18",
+                        "text": "All Members may speak and vote at Open Meetings, except the Chair, who may not vote except in the event of a tie. KCGS Members may speak, and may vote if a simple majority of KCSU Members present so decide. Members of neither union may speak, but not vote, if a simple majority of KCSU Members so decide."
+                    },
+                    {
+                        "id": "19",
+                        "text": "For the purposes of matters relating to the Societies Funding Committee, KCGS Members shall be counted as if they were KCSU Members and shall therefore have the accompanying voting rights."
+                    }
+                ]
+            },
+            {
+                "id": "h",
+                "title": "Quorum and Voting Thresholds",
+                "content": [
+                    {
+                        "id": "20",
+                        "text": "The voting threshold for any Motion or Ratification shall ordinarily be 25 Members, but shall be 30 Members in the case of Constitutional Amendments, changes to the Standing Orders, Ratification or Amendment of the Budget, or Motions mandating an expenditure over £100."
+                    },
+                    {
+                        "id": "21",
+                        "text": "Should a Motion or Ratification fail to meet the voting threshold, then the motion should be once again proposed at the next open meeting. If a threshold is not met twice, the motion should be considered to have failed. Should the first meeting be inquorate, voting may be moved online at the chair’s discretion. The chair may deem a motion too contentious or sensitive to be taken online, in which case the vote will be moved to the next quorate open meeting."
+                    },
+                    {
+                        "id": "22",
+                        "text": "Motions and Ratifications ordinarily require a simple majority of Members present to be passed, save that Constitutional Amendments, changes to the Standing Orders, Motions calling for the removal of an Officer, and certain Procedural Motions (Cf: 'Procedural Motions'), require a two-thirds majority of Members present. These thresholds do not apply to attempts to overturn previous policy (Cf: 'Powers')."
+                    },
+                    {
+                        "id": "23",
+                        "text": "In the event of a tie, the Chair shall have the casting vote, save in the case of Motions directly affecting them (such as Motions of censure, or a Procedural Motion that the Chair cede)."
+                    }
+                ]
+            },
+            {
+                "id": "i",
+                "title": "Administration",
+                "content": [
+                    {
+                        "id": "24",
+                        "text": "All Open Meetings shall be chaired by the Chair, save that the Chair may voluntarily cede to another willing Member, or a Procedural Motion may force the Chair to cede (Cf: 'Procedural Motions')"
+                    },
+                    {
+                        "id": "25",
+                        "text": "The Coordinator shall take minutes (including the votes for and against, and the abstentions over, each Motion) and circulate them to all Members within one week of any Open Meeting."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "II",
+        "title": "Exec Meetings",
+        "content": [
+            {
+                "id": "a",
+                "title": "Powers",
+                "content": [
+                    {
+                        "id": "1",
+                        "text": "Exec Meetings shall pursue and enact mandate as dictated by Open Meetings. They shall not have the power to contradict mandate set by a vote at an Open Meeting."
+                    }
+                ]
+            },
+            {
+                "id": "b",
+                "title": "Timing and Accessibility",
+                "content": [
+                    {
+                        "id": "2",
+                        "text": "There shall be at least one Exec Meeting per week during Michaelmas and Lent Terms, and at least one per fortnight during Easter Term. At least 24 hours’ notice of the date, time and venue of any Exec Meeting shall be given to all Officers and the undergraduate representatives on College Council and Governing Body. Business to be discussed at an Exec Meeting must be added to an agenda to be circulated to all prior to the Exec Meeting. All Exec Meetings shall be held in College during Full Term, in a room accessible to all Members, unless under extraordinary circumstances, in which case they shall be held on an online platform accessible to all Members."
+                    },
+                    {
+                        "id": "3",
+                        "text": "At least 24 hours’ notice of the date, time and venue of any Exec Meeting shall be given to all Officers and the undergraduate representatives on College Council and Governing Body."
+                    },
+                    {
+                        "id": "4",
+                        "text": "Business to be discussed at an Exec Meeting must be added to an agenda to be circulated to all prior to the Exec Meeting."
+                    },
+                    {
+                        "id": "5",
+                        "text": "All Exec Meetings shall be held in College during Full Term, in a room accessible to all Members, unless under extraordinary circumstances, in which case they shall be held on an online platform accessible to all Members."
+                    }
+                ]
+            },
+            {
+                "id": "c",
+                "title": "Agenda",
+                "content": [
+                    {
+                        "id": "6",
+                        "text": "The Order of Business at Exec Meetings shall be decided upon by the Chair and set out in an Agenda, including the following items as applicable to the meeting:",
+                        "content": [
+                            {
+                                "id": "i",
+                                "text": "Apologies & Admonishments;"
+                            },
+                            {
+                                "id": "ii",
+                                "text": "Conflicts of Interest;"
+                            },
+                            {
+                                "id": "iii",
+                                "text": "Reports on Action Points;"
+                            },
+                            {
+                                "id": "iv",
+                                "text": "Scheduled business;"
+                            },
+                            {
+                                "id": "v",
+                                "text": "Any other business;"
+                            },
+                            {
+                                "id": "vi",
+                                "text": "Meeting reminders for the next week."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "d",
+                "title": "Speaking and Voting Rights",
+                "content": [
+                    {
+                        "id": "7",
+                        "text": "All KCSU Members may speak at Exec Meetings, but only Officers may vote. KCGS Members and members of neither union may speak, but not vote, if a simple majority of KCSU Members present so decide."
+                    }
+                ]
+            },
+            {
+                "id": "e",
+                "title": "Quorum and Voting Thresholds",
+                "content": [
+                    {
+                        "id": "8",
+                        "text": "The Quorum for all business conducted in Exec Meetings shall be half of all Officers. The chair and any vacant officer positions do not contribute to Quorate."
+                    },
+                    {
+                        "id": "9",
+                        "text": "Should any business fail to be quorate, no vote shall take place, and instead will be added to the business for the next meeting."
+                    },
+                    {
+                        "id": "10",
+                        "text": "All votes shall be decided by a simple majority. In the event of a tie, the Chair shall have the casting vote."
+                    }
+                ]
+            },
+            {
+                "id": "f",
+                "title": "Administration",
+                "content": [
+                    {
+                        "id": "11",
+                        "text": "All Exec Meetings shall be chaired by the Chair, save that the Chair may cede to another willing Member."
+                    },
+                    {
+                        "id": "12",
+                        "text": "The Coordinator shall take minutes and circulate them to all Members within one week of any Exec Meeting."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "III",
+        "title": "The Exec",
+        "content": [
+            {
+                "id": "a",
+                "title": "Officers",
+                "content": [
+                    {
+                        "id": "1",
+                        "text": "The Officers of the Exec shall be:",
+                        "content": [
+                            {
+                                "id": "i",
+                                "text": "The Chair"
+                            },
+                            {
+                                "id": "ii",
+                                "text": "The President"
+                            },
+                            {
+                                "id": "iii",
+                                "text": "The Vice-President"
+                            },
+                            {
+                                "id": "iv",
+                                "text": "The Coordinator"
+                            },
+                            {
+                                "id": "v",
+                                "text": "The Junior Treasurers (2)"
+                            },
+                            {
+                                "id": "vi",
+                                "text": "The Welfare Officers (2)"
+                            },
+                            {
+                                "id": "vii",
+                                "text": "The Access Officers (2)"
+                            },
+                            {
+                                "id": "viii",
+                                "text": "The Green and Environmental Officer"
+                            },
+                            {
+                                "id": "ix",
+                                "text": "The Entertainments Officers (2)"
+                            },
+                            {
+                                "id": "x",
+                                "text": "The BME Officer"
+                            },
+                            {
+                                "id": "xi",
+                                "text": "The International Students Officer"
+                            },
+                            {
+                                "id": "xii",
+                                "text": "The Sports, Societies & Fresher's Officer"
+                            },
+                            {
+                                "id": "xiii",
+                                "text": "The Gender Equalities Officer"
+                            },
+                            {
+                                "id": "xiv",
+                                "text": "The LGBTQ+ Officer"
+                            },
+                            {
+                                "id": "xv",
+                                "text": "The Domus Officer"
+                            },
+                            {
+                                "id": "xvi",
+                                "text": "The Disabled Students Officer"
+                            },
+                            {
+                                "id": "xvii",
+                                "text": "The Education Officer"
+                            },
+                            {
+                                "id": "xviii",
+                                "text": "The Computer Officer"
+                            },
+                            {
+                                "id": "xix",
+                                "text": "The Charities Officer"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "text": "These Officers shall be elected in accordance with the procedures detailed in Article IV."
+                    },
+                    {
+                        "id": "3",
+                        "text": "The BME, International Students, Gender Equalities, LGBTQ+, Access, and Disabled Students Officers shall be defined as the liberation officers. "
+                    },
+                    {
+                        "id": "4",
+                        "text": "All offices, excluding that of Chair, President, Vice-President, Junior Treasurer, Access, Welfare and Entertainments, may be held by an individual or a pair. The first three must be held by an individual, the latter four must be held by a pair. If a member of a pair of treasurers resigns or is removed, the other member of the pair can remain in office temporarily without requiring an Exec vote (This supersedes Section III, Article A, Clause 10). Liberation officers (as defined in Section III, Article A, Clause 3) are recommended, but not required, to run as a pair."
+                    },
+                    {
+                        "id": "5",
+                        "text": "The Functions and Duties of individual Officer positions are detailed in Appendix A to these Standing Orders."
+                    },
+                    {
+                        "id": "6",
+                        "text": "Officers shall attend all Open Meetings and Exec Meetings. If an officer fails to attend three consecutive meetings without giving apologies to the chair 24h in advance, the chair will contact the officer to discuss their attendance and, if necessary, issue a warning. Further consecutive failure to attend without prior apology 24h in advance shall be treated as a resignation from their post. Under normal circumstances, any exec attending fewer than half of the meetings in any given term will be subject to the same disciplinary process."
+                    },
+                    {
+                        "id": "7",
+                        "text": "The president and vice-president shall be expected to take the views and interests of students – as expressed through KCSU meetings – into account when speaking or voting on College Council or Governing Body."
+                    },
+                    {
+                        "id": "8",
+                        "text": "Officers of KCSU shall abide by the responsibilities agreement signed by all incoming officers, and the following code of conduct:",
+                        "content": [
+                            {
+                                "id": "a",
+                                "text": "KCSU officers shall not use the privileges of their office to pursue personal profit, or the individual profit of any other student;"
+                            },
+                            {
+                                "id": "b",
+                                "text": "KCSU officers shall always act in the interest of the King’s undergraduate community and adhere to policy decided on by the Exec or Open Meetings, even when this may conflict with their personal opinions;"
+                            },
+                            {
+                                "id": "c",
+                                "text": "KCSU officers shall perform their duties in a non-discriminatory manner;"
+                            },
+                            {
+                                "id": "d",
+                                "text": "KCSU officers shall remain transparent with the rest of the Exec, and shall not withhold information or provide intentionally misleading information to the committee."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "9",
+                        "text": "The Chair shall be responsible for ensuring the code of conduct is followed, as well as ensuring that incoming officers sign the responsibilities agreement at the onboarding meeting."
+                    },
+                    {
+                        "id": "10",
+                        "text": "If a member of an officer pair resigns or is removed from office, the other member of the pair must also resign. They can be appointed to continue the role on a temporary basis (if that is what they desire and in accordance with Section III, Article E, Clause 24) and can choose to run again either alone or with a new partner."
+                    },
+                    {
+                        "id": "11",
+                        "text": "The KCSU may work alongside the KCGS in instances where the Exec believes it to be beneficial for the KCSU. Officers should not agree to work alongside KCGS if such collaboration does not present any benefit to the KCSU."
+                    }
+                ]
+            },
+            {
+                "id": "b",
+                "title": "Working Groups",
+                "content": [
+                    {
+                        "id": "12",
+                        "text": "The Chair shall maintain a list of all active Working Groups (See Appendix B) and Working Groups will submit a list of members to the KCSU Exec."
+                    },
+                    {
+                        "id": "13",
+                        "text": "Working Groups shall be open to all Members. The formation of any Working Group shall be announced at the next Open Meeting."
+                    },
+                    {
+                        "id": "14",
+                        "text": "When creating a Working Group, a member of the KCSU should submit a written proposal to the Chair, which includes the purpose of the group and the planned number of members, and the person responsible for reporting the activities of the group to the exec. The Exec will then vote to approve the creation of the working group."
+                    },
+                    {
+                        "id": "15",
+                        "text": "When forming a Working Group, officers should take care to include students from different backgrounds and in different years, whenever possible."
+                    },
+                    {
+                        "id": "16",
+                        "text": "Working Groups shall possess no autonomous powers, only those delegated to them by the Exec. They shall report back to Exec Meetings and be accountable to the Exec and Open Meetings."
+                    },
+                    {
+                        "id": "17",
+                        "text": "The Exec can request a progress and activity update from any Working Group at an Exec meeting. A report should be submitted to the Exec at the next Exec meeting."
+                    }
+                ]
+            },
+            {
+                "id": "c",
+                "title": "Collective Powers and Duties",
+                "content": [
+                    {
+                        "id": "18",
+                        "text": "Every Officer in the Exec shall be jointly responsible for the general running of KCSU in addition to being individually responsible for their specific duties. Elections and Freshers’ Week in particular shall not be the duty of any single Officer."
+                    },
+                    {
+                        "id": "19",
+                        "text": "A list of KCSU representatives on College’s standing committees is maintained in Appendix B to these Standing Orders. The officers listed shall be responsible for attending meetings of those committees or nominating a suitable proxy where possible, in accordance with the procedure in Section III, Article G, Clause 29."
+                    },
+                    {
+                        "id": "20",
+                        "text": "Officers are expected to offer each other support in their roles wherever necessary and/or possible. Therefore Officers shall bring to the attention of the Exec matters relating to their specific duties."
+                    },
+                    {
+                        "id": "21",
+                        "text": "Officers shall keep the Exec informed on their activities, particularly when those activities may directly or indirectly affect the duties of another Officer or prove to be controversial in nature."
+                    }
+                ]
+            },
+            {
+                "id": "d",
+                "title": "Complaints and Officer Removal",
+                "content": [
+                    {
+                        "id": "22",
+                        "text": "Any complaints about a member of the exec should be directed to the Chair, or, if the complaint is concerning the Chair, to the President. In the first instance, the Chair should raise the complaint with the individual, and try to come to a resolution. Failing this, the Chair shall pursue the following procedure:",
+                        "content": [
+                            {
+                                "id": "a",
+                                "text": "Privately inform the officer in question that a complaint of this nature has been received, and offer them a chance to exit KCSU without the complaint being brought to the full Exec."
+                            },
+                            {
+                                "id": "b",
+                                "text": "If the officer chooses to remain in office, the complaint shall be raised at the next KCSU Exec Meeting (or at an emergency meeting if outside of term time). The officer shall be given a right to respond to the complaint."
+                            },
+                            {
+                                "id": "c",
+                                "text": "Conduct a vote by secret ballot to determine whether the officer should be temporarily suspended. Suspension must receive at least a 2/3 majority of all KCSU officers (where pairs are counted as one officer) in order to pass."
+                            },
+                            {
+                                "id": "d",
+                                "text": "If the officer is suspended, they have an opportunity to resign, or an Extraordinary Open Meeting will be called in order to vote on a referendum to remove the officer from their position."
+                            },
+                            {
+                                "id": "e",
+                                "text": "If the latter is chosen, a temporary replacement officer will be nominated by the Exec in accordance with Section III, Article E, clause 24 to ensure the responsibilities of the role are fulfilled until the referendum has been conducted."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23",
+                        "text": "If a complaint is raised to the Chair (or the president if the chair is the officer in question) about a KCSU officer engaging in one of the following behaviours then the returning officer must be notified, regardless of the outcome:",
+                        "content": [
+                            {
+                                "id": "a",
+                                "text": "Harassment or bullying of any nature"
+                            },
+                            {
+                                "id": "b",
+                                "text": "Physical misconduct / engaging or attempting to engage in sexual misconduct"
+                            },
+                            {
+                                "id": "c",
+                                "text": "Threatening or violent behaviour motivated by prejudice on the basis of race, religion, sexual orientation, or other discriminatory grounds"
+                            },
+                            {
+                                "id": "d",
+                                "text": "Fraudulent activity, especially for personal gain"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "e",
+                "title": "Vacant Positions",
+                "content": [
+                    {
+                        "id": "24",
+                        "text": "If an Officer position becomes vacant, a new officer should be elected as soon as possible (see Section IV, Article A, Clause 1). If an Officer position should fall vacant, the Exec may nominate a temporary replacement in accordance with Section III, Article G, Clause 29. That officer serves until the next KCSU election."
+                    },
+                    {
+                        "id": "25",
+                        "text": "While a position is vacant, the President or the Computer Officer should monitor their email to handle any serious urgent issue. In such a case, an officer can be appointed by the Exec in accordance with the procedure in Section III, Article G, Clause 29 to handle that emergency until an officer is elected."
+                    }
+                ]
+            },
+            {
+                "id": "f",
+                "title": "Handover",
+                "content": [
+                    {
+                        "id": "26",
+                        "text": "All outgoing members of the Exec shall ensure, to the best of their abilities, that their successors are in possession of all information relevant to their new post. This process shall be coordinated by the outgoing Chair."
+                    },
+                    {
+                        "id": "27",
+                        "text": "On election, the Junior Treasurers-elect shall act as Assistant Junior Treasurers until assuming office once one of the new pair has access to the KCSU Bank Account and Mobile Banking (This superseded Section IV, Article A, Clause 3). Any reference to the ‘Junior Treasurer’ in KCSU governance documents shall not be interpreted as a reference to the Assistant Junior Treasurer."
+                    },
+                    {
+                        "id": "28",
+                        "text": "Finalists must complete their handover document by the end of Lent term before graduation and submit this to the chair."
+                    }
+                ]
+            },
+            {
+                "id": "g",
+                "title": "Appointments",
+                "content": [
+                    {
+                        "id": "29",
+                        "text": "If any procedure requires the Exec to appoint someone to a role, the following procedure will apply: An officer (either the officer being appointed or an officer nominating someone from outside the Exec) will act as the Proposer. They will Propose an appointment at an Exec Meeting. The Exec may then deliberate. When deliberations are complete, the Chair will call for a simple majority vote on the appointment. The Proposer may not vote in this election. In the case of a tie, the Chair has the tie breaking vote. If the Chair is the Proposer, then the President will have the tie breaking vote. The Chair will then announce any appointments to the members within 24 hours of the Exec Meeting."
+                    },
+                    {
+                        "id": "30",
+                        "text": "In the event that an officer must be absent from their duties for an extended period, they may Propose (in accordance with Section III, Article G, Clause 29) a temporary replacement to take on their duties for the time of their absence. If they are to be absent for more than a term, the role must be put up for election."
+                    },
+                    {
+                        "id": "31",
+                        "text": "Any member may challenge or question an appointment by the Exec at an Open Meeting. If they want the appointment changed, they may propose a motion to do so, which will be treated like a change to the Standing Order."
+                    }
+                ]
+            }
+        ]
+    }
+]
