@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Restock</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.8/purify.min.js" integrity="sha512-5g2Nj3mqLOgClHi20oat1COW7jWvf7SyqnvwWUsMDwhjHeqeTl0C+uzjucLweruQxHbhDwiPLXlm8HBO0011pA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="./index.js" type="module"></script> -->
+</head>
+<body>
+<header>
+    <nav><a href="https://kcsu.org.uk/">Home</a></nav></header>
+
+<main>
+    <h1>Period Vend Restock Request</h1>
+    <hr>
+    <form action="" method="get">
+    <select name="location" id="location-select">
+      <option value="keynes-cub">Keynes Cubicles</option>
+      <option value="keynes-uri">Keynes + Urinals</option>
+      <option value="garden-hostel">Garden Hostels</option>
+      <option value="library">Library</option>
+      <option value="other">Other</option>
+    </select>
+    <button class="btn outline" type="submit" value="Send">Send Request</button>
+</form>
+<p class="reminder">or email <a href="mailto:genderequality@kcsu.org.uk">genderequality<wbr>@kcsu.org.uk</a>!</p>
+</main>
+
+
+</body>
+</html>
+
+<style>
+
+:root{
+    --k-purple: #59276c;
+    --k-highlight: #CFBE54;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--k-purple);
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 95vh;
+}
+
+header{
+    background-color: var(--k-purple);
+    font-size: medium;
+}
+
+nav{
+    background-color: white;
+    border-radius: 3px;
+    width: fit-content;
+    padding: .3rem .7rem;
+    margin: .5rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: large;
+    color: var(--k-purple);
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(25, 8, 45, 0.586);
+    min-height: 40vh;
+    padding: 20px 20px;
+    margin: auto auto;
+    max-width: 30rem;
+    border-radius: 2px;
+}
+
+h1{
+    text-align: center;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    max-width: 25rem;
+
+}
+
+hr{
+    border: var(--k-purple) 1px solid;
+    width: 30%;
+    margin: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 1.3rem;
+    gap: 1rem;
+    
+}
+
+select{
+    font-size: 1.2rem;
+    padding: .3rem;
+    margin: 0;
+    border: 2px solid var(--k-purple);
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+button{
+  padding: .5rem;
+  font-size: larger;
+  font-weight: bold;
+  background-color: var(--k-purple);
+  border: var(--k-purple) 1px solid;
+   
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+background-color:hsla(315,58%,33%,1);
+background-image:
+linear-gradient( 120deg, rgba(94, 22, 22, 0.658) 0px, transparent 35%, rgb(209, 158, 82) 90% );
+}
+
+p.reminder{
+    opacity: 80%;
+}
+
+</style>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const location = $("#location-select");
+
+function getLocation() {
+  const location_param = params.get("location") ?? 'other';
+  const url = new URL(window.location.href);
+
+    return location_param;
+}
+
+$(document).ready(function () {
+  const location_param = getLocation();
+  location.val(location_param).change();
+});
+
+</script>
