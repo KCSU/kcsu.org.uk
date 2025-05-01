@@ -1,28 +1,27 @@
 ---
-import Main from '../layouts/Main.astro';
-import Logo from '../assets/kings_college_logo.png';
+import Main from "../layouts/Main.astro";
+import Logo from "../assets/kings_college_logo.png";
 
-import KingsCollege1 from '../assets/kings_college/1.jpg';
-import KingsCollege2 from '../assets/kings_college/2.jpg';
-import KingsCollege3 from '../assets/kings_college/3.jpg';
+import KingsCollege1 from "../assets/kings_college/1.jpg";
+import KingsCollege2 from "../assets/kings_college/2.jpg";
+import KingsCollege3 from "../assets/kings_college/3.jpg";
 
-import Carousel from '../components/Carousel.astro';
-import InfoGridColumn from '../components/info_card/InfoGridColumn.astro';
-import InfoCard from '../components/info_card/InfoCard.astro';
-import InfoLink from '../components/info_card/InfoLink.astro';
-import InfoContactItem from '../components/info_card/InfoContactItem.astro';
+import Carousel from "../components/Carousel.astro";
+import InfoGridColumn from "../components/info_card/InfoGridColumn.astro";
+import InfoCard from "../components/info_card/InfoCard.astro";
+import InfoLink from "../components/info_card/InfoLink.astro";
+import InfoContactItem from "../components/info_card/InfoContactItem.astro";
 
 const carouselImages = [
   { src: KingsCollege1, alt: "King's College" },
   { src: KingsCollege2, alt: "King's College" },
   { src: KingsCollege3, alt: "King's College" },
 ];
-
 ---
 
 <Main title="Home">
-  <Carousel 
-    images={carouselImages} 
+  <Carousel
+    images={carouselImages}
     logo={Logo}
     title="King's College SU"
     subtitle="Your undergraduate representative body"
@@ -30,14 +29,17 @@ const carouselImages = [
 
   <section class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white p-6 rounded-md shadow-md mb-8 border-l-[6px] border-purple-500">
+      <div
+        class="bg-white p-6 rounded-md shadow-md mb-8 border-l-[6px] border-purple-500"
+      >
         <p class="text-gray-900">
-          Welcome to the KCSU website! We are the student-elected representatives for the
-          undergraduate students here at King's. This platform serves as a place for resources,
-          support, and information you may need throughout your time here.
+          Welcome to the KCSU website! We are the student-elected
+          representatives for the undergraduate students here at King's. This
+          platform serves as a place for resources, support, and information you
+          may need throughout your time here.
         </p>
       </div>
-  
+
       <!-- column layout -->
       <div class="flex flex-col md:flex-row gap-8">
         <InfoGridColumn>
@@ -47,60 +49,115 @@ const carouselImages = [
             <InfoLink href="#" label="Formal Booking" />
             <InfoLink href="#" label="EPOS Top-up" />
           </InfoCard>
-    
+
           <!-- Contact list -->
           <InfoCard title="Contact List" icon="fa-phone">
-            <InfoContactItem label="Porters" value="+44 (0)1223 331100" href="tel:01223331100" />
+            <InfoContactItem
+              label="Porters"
+              value="+44 (0)1223 331100"
+              href="tel:01223331100"
+            />
             <!-- <InfoContactItem label="important person" value="+44 (0)1234 567890" href="tel:01234567890" disabled={true} /> -->
           </InfoCard>
-    
+
           <!-- Transport -->
           <InfoCard title="Transport" icon="fa-bus">
-            <InfoLink href="https://smartcambridge.org/transport/map/" label="Real-time Bus Information" />
-            <InfoLink href="https://www.realtimetrains.co.uk/search/simple/gb-nr:CBG" label="Train Arrivals & Departures" />
+            <InfoLink
+              href="https://smartcambridge.org/transport/map/"
+              label="Real-time Bus Information"
+            />
+            <InfoLink
+              href="https://www.realtimetrains.co.uk/search/simple/gb-nr:CBG"
+              label="Train Arrivals & Departures"
+            />
             <!-- todo: download this file and host it ourselves -->
-            <InfoLink href="https://www.kings.cam.ac.uk/sites/default/files/documents/3d-map-kings-college-cambridge.pdf" label="College Map" />
+            <InfoLink
+              href="https://www.kings.cam.ac.uk/sites/default/files/documents/3d-map-kings-college-cambridge.pdf"
+              label="College Map"
+            />
           </InfoCard>
         </InfoGridColumn>
-    
+
         <InfoGridColumn>
           <!-- Welfare contacts -->
           <InfoCard title="Welfare Contacts" icon="fa-hands-helping">
-            <InfoLink href="https://www.kings.cam.ac.uk/study/life-at-kings/student-support" label="King's Student Support" />
-            <InfoLink href="https://www.studentsupport.cam.ac.uk/individual-counselling" label="University Counselling Service" />
-            <InfoLink href="https://www.cambridgesu.co.uk/advice/student-advice-service/" label="Cambridge SU Advice Service" />
+            <InfoLink
+              href="https://www.kings.cam.ac.uk/study/life-at-kings/student-support"
+              label="King's Student Support"
+            />
+            <InfoLink
+              href="https://www.studentsupport.cam.ac.uk/individual-counselling"
+              label="University Counselling Service"
+            />
+            <InfoLink
+              href="https://www.cambridgesu.co.uk/advice/student-advice-service/"
+              label="Cambridge SU Advice Service"
+            />
           </InfoCard>
-    
+
           <!-- College websites -->
           <InfoCard title="Websites" icon="fa-globe">
-            <InfoLink href="https://store.kcsu.org.uk/" label="Formal Booking (KiFoMaSy)" />
-            <InfoLink href="https://www.casc.cam.ac.uk/" label="Accommodation View" />
-            <InfoLink href="https://kings.cam.ac.uk/intranet" label="College Intranet" />
-            <InfoLink href="https://fms.kings.cam.ac.uk/" label="Facility Management System (FMS)" />
-            <InfoLink href="https://app.casc.cam.ac.uk/rms_live/InstHome.aspx" label="Room Management System (RMS)" />
-            <InfoLink href="https://kcgs.org.uk/" label="King's Graduate Society" />
+            <InfoLink
+              href="https://store.kcsu.org.uk/"
+              label="Formal Booking (KiFoMaSy)"
+            />
+            <InfoLink
+              href="https://www.casc.cam.ac.uk/"
+              label="Accommodation View"
+            />
+            <InfoLink
+              href="https://kings.cam.ac.uk/intranet"
+              label="College Intranet"
+            />
+            <InfoLink
+              href="https://fms.kings.cam.ac.uk/"
+              label="Facility Management System (FMS)"
+            />
+            <InfoLink
+              href="https://app.casc.cam.ac.uk/rms_live/InstHome.aspx"
+              label="Room Management System (RMS)"
+            />
+            <InfoLink
+              href="https://kcgs.org.uk/"
+              label="King's Graduate Society"
+            />
           </InfoCard>
         </InfoGridColumn>
-    
+
         <InfoGridColumn>
           <!-- Email support -->
           <InfoCard title="Email Support" icon="fa-envelope">
-            <InfoLink href="/about-us/team?view=table" label="KCSU Exec Emails" icon="" />
-            <InfoLink href="mailto:it.support@kings.cam.ac.uk" label="College IT Support" isEmail={true} />
+            <InfoLink
+              href="/about-us/team?view=table"
+              label="KCSU Exec Emails"
+              icon=""
+            />
+            <InfoLink
+              href="mailto:it.support@kings.cam.ac.uk"
+              label="College IT Support"
+              isEmail={true}
+            />
           </InfoCard>
 
           <!-- Maintenance -->
           <InfoCard title="Maintenance" icon="fa-tools">
-            <InfoLink href="#" label="check back later!" disabled={true}/>
+            <InfoLink
+              href="/period-vend"
+              label="Request a Period Vending Machine Restock"
+            />
+            <!-- <InfoLink href="#" label="check back later!" disabled={true}/> -->
             <!-- <InfoLink href="#" label="who do i email if my room is broken" isEmail={true} disabled={true} /> -->
           </InfoCard>
-          
+
           <!-- KCSU forms -->
           <InfoCard title="KCSU Forms" icon="fa-file-alt">
-            <InfoLink href="https://docs.google.com/forms/d/e/1FAIpQLScMROYSHkN8-zhdUpSlg7iiPbneCPHxYxKzy-Gt4Sk-WUA54w/viewform" label="Continuous Feedback Form" />
+            <InfoLink
+              href="https://docs.google.com/forms/d/e/1FAIpQLScMROYSHkN8-zhdUpSlg7iiPbneCPHxYxKzy-Gt4Sk-WUA54w/viewform"
+              label="Continuous Feedback Form"
+            />
           </InfoCard>
         </InfoGridColumn>
       </div>
     </div>
-  </section> 
+  </section>
 </Main>
