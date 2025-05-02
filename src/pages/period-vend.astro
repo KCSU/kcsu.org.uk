@@ -6,7 +6,7 @@ import Main from "../layouts/Main.astro";
   <div class="request">
     <h1>Period Vend Restock Request</h1>
     <hr />
-    <form action="" method="get">
+    <!-- <form action="" method="get">
       <select name="location" id="location-select">
         <option value="keynes-cub">Keynes Cubicles</option>
         <option value="keynes-uri">Keynes + Urinals</option>
@@ -17,12 +17,32 @@ import Main from "../layouts/Main.astro";
       <button class="btn outline" type="submit" value="Send"
         >Send Request</button
       >
+    </form> -->
+    <form
+      action="https://chat.google.com/dm/nrq0V8AAAAE/92G3-SfNpnE/92G3-SfNpnE?cls=10"
+      method="post"
+      accept-charset="UTF-8"
+    >
+      <select name="location" id="location-select">
+        <option value="keynes-cub">Keynes Cubicles</option>
+        <option value="keynes-uri">Keynes + Urinals</option>
+        <option value="garden-hostel">Garden Hostels</option>
+        <option value="library">Library</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input class="submit" type="submit" value="Send Request" />
+      <div
+        style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;"
+        aria-hidden="true"
+      >
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+      </div>
     </form>
     <p class="reminder">
-      This page is current under construction. Please email <a
-        href="mailto:genderequality@kcsu.org.uk"
+      You can also email <a href="mailto:genderequality@kcsu.org.uk"
         >genderequality<wbr />@kcsu.org.uk</a
-      > to request restocks.
+      >!
     </p>
   </div>
 </Main>
@@ -76,7 +96,7 @@ import Main from "../layouts/Main.astro";
     text-align: center;
   }
 
-  button {
+  .submit {
     padding: 0.5rem;
     font-size: larger;
     font-weight: bold;
@@ -88,7 +108,7 @@ import Main from "../layouts/Main.astro";
     transition: all 0.3s ease;
   }
 
-  button:hover {
+  .submit:hover {
     background-color: hsla(315, 58%, 33%, 1);
     background-image: linear-gradient(
       120deg,
@@ -100,6 +120,7 @@ import Main from "../layouts/Main.astro";
 
   p.reminder {
     opacity: 80%;
+    margin: 10px;
     text-align: center;
   }
 
