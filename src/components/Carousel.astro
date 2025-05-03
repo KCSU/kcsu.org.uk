@@ -35,34 +35,34 @@ const { images, logo, title, subtitle } = Astro.props;
   
   <!-- Navigation arrows -->
   <button 
-    class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+    class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
     id="prev-button"
     aria-label="Previous image"
   >
-    <i class="fas fa-chevron-left text-2xl"></i>
+    <i class="fas fa-chevron-left text-xl sm:text-2xl"></i>
   </button>
   
   <button 
-    class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-14 h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
+    class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-30"
     id="next-button"
     aria-label="Next image"
   >
-    <i class="fas fa-chevron-right text-2xl"></i>
+    <i class="fas fa-chevron-right text-xl sm:text-2xl"></i>
   </button>
 
   <!-- Carousel content -->
   <div class="absolute inset-0 bg-black/60 flex items-center justify-center z-20 pointer-events-none">
-    <div class="flex items-center gap-8 px-4 pointer-events-auto">
+    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 px-4 pointer-events-auto">
       {logo && (
         <Image 
           src={logo}
           alt="Logo"
-          class="w-36 h-36 object-contain pointer-events-none"
+          class="w-28 h-28 sm:w-32 md:w-36 sm:h-32 md:h-36 object-contain pointer-events-none mb-4 sm:mb-0"
         />
       )}
-      <div class="text-white">
-        {title && <h1 class="text-5xl font-bold mb-4 pointer-events-none">{title}</h1>}
-        {subtitle && <p class="text-xl mb-4 pointer-events-none">{subtitle}</p>}
+      <div class="text-white text-center sm:text-left">
+        {title && <h1 class="text-3xl md:text-5xl font-bold mb-2 md:mb-4 pointer-events-none">{title}</h1>}
+        {subtitle && <p class="text-lg md:text-xl mb-4 pointer-events-none">{subtitle}</p>}
         <a 
           href="/about-us/team" 
           class="inline-flex items-center px-4 py-1 text-lg font-medium text-white border-2 
