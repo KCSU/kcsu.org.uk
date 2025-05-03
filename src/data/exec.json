@@ -11,7 +11,7 @@
     "names": ["Dan Erwig"],
     "emails": ["vice.president@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=DE",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": ""
   },
   {
     "role": "Chair",
@@ -22,45 +22,45 @@
   },
   {
     "role": "Welfare",
-    "names": ["Sophie Ferni", "Gary Chowdhury"],
+    "names": ["Sophie Fernig", "Gary Chowdhury"],
     "emails": ["welfare.a@kcsu.org.uk", "welfare.b@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=SF",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": ""
   },
   {
     "role": "Domus",
     "names": ["Rachel Elliman"],
     "emails": ["domus@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=RE",
+    "image": "/images/exec/domus.png",
     "description": "Hi, I am Rachel, a second year History and Politics student and your Domus officer! I am responsible for representing students wants, needs and concerns in anything related to accommodation and catering. Please email me if there is anything you want to talk about or issues you'd like to raise!"
   },
   {
     "role": "Gender Equalities",
-    "names": ["Eva Lemmy"],
+    "names": ["Gloria Neligwa"],
     "emails": ["genderequality@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=EL",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=GN",
+    "description": "Hi, I'm Gloria. I'm a second year medical student and my role on the KCSU is Gender Equalities Officer.  My job is to support women and non-binary members of the college community, manage King's Femsoc and maintain access to free sanitary products at multiple locations across the college. If you have any ideas or concerns do not hesitate to contact me!"
   },
   {
     "role": "Disabled Students",
     "names": ["Lonny McKiernan"],
     "emails": ["disabled.students@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=LM",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": "I'm Lonnie, a 2nd year engineering student and your DSO officer. I'm responsible for disabled students having access to the resources and support they need, and aren't being made to face even more obstacles. Please email me if you have any concerns, want something in college changed, or need help navigating all the extra bureaucracy/paperwork given to disabled people."
   },
   {
     "role": "BME",
     "names": ["Imisi Alake", "Elizabeth Omondi"],
     "emails": ["ethnic.minorities@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=IA",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "image": "/images/exec/bme.png",
+    "description": "Hey! We are Elizabeth and Imisi, your BME officers. We are responsible for organising events such as BME chai, as well as cultural celebrations such as national food days and BHM formal. It is also our job to make King’s a safe space for all who identify as part of a minority ethnic group. If you ever have any ideas to make King’s a more inclusive place or just need someone to talk to, come find us!"
   },
   {
     "role": "LGBTQ+",
     "names": ["Max Carter", "Ainoa Cernohorsky"],
     "emails": ["lgbtq@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=MC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": " Hello, We're Max and Ainoa, the Kings LGBTQ+ Officers! Max is a first-year linguistics student, and Ainoa is a first-year HSPS student. As LGBTQ+ officers, we are committed to running Queer events in college and with other colleges at the undergraduate level, including the LGBTQ+ formal and Pride-related activities. In addition, we oversee queer-related programmes and issues within the college to support our LGBTQ+ community here at King's. If you are a queer student, please do not hesitate to contact us; we are here for you!"
   },
   {
     "role": "Access",
@@ -74,21 +74,21 @@
     "names": ["Iris Tadie"],
     "emails": ["education@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=IT",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": "Hi, I'm Iris, a second year Linguistics student. I'm your Education Officer, which means I'm a port of call for any education-related queries. I sit on the Library, E-Lab and Education Committees, and organise support for students on intermission. I'm also working on opening some new study spaces up in the future! Please don't hesitate to get in touch wth any issues or questions you may have surrounding you education here at King's, and I will do by best to help you out!"
   },
   {
     "role": "Charities",
     "names": ["Mariam Al-Badry", "Zinzi Sibanda"],
     "emails": ["charities@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=MA",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": "We are Mariam (She/her) and Zinzi (She/her), and we are your KCSU Charities Officers! Our role is to ensure that the money that the College gives to charity is representative of what the student body feels passionate about."
   },
   {
     "role": "Coordinator",
     "names": ["Sophia O'Callaghan"],
     "emails": ["coordinator@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=SO",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "image": "/images/exec/coordinator.png",
+    "description": "Hey, I’m Sophia! I’m a first year Classics student and your KCSU Coordinator. In my role, I write and send out the minutes from the weekly Exec meetings, as well as the fortnightly newsletter, the King’s Affairs. I also manage KCSU Announce, which you can use to send messages to the student body! I’m here to make sure that you’re kept up to date with what the Exec is working on. If you ever have any questions about the minutes or Announce or have something to include in the newsletter, please reach out!"
   },
   {
     "role": "Ents",
@@ -101,29 +101,29 @@
     "role": "Sports and Societies",
     "names": ["Phoebe Zhang", "Eugene Kang"],
     "emails": ["sports.societies@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=PZ",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "image": "/images/exec/ssf.png",
+    "description": ""
   },
   {
     "role": "International",
-    "names": ["Gabby Kurniawan"],
+    "names": ["Ruben White, Mohammad Hussein"],
     "emails": ["international@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=GK",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "image": "/images/exec/international.png",
+    "description": "Hello! We’re Ruben and Muhammad, your International Officers for this year. Our role is to support and represent the international student community at King's. Whether you're new to the UK or just looking to connect with others from around the world, we're here to make your experience as smooth and enjoyable as possible. We help organise events throughout the year to celebrate our vibrant international community, and we work with the KCSU and the college to ensure international student voices are heard. If you ever have questions, concerns, or just want a chat, don’t hesitate to reach out—we’re always happy to help!"
   },
   {
     "role": "Treasurers",
     "names": ["Rowan Hector-Turnbull", "Jasmine Covell"],
     "emails": ["treasurer@kcsu.org.uk"],
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=RH",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "description": "Hello! We are Jasmine and Rowan, your joint Treasurers, and we are both first-year bio NatScis. We are responsible for reimbursing societies (sorry if we are late!), setting the budgets in Michaelmas and we attend finance and investment committee. We are also your way to access college funds, so get in touch if you are planning an event (theatre, sports etc) and want to try and get some college money (no promises)! Please get in touch with us if you have any questions about reimbursements or want to discuss your budget for next year. Also please let us know if there are any concerns you would like us to raise at either committee we attend - particularly where college spends their money, their investments, donations etc."
   },
   {
     "role": "Greens",
     "names": ["Alexus Lambert-Dowell"],
     "emails": ["greens@kcsu.org.uk"],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=AL",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nisl sit amet gravida vehicula. Suspendisse vehicula, sem vel mollis blandit, augue ligula egestas tortor, eget sodales augue dolor ac arcu. Cras enim neque, euismod sed urna hendrerit, finibus pellentesque dui. Pellentesque gravida, libero vel dictum tincidunt, lectus magna tincidunt lectus, at luctus dolor neque a nibh. Fusce pretium velit dolor, in ultricies nunc bibendum non. Curabitur tristique ullamcorper sodales. Sed vitae nunc nisi. Nunc dictum magna et pretium fringilla."
+    "image": "/images/exec/greens.png",
+    "description": "Hi, I’m Alex, a second year Engineer, your Greens and Environment Officer. I engage and inform students about sustainability in college by running and promoting events where students can learn and get involved. Whilst giving away free plants each Green Week, I gather students’ ideas and suggestions, helping college to deliver some of these such as food waste bins. I sit on the Sustainability Committee and the Gardens Committee, do get in touch if you have any concerns, thoughts or questions!"
   },
   {
     "role": "Computer",

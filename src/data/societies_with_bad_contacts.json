@@ -1,0 +1,229 @@
+[
+    {
+      "id": "kcbc",
+      "type": "sports",
+      "name": "King's College Boat Club",
+      "contacts": [
+        { "name": "Tobias Allen", "role": "Men's Captain", "email": "kings.men@cucbc.org" },
+        { "name": "Martha Meadows, Iris Tadie", "role": "Women's Captain", "email": "kings.women@cucbc.org" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCBC"
+    },
+    {
+      "id": "rugby",
+      "type": "sports",
+      "name": "Clare, Corpus Christi and King’s College Rugby Football Club",
+      "description": "",
+      "contacts": [
+        { "name": "Harry Jones", "role": "(title)", "email": "hdjj2@cam.ac.uk" },
+        { "name": "Will Rowlands", "role": "(title)", "email": "wr285@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=CCK"
+    },
+    {
+      "id": "badminton",
+      "type": "sports",
+      "name": "King's College Badminton Society",
+      "description": "",
+      "contacts": [
+        { "name": "Ewan Page", "role": "(title)", "email": "ep681@cam.ac.uk" },
+        { "name": "Ritu Patel", "role": "(title)", "email": "rp745@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCBS"
+    },
+    {
+      "id": "punts",
+      "type": "sports",
+      "name": "King's College Punts",
+      "description": "",
+      "contacts": [
+        { "name": "Otto Geissler", "role": "(title)", "email": "ocpg2@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCP"
+    },
+    {
+      "id": "basketball_mens",
+      "type": "sports",
+      "name": "King's College Basketball (Men's)",
+      "description": "",
+      "contacts": [
+        { "name": "Venkata Chaluvadi", "role": "(title)", "email": "vsac2@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCBM"
+    },
+    {
+      "id": "lacrosse",
+      "type": "sports",
+      "name": "Caius and King's Mixed Lacrosse",
+      "description": "",
+      "contacts": [
+        { "name": "Daniel Larby", "role": "(title)", "email": "dl564@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=CKCML"
+    },
+    {
+      "id": "hockey",
+      "type": "sports",
+      "name": "Sidney, Homerton and King's Hockey",
+      "description": "",
+      "contacts": [
+        { "name": "Majid Panahi", "role": "(title)", "email": "mp969@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=SHKH"
+    },
+    {
+      "id": "football_womens",
+      "type": "sports",
+      "name": "King's and John's Football (Women's)",
+      "description": "",
+      "contacts": [
+        { "name": "Samara Mulchandani", "role": "(title)", "email": "sm2718@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=SHKH"
+    },
+    {
+      "id": "ultimate_frisbee",
+      "type": "sports",
+      "name": "King's and Jesus Ultimate Frisbee",
+      "description": "",
+      "contacts": [
+        { "name": "Helen Soane", "role": "(title)", "email": "hs820@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KJUF"
+    },
+    {
+      "id": "tennis",
+      "type": "sports",
+      "name": "King's College Tennis",
+      "description": "",
+      "contacts": [
+        { "name": "(not found on lookup)", "role": "(title)", "email": "kmm84@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCT"
+    },
+    {
+      "id": "cricket",
+      "type": "sports",
+      "name": "King's College Cricket Club",
+      "description": "",
+      "contacts": [
+        { "name": "Ram Vinjamuri", "role": "(title)", "email": "av646@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCCC"
+    },
+    {
+      "id": "mountaineering",
+      "type": "sports",
+      "name": "King's Mountaineering and Climbing Association",
+      "description": "",
+      "contacts": [
+        { "name": "(not found on lookup)", "role": "(title)", "email": "mhb44@cam.ac.uk" },
+        { "name": "Bernice Chiu", "role": "(title)", "email": "bc543@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KMCA"
+    },
+    {
+      "id": "netball",
+      "type": "sports",
+      "name": "King's College Netball",
+      "description": "",
+      "contacts": [
+        { "name": "Isobel Waldie", "role": "(title)", "email": "mhb44@cam.ac.uk" },
+        { "name": "Nwabueze Ihesiaba", "role": "(title)", "email": "ni277@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCN"
+    },
+    {
+      "id": "table_tennis",
+      "type": "sports",
+      "name": "King's College Table Tennis",
+      "description": "",
+      "contacts": [
+        { "name": "Sushanth Kommareddy", "role": "(title)", "email": "jsrk2@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCTT"
+    },
+    {
+      "id": "yoga",
+      "type": "sports",
+      "name": "King's Yoga Society",
+      "description": "",
+      "contacts": [
+        { "name": "(not found on lookup)", "role": "(title)", "email": "mjs312@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=CKCML"
+    },
+    {
+      "id": "kcprc",
+      "type": "academic",
+      "name": "King's College Political Rambling Club",
+      "description": "",
+      "contacts": [
+        { "name": "(not found on lookup)", "role": "(title)", "email": "fh420@cam.ac.uk" },
+        { "name": "Teddy Graham", "role": "(title)", "email": "rg670@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCPRC"
+    },
+    {
+      "id": "medsoc",
+      "type": "academic",
+      "name": "King's College Medicine Society",
+      "description": "",
+      "contacts": [
+        { "name": "Raina Xing", "role": "(title)", "email": "rx228@cam.ac.uk" },
+        { "name": "Bernice Chiu", "role": "(title)", "email": "bc543@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KCMS"
+    },
+    {
+      "id": "artloan",
+      "type": "academic",
+      "name": "Student Art Loan Collection",
+      "description": "",
+      "contacts": [
+        { "name": "Ane Cornelia Pade", "role": "(title)", "email": "acp79@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=SALC"
+    },
+    {
+      "id": "artroom",
+      "type": "academic",
+      "name": "King's Art Room Society",
+      "description": "",
+      "contacts": [
+        { "name": "Teddy Graham", "role": "(title)", "email": "rg670@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KARS"
+    },
+    {
+      "id": "lawsoc",
+      "type": "academic",
+      "name": "King's Law Society",
+      "description": "",
+      "contacts": [
+        { "name": "(not found on lookup)", "role": "(title)", "email": "ars64@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KLS"
+    },
+    {
+      "id": "polsoc",
+      "type": "academic",
+      "name": "King's Politics Society",
+      "description": "",
+      "contacts": [
+        { "name": "Elizabeth Zachariah", "role": "(title)", "email": "ez277@cam.ac.uk" },
+        { "name": "(not found on lookup)", "role": "(title)", "email": "hc561@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KPS"
+    },
+    {
+      "id": "filmsoc",
+      "type": "academic",
+      "name": "King's Film Society",
+      "description": "",
+      "contacts": [
+        { "name": "(not found on lookup)", "role": "(title)", "email": "lk494@cam.ac.uk" }
+      ],
+      "image": "https://placehold.co/400x500/EEE/31343C?text=KFS"
+    }
+  ] 

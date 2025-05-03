@@ -44,13 +44,14 @@ const navItems = sections.map(section => ({
                   <div class="space-y-4">
                     {section.content.map((item, itemIndex) => (
                       <div>
-                        <p class="text-gray-700 leading-relaxed">
-                          <span class="w-5 inline-block">{itemIndex + 1}.</span> {item.text}
-                        </p>
+                        <div class="relative pl-6 text-gray-700 leading-relaxed">
+                          <span class="absolute left-0 w-8">{itemIndex + 1}.</span>
+                          {item.text}
+                        </div>
                         {item.list && (
-                          <ul class="list-none pl-8 mt-2 space-y-2">
+                          <ul class="pl-6 mt-2 space-y-2">
                             {item.list.map((subItem) => (
-                              <li class="text-gray-700">
+                              <li class="text-gray-700 relative pl-6 before:absolute before:left-0 before:top-[0.6rem] before:w-1.5 before:h-1.5 before:rounded-full before:bg-purple-600">
                                 {subItem}
                               </li>
                             ))}
@@ -75,20 +76,5 @@ const navItems = sections.map(section => ({
 <style>
   html {
     scroll-behavior: smooth;
-  }
-
-  /* Custom list styling - scoped to document content only */
-  .prose ul li {
-    position: relative;
-  }
-  .prose ul li::before {
-    content: "";
-    position: absolute;
-    left: -1.5rem;
-    top: 0.75rem;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: theme('colors.purple.600');
   }
 </style> 

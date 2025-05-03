@@ -15,107 +15,170 @@ const { items, title = "On This Page", showId = false } = Astro.props;
 ---
 
 <div class="hidden lg:block lg:w-1/4 h-fit mt-2 sticky top-28">
-  <div class="pl-6">
-    <h3 class="text-lg font-bold text-gray-800 mb-3 ml-1.5">{title}</h3>
-    <ul class="space-y-2">
-      {items.map((item) => (
-        <li class="nav-item" data-target-id={item.id}>
-          <a 
-            href={`#${item.id}`} 
-            class="block py-1 pl-2 text-gray-600 hover:text-purple-700 transition-colors duration-200 nav-link"
-            data-nav-id={item.id}
+  <div class="relative">
+    <!-- Scroll up indicator -->
+    <div class="absolute top-0 left-0 right-0 flex justify-center z-20 opacity-0 pointer-events-none transition-opacity duration-200 scroll-up-indicator">
+      <button class="bg-white rounded-full text-sm mt-3 w-12 h-8 shadow-lg/15 text-purple-700 hover:text-purple-900 transition-colors relative z-10">
+        <i class="fas fa-chevron-up pt-[5px]"></i>
+      </button>
+    </div>
+    
+    <!-- Navigation content -->
+    <div class="pl-6 overflow-y-auto max-h-[70vh] pr-4 overscroll-contain relative nav-container">
+      <h3 class="text-lg font-bold text-gray-800 mb-3 ml-1.5">{title}</h3>
+      <ul class="space-y-2">
+        {items.map((item) => (
+          <li 
+            class="relative -ml-0.5 pl-0.5 text-gray-600 border-l-2 border-transparent transition-all duration-100 nav-item" 
+            data-target-id={item.id}
           >
-            {showId && item.id && <span class="mr-2">{item.id}.</span>}{item.title}
-          </a>
-        </li>
-      ))}
-    </ul>
+            <a 
+              href={`#${item.id}`} 
+              class="block py-1 pl-2 hover:text-purple-700 transition-colors duration-100 nav-link group"
+              data-nav-id={item.id}
+            >
+              {showId && item.id && (
+                <span class="mr-2 group-hover:text-purple-700 transition-colors duration-100">
+                  {item.id}.
+                </span>
+              )}
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+    <!-- Scroll down indicator -->
+    <div class="absolute bottom-0 left-0 right-0 flex justify-center z-20 opacity-0 pointer-events-none transition-opacity duration-200 scroll-down-indicator">
+      <button class="bg-white/95 rounded-full text-sm mb-3 w-12 h-8 shadow-lg/15 text-purple-700 hover:text-purple-900 transition-colors relative z-10">
+        <i class="fas fa-chevron-down pt-[5px]"></i>
+      </button>
+    </div>
   </div>
 </div>
 
-<style>
-  /* Navigation sidebar styling */
-  .nav-item {
-    position: relative;
-    margin-left: -2px;
-    padding-left: 2px;
-    border-left: 2px solid transparent;
-    transition: border-color 0.2s ease;
-  }
-  
-  .nav-item.active-nav-item {
-    border-left: 2px solid theme('colors.purple.600');
-  }
-  
-  .nav-item.active-nav-item a {
-    color: theme('colors.purple.800');
-    font-weight: 500;
-  }
-
-  /* Override any bullet styling */
-  .nav-item::before {
-    content: none !important;
-  }
-</style>
-
 <script>
   $(document).ready(() => {
+    // DOM elements
     const $sections = $('[id]');
-    const $navLinks = $('.nav-link');
     const $navItems = $('.nav-item');
+    const $navContainer = $('.nav-container');
+    const $scrollUpIndicator = $('.scroll-up-indicator');
+    const $scrollDownIndicator = $('.scroll-down-indicator');
+    let isScrollingProgrammatically = false;
     
-    // Highlight the active navigation link
+    // Update scroll indicators visibility
+    const updateScrollIndicators = () => {
+      const container = $navContainer[0];
+      if (!container) return;
+      
+      const scrollTop = container.scrollTop;
+      const scrollBottom = container.scrollHeight - container.scrollTop - container.clientHeight;
+      
+      $scrollUpIndicator.css('opacity', scrollTop > 20 ? 1 : 0)
+        .css('pointer-events', scrollTop > 20 ? 'auto' : 'none');
+      
+      $scrollDownIndicator.css('opacity', scrollBottom > 20 ? 1 : 0)
+        .css('pointer-events', scrollBottom > 20 ? 'auto' : 'none');
+    };
+    
+    // Scroll handlers
+    $scrollUpIndicator.on('click', 'button', () => 
+      $navContainer.animate({ scrollTop: 0 }, 200, updateScrollIndicators));
+    
+    $scrollDownIndicator.on('click', 'button', () => {
+      const container = $navContainer[0];
+      if (!container) return;
+      $navContainer.animate({ 
+        scrollTop: container.scrollHeight - container.clientHeight 
+      }, 200, updateScrollIndicators);
+    });
+    
+    // Center active item
+    const scrollItemToCenter = ($item: JQuery<HTMLElement>) => {
+      if (!$item.length || !$navContainer.length) return;
+      
+      const containerHeight = $navContainer.height() || 0;
+      const itemHeight = $item.outerHeight() || 0;
+      const itemTop = $item.position()?.top || 0;
+      const scrollTo = itemTop - (containerHeight / 2) + (itemHeight / 2) + ($navContainer.scrollTop() || 0);
+      
+      $navContainer.stop().animate({ scrollTop: scrollTo }, 200, updateScrollIndicators);
+    };
+    
+    // Highlight active navigation item
     const highlightActiveLink = (id: string) => {
-      $navItems.removeClass('active-nav-item');
-      $(`[data-target-id="${id}"]`).addClass('active-nav-item');
+      $navItems
+        .removeClass('border-purple-600 font-medium text-purple-800')
+        .addClass('border-transparent text-gray-600');
+      
+      const $activeItem = $(`[data-target-id="${id}"]`);
+      if ($activeItem.length) {
+        $activeItem
+          .removeClass('border-transparent text-gray-600')
+          .addClass('border-purple-600 font-medium text-purple-800');
+        
+        // Prevent another scroll to center when already scrolling
+        if (!isScrollingProgrammatically) {
+          scrollItemToCenter($activeItem);
+        }
+      }
     };
     
     // Set up Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            if (id) highlightActiveLink(id);
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.target.id) {
+            highlightActiveLink(entry.target.id);
           }
         });
       },
-      {
-        rootMargin: `0px 0px -${window.innerHeight / 2}px 0px`,
-        threshold: 0
-      }
+      { rootMargin: `-50% 0px -50% 0px`, threshold: 0 }
     );
     
-    // Observe all sections
-    $sections.each(function() {
-      observer.observe(this);
-    });
+    // Observe sections
+    $sections.each(function() { observer.observe(this); });
     
-    // Smooth scroll to section when clicking on nav links
-    $navLinks.on('click', function(e) {
+    // Handle navigation clicks
+    $('.nav-link').on('click', function(e) {
       e.preventDefault();
+      
+      isScrollingProgrammatically = true;
+      setTimeout(() => { isScrollingProgrammatically = false; }, 600);
       
       const id = $(this).data('nav-id');
       if (id) {
-        const headerHeight = 85;
         const $targetSection = $(`#${id}`);
-        
         if ($targetSection.length) {
-          $('html, body').animate({
-            scrollTop: $targetSection.offset()?.top ? $targetSection.offset()!.top - headerHeight : 0
-          }, {
-            duration: 75
-          });
+          const headerHeight = 85;
+          const targetOffset = $targetSection.offset()?.top || 0;
+          
+          $('html, body').animate({ scrollTop: targetOffset - headerHeight }, 75);
         }
       }
     });
     
-    // Default highlight first navigation item on page load
-    if ($navItems.length > 0) {
-      const firstItemId = $navItems.first().data('target-id');
-      if (firstItemId) {
-        highlightActiveLink(firstItemId);
-      }
+    $navContainer.on('scroll', updateScrollIndicators);
+    updateScrollIndicators();
+    
+    // Initial highlight
+    const firstItemId = $navItems.first().data('target-id');
+    if (firstItemId) {
+      highlightActiveLink(firstItemId);
     }
   });
-</script> 
+</script>
+
+<style>
+  /* Hide scrollbar */
+  .nav-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .nav-container::-webkit-scrollbar {
+    display: none;
+  }
+</style> 

@@ -1,7 +1,7 @@
 ---
 import Main from '../layouts/Main.astro';
 import DocumentHeader from '../components/DocumentHeader.astro';
-import Badge from '../components/Badge.astro';
+// import Badge from '../components/Badge.astro';
 ---
 
 <Main title="Servery Menu">
@@ -11,16 +11,23 @@ import Badge from '../components/Badge.astro';
       <!-- Header Section -->
       <DocumentHeader
         title="Servery Menu"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        subtitle="Last updated: 1 May 2025"
       />
 
-      <!-- Today's Menu Section -->
+      <div class="flex justify-center w-full mt-16">
+        <div class="w-full max-w-6xl">
+          <iframe
+            src="https://docs.google.com/gview?embedded=true&url=kcsu.org.uk/documents/servery_menu.pdf"
+            class="w-full h-[85vh] rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+
+      <!-- Today's Menu Section
       <div class="bg-white rounded-xl shadow-sm p-8 lg:p-12 mt-12">
         <h2 class="text-4xl font-bold text-gray-900 mb-6">13 Mar 2025 (Thursday)</h2>
 
-        <!-- Grid for Lunch and Dinner -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Lunch Section -->
           <div>
             <h3 class="text-3xl font-bold text-purple-700 mb-4">Lunch</h3>
             <ul class="space-y-4">
@@ -98,7 +105,6 @@ import Badge from '../components/Badge.astro';
             </ul>
           </div>
 
-          <!-- Dinner Section -->
           <div class="md:border-l md:pl-8">
             <h3 class="text-3xl font-bold text-purple-700 mb-4">Dinner</h3>
             <ul class="space-y-4">
@@ -120,13 +126,13 @@ import Badge from '../components/Badge.astro';
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Footer Note -->
       <div class="mt-16 pt-8 border-t border-gray-200">
         <div class="flex items-center justify-between text-sm text-gray-500">
           <p>
-            Menu is subject to change. Last updated: 12 March 2025.
+            Menu is subject to change. For the most up to date menu, please visit the college servery.
           </p>
           <a 
             href="#" 
@@ -140,9 +146,3 @@ import Badge from '../components/Badge.astro';
     </div>
   </div>
 </Main>
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>

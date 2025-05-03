@@ -1,12 +1,160 @@
 [
   {
+    "id": "kcbc",
+    "type": "sports",
+    "name": "King's College Boat Club",
+    "contacts": [
+      { "name": "Tobias Allen", "role": "Men's Captain", "email": "kings.men@cucbc.org" },
+      { "name": "Martha Meadows, Iris Tadie", "role": "Women's Captain", "email": "kings.women@cucbc.org" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBC"
+  },
+  {
+    "id": "rugby",
+    "type": "sports",
+    "name": "Clare, Corpus Christi and King’s College Rugby Football Club",
+    "description": "",
+    "contacts": [
+      { "name": "Harry Jones", "role": "(tbc)", "email": "hdjj2@cam.ac.uk" },
+      { "name": "Will Rowlands", "role": "(tbc)", "email": "wr285@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=CCK"
+  },
+  {
+    "id": "badminton",
+    "type": "sports",
+    "name": "King's College Badminton Society",
+    "description": "",
+    "contacts": [
+      { "name": "Ewan Page", "role": "(tbc)", "email": "ep681@cam.ac.uk" },
+      { "name": "Ritu Patel", "role": "(tbc)", "email": "rp745@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBS"
+  },
+  {
+    "id": "punts",
+    "type": "sports",
+    "name": "King's College Punts",
+    "description": "",
+    "contacts": [
+      { "name": "Otto Geissler", "role": "(tbc)", "email": "ocpg2@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCP"
+  },
+  {
+    "id": "basketball_mens",
+    "type": "sports",
+    "name": "King's College Basketball (Men's)",
+    "description": "",
+    "contacts": [
+      { "name": "Venkata Chaluvadi", "role": "(tbc)", "email": "vsac2@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBM"
+  },
+  {
+    "id": "lacrosse",
+    "type": "sports",
+    "name": "Caius and King's Mixed Lacrosse",
+    "description": "",
+    "contacts": [
+      { "name": "Daniel Larby", "role": "(tbc)", "email": "dl564@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=CKCML"
+  },
+  {
+    "id": "hockey",
+    "type": "sports",
+    "name": "Sidney, Homerton and King's Hockey",
+    "description": "",
+    "contacts": [
+      { "name": "Majid Panahi", "role": "(tbc)", "email": "mp969@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=SHKH"
+  },
+  {
+    "id": "football_womens",
+    "type": "sports",
+    "name": "King's and John's Football (Women's)",
+    "description": "",
+    "contacts": [
+      { "name": "Samara Mulchandani", "role": "(tbc)", "email": "sm2718@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KJFW"
+  },
+  {
+    "id": "ultimate_frisbee",
+    "type": "sports",
+    "name": "King's and Jesus Ultimate Frisbee",
+    "description": "",
+    "contacts": [
+      { "name": "Helen Soane", "role": "(tbc)", "email": "hs820@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KJUF"
+  },
+  {
+    "id": "tennis",
+    "type": "sports",
+    "name": "King's College Tennis",
+    "description": "",
+    "contacts": [],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCT"
+  },
+  {
+    "id": "cricket",
+    "type": "sports",
+    "name": "King's College Cricket Club",
+    "description": "",
+    "contacts": [
+      { "name": "Ram Vinjamuri", "role": "(tbc)", "email": "av646@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCCC"
+  },
+  {
+    "id": "mountaineering",
+    "type": "sports",
+    "name": "King's Mountaineering and Climbing Association",
+    "description": "",
+    "contacts": [
+      { "name": "Bernice Chiu", "role": "(tbc)", "email": "bc543@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KMCA"
+  },
+  {
+    "id": "netball",
+    "type": "sports",
+    "name": "King's College Netball",
+    "description": "",
+    "contacts": [
+      { "name": "Isobel Waldie", "role": "(tbc)", "email": "mhb44@cam.ac.uk" },
+      { "name": "Nwabueze Ihesiaba", "role": "(tbc)", "email": "ni277@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCN"
+  },
+  {
+    "id": "table_tennis",
+    "type": "sports",
+    "name": "King's College Table Tennis",
+    "description": "",
+    "contacts": [
+      { "name": "Sushanth Kommareddy", "role": "(tbc)", "email": "jsrk2@cam.ac.uk" }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCTT"
+  },
+  {
+    "id": "yoga",
+    "type": "sports",
+    "name": "King's Yoga Society",
+    "description": "",
+    "contacts": [],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KYS"
+  },
+  {
     "id": "kcprc",
     "type": "academic",
     "name": "King's College Political Rambling Club",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
+    "description": "",
     "contacts": [
-      { "name": "(not found on lookup)", "role": "inserttitlename", "email": "fh420@cam.ac.uk" },
-      { "name": "Teddy Graham", "role": "inserttitlename", "email": "rg670@cam.ac.uk" }
+      { "name": "Teddy Graham", "role": "(tbc)", "email": "rg670@cam.ac.uk" }
     ],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KCPRC"
   },
@@ -14,10 +162,10 @@
     "id": "medsoc",
     "type": "academic",
     "name": "King's College Medicine Society",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
+    "description": "",
     "contacts": [
-      { "name": "Raina Xing", "role": "inserttitlename", "email": "rx228@cam.ac.uk" },
-      { "name": "Bernice Chiu", "role": "inserttitlename", "email": "bc543@cam.ac.uk" }
+      { "name": "Raina Xing", "role": "(tbc)", "email": "rx228@cam.ac.uk" },
+      { "name": "Bernice Chiu", "role": "(tbc)", "email": "bc543@cam.ac.uk" }
     ],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KCMS"
   },
@@ -25,9 +173,9 @@
     "id": "artloan",
     "type": "academic",
     "name": "Student Art Loan Collection",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
+    "description": "",
     "contacts": [
-      { "name": "Ane Cornelia Pade", "role": "inserttitlename", "email": "acp79@cam.ac.uk" }
+      { "name": "Ane Cornelia Pade", "role": "(tbc)", "email": "acp79@cam.ac.uk" }
     ],
     "image": "https://placehold.co/400x500/EEE/31343C?text=SALC"
   },
@@ -35,9 +183,9 @@
     "id": "artroom",
     "type": "academic",
     "name": "King's Art Room Society",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
+    "description": "",
     "contacts": [
-      { "name": "Teddy Graham", "role": "inserttitlename", "email": "rg670@cam.ac.uk" }
+      { "name": "Teddy Graham", "role": "(tbc)", "email": "rg670@cam.ac.uk" }
     ],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KARS"
   },
@@ -45,20 +193,17 @@
     "id": "lawsoc",
     "type": "academic",
     "name": "King's Law Society",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
-    "contacts": [
-      { "name": "(not found on lookup)", "role": "inserttitlename", "email": "ars64@cam.ac.uk" }
-    ],
+    "description": "",
+    "contacts": [],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KLS"
   },
   {
     "id": "polsoc",
     "type": "academic",
     "name": "King's Politics Society",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
+    "description": "",
     "contacts": [
-      { "name": "Elizabeth Zachariah", "role": "inserttitlename", "email": "ez277@cam.ac.uk" },
-      { "name": "(not found on lookup)", "role": "inserttitlename", "email": "hc561@cam.ac.uk" }
+      { "name": "Elizabeth Zachariah", "role": "(tbc)", "email": "ez277@cam.ac.uk" }
     ],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KPS"
   },
@@ -66,10 +211,8 @@
     "id": "filmsoc",
     "type": "academic",
     "name": "King's Film Society",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies sem ac magna pharetra tempor. In urna lectus, pharetra sit amet risus id, lobortis commodo ipsum. Etiam in imperdiet nibh. Maecenas facilisis ornare sodales. In porttitor porttitor facilisis. Proin eget odio turpis. Curabitur ut est metus. Proin ornare malesuada lacus. Nam eget erat sit amet lectus sodales iaculis eget in diam.",
-    "contacts": [
-      { "name": "(not found on lookup)", "role": "inserttitlename", "email": "lk494@cam.ac.uk" }
-    ],
+    "description": "",
+    "contacts": [],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KFS"
   }
 ] 

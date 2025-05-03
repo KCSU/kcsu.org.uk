@@ -20,7 +20,7 @@ interface Society {
   image: string;
 }
 
-const academicSocieties: Society[] = societiesData.filter(society => society.type === "academic");
+const academicSocieties: Society[] = societiesData.filter(society => society.type === "sports");
 
 // Map societies to nav items for the sidebar
 const navItems = academicSocieties.map(society => ({
@@ -29,10 +29,10 @@ const navItems = academicSocieties.map(society => ({
 }));
 ---
 
-<Main title="Academic Societies">
+<Main title="Sports Societies">
   <div class="bg-gradient-to-b from-purple-50 to-slate-50 min-h-screen">
     <div class="container mx-auto px-4 py-16">
-      <DocumentHeader title="Academic Societies" subtitle="The contents of this page are temporarily out to date, check back later!" />
+      <DocumentHeader title="Sports Societies" subtitle="The contents of this page are temporarily out to date, check back later!" />
 
       <div class="flex flex-col lg:flex-row gap-8 mt-12 relative">
         <!-- Navigation sidebar -->
@@ -41,28 +41,26 @@ const navItems = academicSocieties.map(society => ({
         <!-- Societies list -->
         <div class="lg:w-3/4 space-y-10">
           {academicSocieties.map((society) => (
-            <div id={society.id} class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl scroll-mt-28">
+            <div id={society.id} class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl scroll-mt-28">
               <div class="flex flex-col md:flex-row">
                 <!-- Society Details -->
                 <div class="p-8 md:w-3/5 min-h-48">
                   <h2 class="text-3xl font-bold text-gray-900 mb-4">{society.name}</h2>
                   
-                  <p class="text-gray-700 mb-6">{society.description || "(tbc)"}</p>
+                  <p class="text-gray-700 mb-6">{society.description || "(check back later!)"}</p>
                   
                   <div class="mt-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Contact Information</h3>
-                    { society.contacts.length > 0 ? (
-                      <ul class="space-y-2">
-                        {society.contacts.map((contact) => (
-                            <li>
-                            <span class="font-medium">{contact.name}</span> - {contact.role}
-                            <a href={`mailto:${contact.email}`} class="block text-purple-700 hover:text-purple-900">
-                                {contact.email}
-                            </a>
-                            </li>
-                        ))}
-                      </ul>
-                    ) : "(tbc)"}
+                    <ul class="space-y-2">
+                      {society.contacts.map((contact) => (
+                        <li>
+                          <span class="font-medium">{contact.name}</span> - {contact.role}
+                          <a href={`mailto:${contact.email}`} class="block text-purple-700 hover:text-purple-900">
+                            {contact.email}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
                 
@@ -87,7 +85,7 @@ const navItems = academicSocieties.map(society => ({
           Interested in starting a new society at King's? The KCSU is always happy to welcome new initiatives.
           Contact the KCSU Sports & Societies Officer for guidance on how to establish and fund your society.
         </p>
-        <a href="mailto:sports.societies@kcsu.org.uk" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+        <a href="mailto:sports.societies@kcsu.org.uk" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
           Contact Us
           <i class="fas fa-arrow-right ml-2"></i>
         </a>
@@ -98,3 +96,9 @@ const navItems = academicSocieties.map(society => ({
     </div>
   </div>
 </Main>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
