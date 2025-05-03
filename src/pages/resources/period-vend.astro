@@ -7,17 +7,17 @@ import Main from "../../layouts/Main.astro";
   <div class="bg-gradient-to-b from-purple-50 to-slate-50">
     <div class="container mx-auto px-4 py-16">
       <DocumentHeader title="Period Vend Restock Request" />
-    
+
       <div class="flex flex-col items-center max-w-md mx-auto p-8">
         <form
-          action="https://chat.google.com/dm/nrq0V8AAAAE/92G3-SfNpnE/92G3-SfNpnE?cls=10"
+          action="https://public.herotofu.com/v1/a7d26bd0-2744-11f0-ab37-9d304c3aa51c"
           method="post"
           accept-charset="UTF-8"
           class="flex flex-col w-full gap-4"
         >
           <div class="relative w-full">
-            <select 
-              name="location" 
+            <select
+              name="location"
               id="location-select"
               class="w-full text-lg p-2 px-8 border-2 border-purple-700 rounded-lg text-center appearance-none shadow-md hover:shadow-lg focus:shadow-lg transition duration-300 focus:outline-none cursor-pointer select"
             >
@@ -27,22 +27,37 @@ import Main from "../../layouts/Main.astro";
               <option value="library">Library</option>
               <option value="other">Other</option>
             </select>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <i class="fa-solid fa-chevron-down text-purple-700 text-sm" aria-hidden="true"></i>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+            >
+              <i
+                class="fa-solid fa-chevron-down text-purple-700 text-sm"
+                aria-hidden="true"></i>
             </div>
           </div>
 
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             class="p-3 text-lg font-bold bg-purple-900 text-white rounded-lg shadow-md transition duration-400 cursor-pointer hover:shadow-lg/15 submit"
           >
             Send Request
           </button>
-          
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only absolute" aria-hidden="true" />
+
+          <input
+            type="text"
+            name="_gotcha"
+            tabindex="-1"
+            autocomplete="off"
+            class="sr-only absolute"
+            aria-hidden="true"
+          />
         </form>
         <p class="text-center text-gray-600 mt-6">
-          You can also email <a href="mailto:genderequality@kcsu.org.uk" class="text-purple-700 underline hover:text-purple-900">genderequality<wbr />@kcsu.org.uk</a>!
+          You can also email <a
+            href="mailto:genderequality@kcsu.org.uk"
+            class="text-purple-700 underline hover:text-purple-900"
+            >genderequality<wbr />@kcsu.org.uk</a
+          >!
         </p>
       </div>
     </div>
