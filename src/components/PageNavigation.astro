@@ -59,116 +59,102 @@ const { items, title = "On This Page", showId = false } = Astro.props;
 </div>
 
 <script>
-  $(document).ready(() => {
-    // DOM elements
-    const $sections = $('[id]');
-    const $navItems = $('.nav-item');
-    const $navContainer = $('.nav-container');
-    const $scrollUpIndicator = $('.scroll-up-indicator');
-    const $scrollDownIndicator = $('.scroll-down-indicator');
-    let isScrollingProgrammatically = false;
-    
-    // Update scroll indicators visibility
-    const updateScrollIndicators = () => {
-      const container = $navContainer[0];
-      if (!container) return;
-      
-      const scrollTop = container.scrollTop;
-      const scrollBottom = container.scrollHeight - container.scrollTop - container.clientHeight;
-      
-      $scrollUpIndicator.css('opacity', scrollTop > 20 ? 1 : 0)
-        .css('pointer-events', scrollTop > 20 ? 'auto' : 'none');
-      
-      $scrollDownIndicator.css('opacity', scrollBottom > 20 ? 1 : 0)
-        .css('pointer-events', scrollBottom > 20 ? 'auto' : 'none');
-    };
-    
-    // Scroll handlers
-    $scrollUpIndicator.on('click', 'button', () => 
-      $navContainer.animate({ scrollTop: 0 }, 200, updateScrollIndicators));
-    
-    $scrollDownIndicator.on('click', 'button', () => {
-      const container = $navContainer[0];
-      if (!container) return;
-      $navContainer.animate({ 
-        scrollTop: container.scrollHeight - container.clientHeight 
-      }, 200, updateScrollIndicators);
-    });
-    
-    // Center active item
-    const scrollItemToCenter = ($item: JQuery<HTMLElement>) => {
-      if (!$item.length || !$navContainer.length) return;
-      
-      const containerHeight = $navContainer.height() || 0;
-      const itemHeight = $item.outerHeight() || 0;
-      const itemTop = $item.position()?.top || 0;
-      const scrollTo = itemTop - (containerHeight / 2) + (itemHeight / 2) + ($navContainer.scrollTop() || 0);
-      
-      $navContainer.stop().animate({ scrollTop: scrollTo }, 200, updateScrollIndicators);
-    };
-    
-    // Highlight active navigation item
-    const highlightActiveLink = (id: string) => {
-      $navItems
-        .removeClass('border-purple-600 font-medium text-purple-800')
-        .addClass('border-transparent text-gray-600');
-      
-      const $activeItem = $(`[data-target-id="${id}"]`);
-      if ($activeItem.length) {
-        $activeItem
-          .removeClass('border-transparent text-gray-600')
-          .addClass('border-purple-600 font-medium text-purple-800');
-        
-        // Prevent another scroll to center when already scrolling
-        if (!isScrollingProgrammatically) {
-          scrollItemToCenter($activeItem);
-        }
-      }
-    };
-    
-    // Set up Intersection Observer
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && entry.target.id) {
-            highlightActiveLink(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: `-50% 0px -50% 0px`, threshold: 0 }
-    );
-    
-    // Observe sections
-    $sections.each(function() { observer.observe(this); });
-    
-    // Handle navigation clicks
-    $('.nav-link').on('click', function(e) {
-      e.preventDefault();
-      
-      isScrollingProgrammatically = true;
-      setTimeout(() => { isScrollingProgrammatically = false; }, 600);
-      
-      const id = $(this).data('nav-id');
-      if (id) {
-        const $targetSection = $(`#${id}`);
-        if ($targetSection.length) {
-          const headerHeight = 85;
-          const targetOffset = $targetSection.offset()?.top || 0;
-          
-          $('html, body').animate({ scrollTop: targetOffset - headerHeight }, 75);
-        }
-      }
-    });
-    
-    $navContainer.on('scroll', updateScrollIndicators);
-    updateScrollIndicators();
-    
-    // Initial highlight
-    const firstItemId = $navItems.first().data('target-id');
-    if (firstItemId) {
-      highlightActiveLink(firstItemId);
-    }
+  const sections = document.querySelectorAll<HTMLElement>("[id]");
+  const navItems = document.querySelectorAll<HTMLElement>(".nav-item");
+  const navContainer = document.querySelector<HTMLElement>(".nav-container");
+  const scrollUp = document.querySelector<HTMLElement>(".scroll-up-indicator");
+  const scrollDown = document.querySelector<HTMLElement>(".scroll-down-indicator");
+  let isScrollingProgrammatically = false;
+
+  const ACTIVE = ["border-purple-600", "font-medium", "text-purple-800"];
+  const INACTIVE = ["border-transparent", "text-gray-600"];
+
+  const setIndicator = (el: HTMLElement | null, visible: boolean) => {
+    if (!el) return;
+    el.style.opacity = visible ? "1" : "0";
+    el.style.pointerEvents = visible ? "auto" : "none";
+  };
+
+  const updateScrollIndicators = () => {
+    if (!navContainer) return;
+    const top = navContainer.scrollTop;
+    const bottom = navContainer.scrollHeight - top - navContainer.clientHeight;
+    setIndicator(scrollUp, top > 20);
+    setIndicator(scrollDown, bottom > 20);
+  };
+
+  scrollUp?.querySelector("button")?.addEventListener("click", () => {
+    navContainer?.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  scrollDown?.querySelector("button")?.addEventListener("click", () => {
+    if (!navContainer) return;
+    navContainer.scrollTo({
+      top: navContainer.scrollHeight - navContainer.clientHeight,
+      behavior: "smooth",
+    });
+  });
+
+  // Centre the active item within the scrollable nav
+  const scrollItemToCenter = (item: HTMLElement) => {
+    if (!navContainer) return;
+    const itemRect = item.getBoundingClientRect();
+    const containerRect = navContainer.getBoundingClientRect();
+    const offset = itemRect.top - containerRect.top;
+    const scrollTo =
+      navContainer.scrollTop + offset - navContainer.clientHeight / 2 + itemRect.height / 2;
+    navContainer.scrollTo({ top: scrollTo, behavior: "smooth" });
+  };
+
+  const highlightActiveLink = (id: string) => {
+    navItems.forEach((item) => {
+      item.classList.remove(...ACTIVE);
+      item.classList.add(...INACTIVE);
+    });
+
+    const activeItem = document.querySelector<HTMLElement>(`[data-target-id="${id}"]`);
+    if (!activeItem) return;
+
+    activeItem.classList.remove(...INACTIVE);
+    activeItem.classList.add(...ACTIVE);
+
+    // Avoid fighting a scroll the user just triggered
+    if (!isScrollingProgrammatically) scrollItemToCenter(activeItem);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.target.id) highlightActiveLink(entry.target.id);
+      });
+    },
+    { rootMargin: "-50% 0px -50% 0px", threshold: 0 },
+  );
+  sections.forEach((section) => observer.observe(section));
+
+  document.querySelectorAll<HTMLElement>(".nav-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      isScrollingProgrammatically = true;
+      setTimeout(() => {
+        isScrollingProgrammatically = false;
+      }, 600);
+
+      const id = link.dataset.navId;
+      const target = id ? document.getElementById(id) : null;
+      if (!target) return;
+
+      const headerHeight = 85;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+  });
+
+  navContainer?.addEventListener("scroll", updateScrollIndicators);
+  updateScrollIndicators();
+
+  const firstItemId = navItems[0]?.dataset.targetId;
+  if (firstItemId) highlightActiveLink(firstItemId);
 </script>
 
 <style>

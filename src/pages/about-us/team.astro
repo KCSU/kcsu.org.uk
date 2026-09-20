@@ -20,12 +20,12 @@ const teamMembers: TeamMember[] = execData;
 ---
 
 <Main title="The Exec">
-  <div class="bg-gradient-to-b from-purple-50 to-white min-h-screen">
+  <div class="bg-linear-to-b from-purple-50 to-white min-h-screen">
     <div class="container mx-auto px-4 py-16">
 
       <!-- Header section -->
       <DocumentHeader
-        title="Meet the Team"
+        title="Meet the Exec"
         subtitle="The KCSU is made up of a group of King's students who have been elected in accordance with the Constitution to represent the views of the undergraduate student body. Each member of the KCSU is responsible for a specific area of our work. Find more about us below!"
       />
 
@@ -161,45 +161,38 @@ const teamMembers: TeamMember[] = execData;
 </Main>
 
 <script>
-  $(document).ready(function() {
-    const $cardViewButton = $('#cardViewButton');
-    const $tableViewButton = $('#tableViewButton');
-    const $cardView = $('#cardView');
-    const $tableView = $('#tableView');
-    
-    // Classes to be toggled
-    const classes = "bg-white text-purple-800 shadow-xs text-gray-600 hover:text-gray-800";
+  const cardViewButton = document.getElementById("cardViewButton");
+  const tableViewButton = document.getElementById("tableViewButton");
+  const cardView = document.getElementById("cardView");
+  const tableView = document.getElementById("tableView");
 
-    const toggleView = () => {
-      // Toggle views
-      $cardView.toggleClass('hidden');
-      $tableView.toggleClass('hidden');
+  // Styles that move between the two toggle buttons
+  const TOGGLE_CLASSES = [
+    "bg-white",
+    "text-purple-800",
+    "shadow-xs",
+    "text-gray-600",
+    "hover:text-gray-800",
+  ];
 
-      // Toggle button styles
-      $cardViewButton.toggleClass(classes);
-      $tableViewButton.toggleClass(classes);
+  const toggleView = () => {
+    cardView?.classList.toggle("hidden");
+    tableView?.classList.toggle("hidden");
 
-      // Update URL
-      const url = new URL(window.location.href);
-      if ($tableView.hasClass('hidden')) {
-        url.searchParams.set('view', 'card');
-      } else {
-        url.searchParams.set('view', 'table');
-      }
-      window.history.pushState(null, '', url.toString());
-    };
+    TOGGLE_CLASSES.forEach((cls) => {
+      cardViewButton?.classList.toggle(cls);
+      tableViewButton?.classList.toggle(cls);
+    });
 
-    $tableViewButton.on('click', toggleView);
-    $cardViewButton.on('click', toggleView);
+    const url = new URL(window.location.href);
+    url.searchParams.set("view", tableView?.classList.contains("hidden") ? "card" : "table");
+    window.history.pushState(null, "", url.toString());
+  };
 
-    // Check if query string specifies table view
-    const urlSearchParams = new URLSearchParams(window.location.search);
-    const params = Object.fromEntries(urlSearchParams.entries());
-    const isTableView = params.view === "table";
-    if (isTableView) {
-      toggleView();
-    }
-  });
+  cardViewButton?.addEventListener("click", toggleView);
+  tableViewButton?.addEventListener("click", toggleView);
+
+  if (new URLSearchParams(window.location.search).get("view") === "table") toggleView();
 </script>
 
 <style>

@@ -173,18 +173,18 @@ const navItems = [
 </nav>
 
 <script>
-  $(document).ready(function () {
-    // Toggle mobile menu
-    $("#mobile-menu-button").on("click", function () {
-      $("#mobile-menu").toggleClass("hidden");
-      $("#hamburger-icon").toggleClass("hidden");
-      $("#close-icon").toggleClass("hidden");
-    });
+  // Toggle mobile menu
+  document.getElementById("mobile-menu-button")?.addEventListener("click", () => {
+    document.getElementById("mobile-menu")?.classList.toggle("hidden");
+    document.getElementById("hamburger-icon")?.classList.toggle("hidden");
+    document.getElementById("close-icon")?.classList.toggle("hidden");
+  });
 
-    // Handle mobile dropdowns
-    $(".mobile-dropdown-button").on("click", function () {
-      $(this).next(".mobile-dropdown-content").toggleClass("hidden");
-      $(this).find(".mobile-dropdown-icon").toggleClass("rotate-180");
+  // Handle mobile dropdowns
+  document.querySelectorAll<HTMLElement>(".mobile-dropdown-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      button.nextElementSibling?.classList.toggle("hidden");
+      button.querySelector(".mobile-dropdown-icon")?.classList.toggle("rotate-180");
     });
   });
 </script>

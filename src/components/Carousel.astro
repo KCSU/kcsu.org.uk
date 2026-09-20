@@ -77,43 +77,38 @@ const { images, logo, title, subtitle } = Astro.props;
 </section>
 
 <script define:vars={{ imageCount: images.length }}>
-  $(document).ready(() => {
-    let currentIndex = 0;
-    const $container = $('#carousel-image-container');
-    const $prevButton = $('#prev-button');
-    const $nextButton = $('#next-button');
-    const $carouselSection = $('#carousel-section'); // Get the entire carousel section
-    
-    const updateCarousel = () => 
-      $container.css('transform', `translateX(-${currentIndex * 100}%)`);
-    
-    const nextImage = () => {
-      currentIndex = (currentIndex + 1) % imageCount;
-      updateCarousel();
-    }
+  let currentIndex = 0;
+  const container = document.getElementById("carousel-image-container");
+  const prevButton = document.getElementById("prev-button");
+  const nextButton = document.getElementById("next-button");
+  const carouselSection = document.getElementById("carousel-section");
 
-    const prevImage = () => {
-      currentIndex = (currentIndex - 1 + imageCount) % imageCount;
-      updateCarousel();
-    }
+  const updateCarousel = () => {
+    if (container) container.style.transform = `translateX(-${currentIndex * 100}%)`;
+  };
 
-    // bind function to buttons
-    $prevButton.on('click', prevImage);
-    $nextButton.on('click', nextImage);
+  const nextImage = () => {
+    currentIndex = (currentIndex + 1) % imageCount;
+    updateCarousel();
+  };
 
-    // todo: do we want auto scroll?
-    let autoScrollInterval = setInterval(nextImage, 5000);
-    
-    // pause auto-scroll when hovering over the entire carousel section, including buttons
-    $carouselSection
-      .on('mouseover', () => {
-        clearInterval(autoScrollInterval);
-        autoScrollInterval = null;
-      })
-      .on('mouseleave', () => {
-        if (!autoScrollInterval) {
-          autoScrollInterval = setInterval(nextImage, 5000);
-        }
-      });
+  const prevImage = () => {
+    currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+    updateCarousel();
+  };
+
+  prevButton?.addEventListener("click", prevImage);
+  nextButton?.addEventListener("click", nextImage);
+
+  let autoScrollInterval = setInterval(nextImage, 5000);
+
+  // Pause auto-scroll while the cursor is anywhere over the carousel
+  carouselSection?.addEventListener("mouseenter", () => {
+    clearInterval(autoScrollInterval);
+    autoScrollInterval = null;
+  });
+
+  carouselSection?.addEventListener("mouseleave", () => {
+    if (!autoScrollInterval) autoScrollInterval = setInterval(nextImage, 5000);
   });
 </script> 
