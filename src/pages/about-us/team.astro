@@ -9,7 +9,10 @@ interface TeamMember {
   role: string;
   emails: string[];
   image: string;
-  description: string;
+  description?: string;
+  socials?: {
+    instagram?: string[];
+  };
 }
 
 const teamMembers: TeamMember[] = execData;
@@ -66,6 +69,21 @@ const teamMembers: TeamMember[] = execData;
               </div>
               <div>
                 <p class="text-sm">{member.description}</p>
+                {member.socials?.instagram && member.socials.instagram.length > 0 && (
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3">
+                    {member.socials.instagram.map((handle) => (
+                      <a
+                        href={`https://www.instagram.com/${handle}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 text-sm text-gray-600 hover:text-purple-800 transition-colors"
+                      >
+                        <i class="fa-brands fa-instagram text-base"></i>
+                        <span>@{handle}</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
             
@@ -81,6 +99,21 @@ const teamMembers: TeamMember[] = execData;
                   ))}
                 </div>
                 <p class="text-sm">{member.description}</p>
+                {member.socials?.instagram && member.socials.instagram.length > 0 && (
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3">
+                    {member.socials.instagram.map((handle) => (
+                      <a
+                        href={`https://www.instagram.com/${handle}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 text-sm text-gray-600 hover:text-purple-800 transition-colors"
+                      >
+                        <i class="fa-brands fa-instagram text-base"></i>
+                        <span>@{handle}</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
               <div class="flex-none text-center w-24 md:w-28 lg:w-32 mt-1">
                 {member.image && (

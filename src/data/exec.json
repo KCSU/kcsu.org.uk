@@ -42,6 +42,9 @@
       "welfare.a@kcsu.org.uk",
       "welfare.b@kcsu.org.uk"
     ],
+    "socials": {
+      "instagram": ["kings.welfare"]
+    },
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=FW",
     "description": ""
   },
@@ -111,6 +114,9 @@
     "emails": [
       "access@kcsu.org.uk"
     ],
+    "socials": {
+      "instagram": ["kings.access"]
+    },
     "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=JB"
   },
   {
@@ -152,6 +158,9 @@
     "emails": [
       "entertainments@kcsu.org.uk"
     ],
+    "socials": {
+      "instagram": ["kings.ents"]
+    },
     "image": "",
     "description": ""
   },
@@ -163,6 +172,9 @@
     "emails": [
       "sports.societies@kcsu.org.uk"
     ],
+    "socials": {
+      "instagram": ["kingscollegesportsandsocieties", "kingscollegefreshers"]
+    },
     "image": "/images/exec/ssf.webp",
     "description": "Hello! I’m Maria, your SSF officer! I’m a Classics Prelim, and I am the person to send an email to if you would like to set up - or need support managing - a society or help out on sports day or be on the Freshers’ committee! Equally, if you yourself are a fresher or an incoming student, feel free to drop me an email or message the Instagram with any concerns you may have, or even just to say hi! I am the person to talk to if you want to find out what sports and societies King’s has to offer, and can also point you in the right direction for organising gym membership or booking a squash court… Importantly, I am also the person to email with regards to acquiring college stash!!!"
   },
