@@ -14,7 +14,7 @@ const DEFAULT_DESCRIPTION =
 
 const { title, description = DEFAULT_DESCRIPTION, noindex = false } = Astro.props;
 
-const pageTitle = `${title} | King's College SU`;
+const pageTitle = `${title} | King’s College SU`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
 ---
@@ -42,7 +42,7 @@ const ogImage = new URL("/og-image.png", Astro.site);
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="King&#39;s College SU" />
+    <meta property="og:site_name" content="King’s College SU" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
