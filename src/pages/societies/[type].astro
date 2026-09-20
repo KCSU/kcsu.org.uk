@@ -45,7 +45,10 @@ const navItems = societies.map(society => ({
 }));
 ---
 
-<Main title={title}>
+<Main
+  title={title}
+  description={`${title} at King's College, Cambridge.`}
+>
   <div class="bg-linear-to-b from-purple-50 to-slate-50 min-h-screen">
     <div class="container mx-auto px-4 py-16">
       <DocumentHeader title={title} />

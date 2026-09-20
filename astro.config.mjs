@@ -9,7 +9,11 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: "https://kcsu.org.uk",
   compressHTML: true,
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes("/resources/period-vend-ty"),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()]
   }
