@@ -1,218 +1,421 @@
 [
   {
-    "id": "kcbc",
+    "id": "kings-college-boat-club",
     "type": "sports",
     "name": "King's College Boat Club",
+    "description": "King's College Boat Club, the friendliest Boat Club on the Cam, is also the oldest society at King's, having been in operation since 1838. As the quintessential Cambridge sport, we enjoy a great popularity in the student body and most people give rowing or coxing a try while at King's! From complete novices to experienced rowers, we welcome anyone to join, and members regularly make the Blue Boat for the Boat Race. With a busy social termcard, we also provide a great environment to meet new people and create long-lasting friendships.",
     "contacts": [
-      { "name": "Tobias Allen", "role": "Men's Captain", "email": "kings.men@cucbc.org" },
-      { "name": "Martha Meadows, Iris Tadie", "role": "Women's Captain", "email": "kings.women@cucbc.org" }
+      {
+        "name": "General Enquiries",
+        "email": "kings@cucbc.org"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBC"
+    "image": "/images/societies/kcbc.webp",
+    "links": {
+      "website": "https://www.kingsboatclub.com",
+      "wikipedia": "https://en.wikipedia.org/wiki/King%27s_College_Boat_Club",
+      "instagram": "kingscollegeboatclub"
+    }
   },
   {
-    "id": "rugby",
+    "id": "clare-and-kings-squash-club",
     "type": "sports",
-    "name": "Clare, Corpus Christi and King’s College Rugby Football Club",
-    "description": "",
+    "name": "Clare and King's Squash Club",
+    "description": "Clare and King's Squash Club plays squash in the King's college squash courts and is open to all abilities. We train weekly and participate in weekly league matches with other college teams. The big event of the year is the cuppers team knockout competition in Lent! There is no fee for joining and equipment is available to use!",
     "contacts": [
-      { "name": "Harry Jones", "role": "(tbc)", "email": "hdjj2@cam.ac.uk" },
-      { "name": "Will Rowlands", "role": "(tbc)", "email": "wr285@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "am3204@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=CCK"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=CKSC"
   },
   {
-    "id": "badminton",
+    "id": "kings-college-golf-club",
     "type": "sports",
-    "name": "King's College Badminton Society",
-    "description": "",
+    "name": "King's College Golf Club",
+    "description": "We are a very fun and relaxed society for all those interested in golf or keen to learn or try golf out.",
     "contacts": [
-      { "name": "Ewan Page", "role": "(tbc)", "email": "ep681@cam.ac.uk" },
-      { "name": "Ritu Patel", "role": "(tbc)", "email": "rp745@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "sg2140@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBS"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCGC"
   },
   {
-    "id": "punts",
-    "type": "sports",
-    "name": "King's College Punts",
-    "description": "",
+    "id": "kings-college-greens-society",
+    "type": "others",
+    "name": "King's College Greens Society",
+    "description": "Founded to bring like-minded eco-warriors together, we manage and operate the Library of Things, organise sustainability and environmental events within college, and facilitate a positive climate conversation. We hope to be a driving force of radical stewardship in our community.",
     "contacts": [
-      { "name": "Otto Geissler", "role": "(tbc)", "email": "ocpg2@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "al2191@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCP"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCGS"
   },
   {
-    "id": "basketball_mens",
-    "type": "sports",
-    "name": "King's College Basketball (Men's)",
-    "description": "",
-    "contacts": [
-      { "name": "Venkata Chaluvadi", "role": "(tbc)", "email": "vsac2@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBM"
-  },
-  {
-    "id": "lacrosse",
-    "type": "sports",
-    "name": "Caius and King's Mixed Lacrosse",
-    "description": "",
-    "contacts": [
-      { "name": "Daniel Larby", "role": "(tbc)", "email": "dl564@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=CKCML"
-  },
-  {
-    "id": "hockey",
-    "type": "sports",
-    "name": "Sidney, Homerton and King's Hockey",
-    "description": "",
-    "contacts": [
-      { "name": "Majid Panahi", "role": "(tbc)", "email": "mp969@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=SHKH"
-  },
-  {
-    "id": "football_womens",
-    "type": "sports",
-    "name": "King's and John's Football (Women's)",
-    "description": "",
-    "contacts": [
-      { "name": "Samara Mulchandani", "role": "(tbc)", "email": "sm2718@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KJFW"
-  },
-  {
-    "id": "ultimate_frisbee",
-    "type": "sports",
-    "name": "King's and Jesus Ultimate Frisbee",
-    "description": "",
-    "contacts": [
-      { "name": "Helen Soane", "role": "(tbc)", "email": "hs820@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KJUF"
-  },
-  {
-    "id": "tennis",
-    "type": "sports",
-    "name": "King's College Tennis",
-    "description": "",
-    "contacts": [],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCT"
-  },
-  {
-    "id": "cricket",
+    "id": "kings-college-cricket-club",
     "type": "sports",
     "name": "King's College Cricket Club",
-    "description": "",
+    "description": "We are a society for people passionate about cricket accommodating people from all ranges such as those who have never played before and those who fancy themselves as the next Jos Buttler.",
     "contacts": [
-      { "name": "Ram Vinjamuri", "role": "(tbc)", "email": "av646@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "sg2140@cam.ac.uk"
+      }
     ],
     "image": "https://placehold.co/400x500/EEE/31343C?text=KCCC"
   },
   {
-    "id": "mountaineering",
+    "id": "kings-and-homerton-basketball-society",
     "type": "sports",
-    "name": "King's Mountaineering and Climbing Association",
-    "description": "",
+    "name": "King's and Homerton Basketball society",
+    "description": "A college league level basketball team with weekly training and scrimmages. As of 2025 we are division 4 in the league. Whatsapp, email to get invited",
     "contacts": [
-      { "name": "Bernice Chiu", "role": "(tbc)", "email": "bc543@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "an698@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KMCA"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KHB"
   },
   {
-    "id": "netball",
+    "id": "kings-college-netball-club",
     "type": "sports",
-    "name": "King's College Netball",
-    "description": "",
+    "name": "King's College Netball Club",
+    "description": "The King's College Netball Club is a friendly and welcoming group of people who train and play netball matches weekly with occasional social events.",
     "contacts": [
-      { "name": "Isobel Waldie", "role": "(tbc)", "email": "mhb44@cam.ac.uk" },
-      { "name": "Nwabueze Ihesiaba", "role": "(tbc)", "email": "ni277@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "ic451@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCN"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCNC",
+    "links": {
+      "instagram": "kings.netball"
+    }
   },
   {
-    "id": "table_tennis",
-    "type": "sports",
-    "name": "King's College Table Tennis",
-    "description": "",
+    "id": "kings-and-catz-christian-union",
+    "type": "others",
+    "name": "King's and Catz Christian Union",
+    "description": "We are a constituent of CICCU, whose mission statement is to know Jesus and make him known, and we represent CICCU in fostering that atmosphere to know God alongside a welcoming community in King's.",
     "contacts": [
-      { "name": "Sushanth Kommareddy", "role": "(tbc)", "email": "jsrk2@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "thecatzcu@gmail.com"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCTT"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCCU",
+    "links": {
+      "instagram": "kingsandcatzcu"
+    }
   },
   {
-    "id": "yoga",
+    "id": "kings-college-knitting-society",
+    "type": "others",
+    "name": "King's College Knitting Society",
+    "description": "The Knitting Society holds weekly meetings so that students can craft together during term as a break from the stress of Cambridge. This includes any kind of crafting \u2013 e.g. knitting/crochet/embroidery/sewing. In addition, we provide the materials for students to learn new crafts from other members of the Society without the financial commitment.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "nd543@cam.ac.uk"
+      }
+    ],
+    "image": "/images/societies/knitting-society.webp",
+    "links": {
+      "instagram": "theknittedsoc"
+    }
+  },
+  {
+    "id": "kings-college-tennis-club",
     "type": "sports",
-    "name": "King's Yoga Society",
-    "description": "",
+    "name": "King's College Tennis Club",
+    "description": "The tennis society is a friendly, inclusive club that brings together players of all abilities to enjoy the sport in both social and competitive settings. We offer weekly practice sessions, fun events such as a Christmas party and Jack's socials, and the opportunity to represent the college in the Cuppers tournament. Whether you're a complete beginner or a seasoned player, the society provides a relaxed way to stay active, make friends, and be part of the wider college community.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "rm2166@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCTC"
+  },
+  {
+    "id": "kings-college-engineering-society",
+    "type": "academic",
+    "name": "King's College Engineering Society",
+    "description": "King's College Engineering Society is a friendly and inclusive community of students that are studying or have an interest in Engineering and Chemical Engineering. We host a range of social events designed to help members connect with each other no matter what year of study.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "dhhp2@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCES"
+  },
+  {
+    "id": "kings-college-padel-society",
+    "type": "sports",
+    "name": "King's College Padel Society",
+    "description": "KCPS KCPS provide any King's members the ability to play padel, whether that is through connecting them with other members or court booking.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "wl436@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCPS"
+  },
+  {
+    "id": "kings-sidney-homerton-hockey",
+    "type": "sports",
+    "name": "King's Sidney Homerton Hockey",
+    "description": "A Hockey club joined with Sidney Sussex, King's and Homerton. We play weekly league matches and attend an inter college competition called Cuppers.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "college@cuhc.org.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KSHH",
+    "links": {
+      "instagram": "kidneyhockerton"
+    }
+  },
+  {
+    "id": "kings-college-darkroom-society",
+    "type": "others",
+    "name": "King's College Darkroom Society",
+    "description": "The King's College Darkroom Society provides instruction and the space/ equipment for students to develop film photography, utilising the college's darkroom. It is aimed at students developing their film independently, but there are initial inductions with a professional photographer. The society also oversees all photography-related social events, which are inclusive and welcoming to everyone in the college. These include photography walks, workshops and socials.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "ebl33@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCDS"
+  },
+  {
+    "id": "kings-college-climbing-society",
+    "type": "sports",
+    "name": "King's College Climbing Society",
+    "description": "For all climbers at King's, mostly running indoor bouldering meets at Cambridge's gyms throughout term. Welcoming to all abilities, including people who have never climbed before.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "lj413@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCCS"
+  },
+  {
+    "id": "kings-college-medical-society",
+    "type": "academic",
+    "name": "King's College Medical Society",
+    "description": "The King's College Medical Society is a student-led community for anyone interested in medicine and healthcare. We host inspiring talks by clinicians and researchers, welfare events, formals and social events that connect students across disciplines. Whether you're pursuing a career in medicine or simply curious about the field, join us to explore how science, technology, and compassion come together to improve lives.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "ojm42@cam.ac.uk"
+      }
+    ],
+    "image": "/images/societies/medical-society.webp",
+    "links": {
+      "instagram": "kingscollegemedicalsociety"
+    }
+  },
+  {
+    "id": "classical-retellings-society",
+    "type": "academic",
+    "name": "Classical Retellings Society",
+    "description": "A group to critically discuss Classical reception of any kind, meeting every 3 weeks with biscuits and tea.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "mrw74@cam.ac.uk"
+      }
+    ],
+    "image": "/images/societies/classical-retellings.webp",
+    "links": {
+      "instagram": "camcrs2025"
+    }
+  },
+  {
+    "id": "kings-college-art-rooms-society",
+    "type": "others",
+    "name": "King's College Art Rooms Society",
+    "description": "Society of Artists of all abilities, where members can join workshops, use the studio space, and enjoy open exhibitions.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "kingsartrooms@gmail.com"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCARS",
+    "links": {
+      "instagram": "Kings_art_rooms",
+      "calendar": "https://calendar.google.com/calendar/u/0?cid=a2luZ3NhcnRyb29tc0BnbWFpbC5jb20"
+    }
+  },
+  {
+    "id": "kings-college-islamic-society",
+    "type": "others",
+    "name": "King's College Islamic Society",
+    "description": "We aim to support students across their spiritual, social and academic needs throughout the year. We provide an inclusive and supportive environment for all those coming from an Islamic faith or wanting to learn more about the Islamic faith.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "mr989@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCIS",
+    "links": {
+      "instagram": "kingscamisoc"
+    }
+  },
+  {
+    "id": "kings-college-law-society",
+    "type": "academic",
+    "name": "King's College Law Society",
+    "description": "KCLS runs events and provides opportunities for King's students interested in law, connecting them with professionals, academics, and alumni.",
     "contacts": [],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KYS"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCLS",
+    "links": {
+      "instagram": "cambridgekingslawsoc"
+    }
   },
   {
-    "id": "kcprc",
-    "type": "academic",
-    "name": "King's College Political Rambling Club",
-    "description": "",
+    "id": "kings-college-badminton-society",
+    "type": "sports",
+    "name": "King's College Badminton Society",
+    "description": "King's College Badminton Society is a friendly sporting society who meet weekly on a Saturday evening to play social badminton. We also run a team in the mixed college league which leapt up two division last year. The perfect society to have fun whilst being active and improving your sporting skills.",
     "contacts": [
-      { "name": "Teddy Graham", "role": "(tbc)", "email": "rg670@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "rr716@cam.ac.uk"
+      },
+      {
+        "name": "Contact",
+        "email": "al2191@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCPRC"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBS"
   },
   {
-    "id": "medsoc",
-    "type": "academic",
-    "name": "King's College Medicine Society",
-    "description": "",
-    "contacts": [
-      { "name": "Raina Xing", "role": "(tbc)", "email": "rx228@cam.ac.uk" },
-      { "name": "Bernice Chiu", "role": "(tbc)", "email": "bc543@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KCMS"
-  },
-  {
-    "id": "artloan",
-    "type": "academic",
-    "name": "Student Art Loan Collection",
-    "description": "",
-    "contacts": [
-      { "name": "Ane Cornelia Pade", "role": "(tbc)", "email": "acp79@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=SALC"
-  },
-  {
-    "id": "artroom",
-    "type": "academic",
-    "name": "King's Art Room Society",
-    "description": "",
-    "contacts": [
-      { "name": "Teddy Graham", "role": "(tbc)", "email": "rg670@cam.ac.uk" }
-    ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KARS"
-  },
-  {
-    "id": "lawsoc",
-    "type": "academic",
-    "name": "King's Law Society",
-    "description": "",
+    "id": "kings-gambit-chess-club",
+    "type": "others",
+    "name": "King's Gambit Chess Club",
+    "description": "The King's Gambit Chess Club is a relaxed space to meet new people and enjoy a few games of chess in a friendly setting. Our Chess & chill sessions pair players up each week, making it easy to socialise and play with someone new. Whether you're completely new to the game or already know your way around the board, everyone's welcome, with occasional short lessons for anyone keen to learn or improve.",
     "contacts": [],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KLS"
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KGCC",
+    "links": {
+      "instagram": "kingsgambit.chessclub"
+    }
   },
   {
-    "id": "polsoc",
-    "type": "academic",
-    "name": "King's Politics Society",
-    "description": "",
+    "id": "kings-college-healthcare-society",
+    "type": "others",
+    "name": "King's College Healthcare Society",
+    "description": "The King's College Healthcare Society is a student-led community uniting the next generation of researchers, innovators, clinicians, and leaders dedicated to transforming the future of healthcare. Through an inspiring programme of fireside chats, workshops, conferences, and school outreach initiatives, the Society fosters interdisciplinary dialogue, connection, and collaboration across medicine, science, engineering, law, policy, and entrepreneurship. By bridging disciplines and perspectives, we empower members to explore diverse career pathways, approach pressing healthcare challenges through multiple lenses, and contribute to solutions that advance innovation, equity, population health, and patient care. Our outreach and mentorship programmes further extend this mission by inspiring young students from local schools to pursue studies and careers in healthcare and STEM. Together, we aim to build a vibrant, inclusive ecosystem of collaboration, purpose, and social impact, driving meaningful change in healthcare and beyond.",
     "contacts": [
-      { "name": "Elizabeth Zachariah", "role": "(tbc)", "email": "ez277@cam.ac.uk" }
+      {
+        "name": "Contact",
+        "email": "ar2370@cam.ac.uk"
+      }
     ],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KPS"
+    "image": "/images/societies/healthcare-society.webp"
   },
   {
-    "id": "filmsoc",
-    "type": "academic",
-    "name": "King's Film Society",
-    "description": "",
-    "contacts": [],
-    "image": "https://placehold.co/400x500/EEE/31343C?text=KFS"
+    "id": "kings-womens-running-club",
+    "type": "sports",
+    "name": "King's Women's Running Club",
+    "description": "A supportive place for women to run together. With the aim for more women to try and engage with fell running.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "pb838@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KWRC",
+    "links": {
+      "instagram": "kingswomensrunclub"
+    }
+  },
+  {
+    "id": "kings-college-beekeeping-society",
+    "type": "others",
+    "name": "King's College Beekeeping Society",
+    "description": "BeeSoc is all about beekeeping! We learn all about bees, how to spot bee diseases, to inspect hives, and encourage sustainability. During the summer, we harvest the honey from the hives we've taken care of!",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "kingsbees-members-bounces@srcf.net"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCBS",
+    "links": {
+      "instagram": "kingsbeekeeping_"
+    }
+  },
+  {
+    "id": "kings-college-kayaking-club-society",
+    "type": "sports",
+    "name": "King's College Kayaking Club Society",
+    "description": "KCKC provides kayaks and canoes for use by members of King's College Cambridge on the river Cam.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "sw2050@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCKCS"
+  },
+  {
+    "id": "kings-college-allotment-society",
+    "type": "others",
+    "name": "King's College Allotment Society",
+    "description": "The King's College Allotment Society takes care of the student allotments at King's. Throughout the year we also organise workshops on a wide range of subjects related to gardening.\n\nPeople can apply for their own allotment to grow for  vegetables and flowers.",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "camd4@cam.ac.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KCAS",
+    "links": {
+      "instagram": "nce"
+    }
+  },
+  {
+    "id": "kings-affair-committee",
+    "type": "others",
+    "name": "King's Affair Committee",
+    "description": "The King's Affair Committee is responsible for the organisation of the May, held yearly at King's College. This organisation includes production, arts, music, food/drink, ticketing/IT, budgeting, ents, sustainability, security and legal. maybe put not open for application rn",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "chair@kingsaffair.co.uk"
+      }
+    ],
+    "image": "https://placehold.co/400x500/EEE/31343C?text=KAC",
+    "links": {
+      "instagram": "Kingsaffair"
+    }
+  },
+  {
+    "id": "jesus-x-kings-x-sidney-sussex-ultimate-frisbee",
+    "type": "sports",
+    "name": "Jesus x King's x Sidney Sussex Ultimate Frisbee",
+    "description": "Welcome to Jesus x King's x Sidney Sussex Ultimate frisbee! We are a friendly, welcoming team that aim to have fun and teach people ultimate. It's a much more exciting game than it sounds \u2013 imagine netball and American football combined but played with a frisbee instead of a ball. We compete in the college league, and we encourage people of all abilities to come to games or trainings (or both!) and have fun! It's a great way to meet people from other colleges!",
+    "contacts": [
+      {
+        "name": "Contact",
+        "email": "rh909@cam.ac.uk"
+      }
+    ],
+    "image": "/images/societies/ultimate-frisbee.webp"
   }
-] 
+]
