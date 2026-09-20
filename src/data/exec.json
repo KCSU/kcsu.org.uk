@@ -61,14 +61,12 @@
   },
   {
     "role": "Gender Equalities",
-    "names": [
-      "Gloria Neligwa"
-    ],
+    "names": [],
     "emails": [
       "genderequality@kcsu.org.uk"
     ],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=GN",
-    "description": "Hi, I'm Gloria. I'm a third year medical student and my role on the KCSU is Gender Equalities Officer.  My job is to support women and non-binary members of the college community, manage King's Femsoc and maintain access to free sanitary products at multiple locations across the college. If you have any ideas or concerns do not hesitate to contact me!"
+    "image": "",
+    "description": ""
   },
   {
     "role": "Disabled Students",
@@ -131,15 +129,12 @@
   },
   {
     "role": "Charities",
-    "names": [
-      "Mariam Al-Badry",
-      "Zinzi Sibanda"
-    ],
+    "names": [],
     "emails": [
       "charities@kcsu.org.uk"
     ],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=MA",
-    "description": "We are Mariam (She/her) and Zinzi (She/her), second year HSPS and NatSci students. We are your KCSU Charities Officers! Our role is to ensure that the money the College gives to charity is representative of what the student body feels passionate about. The College gives money to charity on a termly basis and our job is to ensure that you guys are represented in that process. Feel free to come to us with any ideas for charities that are important to you!"
+    "image": "",
+    "description": ""
   },
   {
     "role": "Coordinator",
