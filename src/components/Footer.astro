@@ -18,15 +18,15 @@ const sections: FooterSection[] = [
     title: "Address",
     items: [],
     isAddress: true,
-    address: "King's College\nKing's Parade\nCambridge\nCB2 1ST"
+    address: "King's College\nKing's Parade\nCambridge\nCB2 1ST",
   },
   {
     title: "Quick Links",
     items: [
       { text: "About Us", href: "/about-us/team" },
       { text: "College Map", href: "/documents/college_map.pdf" },
-      { text: "College Website", href: "https://www.kings.cam.ac.uk/" }
-    ]
+      { text: "College Website", href: "https://www.kings.cam.ac.uk/" },
+    ],
   },
   {
     title: "Societies",
@@ -34,15 +34,18 @@ const sections: FooterSection[] = [
       { text: "Academic Societies", href: "/societies/academic" },
       { text: "Sports Societies", href: "/societies/sports" },
       { text: "Other Societies", href: "/societies/others" },
-    ]
+    ],
   },
   {
     title: "Follow Us",
     items: [
-      { text: "Facebook", href: "https://www.facebook.com/KingsCollegeStudentUnion" },
+      {
+        text: "Facebook",
+        href: "https://www.facebook.com/KingsCollegeStudentUnion",
+      },
       { text: "Instagram", href: "https://www.instagram.com/KCSUCambridge/" },
-    ]
-  }
+    ],
+  },
 ];
 ---
 
@@ -50,32 +53,36 @@ const sections: FooterSection[] = [
   <div class="bg-[#272727] w-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        {sections.map(section => (
-          <div>
-            <h3 class="text-lg font-semibold mb-2">{section.title}</h3>
-            {section.isAddress ? (
-              <p class="text-gray-300 whitespace-pre-line leading-relaxed">
-                {section.address}
-              </p>
-            ) : (
-              <ul class="space-y-2 text-gray-300">
-                {section.items.map(item => (
-                  <li>
-                    {item.href ? (
-                      <a href={item.href} class="hover:text-white">{item.text}</a>
-                    ) : (
-                      <p>{item.text}</p>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+        {
+          sections.map((section) => (
+            <div>
+              <h3 class="text-lg font-semibold mb-2">{section.title}</h3>
+              {section.isAddress ? (
+                <p class="text-gray-300 whitespace-pre-line leading-relaxed">
+                  {section.address}
+                </p>
+              ) : (
+                <ul class="space-y-2 text-gray-300">
+                  {section.items.map((item) => (
+                    <li>
+                      {item.href ? (
+                        <a href={item.href} class="hover:text-white">
+                          {item.text}
+                        </a>
+                      ) : (
+                        <p>{item.text}</p>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>
-  
+
   <div class="bg-[#151515] w-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="text-center flex flex-wrap justify-center items-center gap-3">
@@ -83,11 +90,17 @@ const sections: FooterSection[] = [
           &copy; {currentYear} King's College Student Union. All rights reserved.
         </p>
         <div class="h-4 border-l border-gray-600"></div>
-        <a href="https://docs.google.com/document/d/1TdlqKOIATj2MuTaNxr6W52P9B_6yNuvy/edit" class="text-gray-400 hover:text-white transition-colors duration-200">
+        <a
+          href="https://docs.google.com/document/d/1TdlqKOIATj2MuTaNxr6W52P9B_6yNuvy/edit"
+          class="text-gray-400 hover:text-white transition-colors duration-200"
+        >
           Privacy Policy
         </a>
         <div class="h-4 border-l border-gray-600"></div>
-        <a href="/sitemap" class="text-gray-400 hover:text-white transition-colors duration-200">
+        <a
+          href="/sitemap"
+          class="text-gray-400 hover:text-white transition-colors duration-200"
+        >
           Sitemap
         </a>
       </div>
