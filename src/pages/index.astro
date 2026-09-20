@@ -72,6 +72,7 @@ const carouselImages = [
             <InfoLink
               href="/documents/college_map.pdf"
               label="College Map"
+              icon="fa-solid fa-paperclip"
             />
           </InfoCard>
         </InfoGridColumn>
@@ -80,7 +81,12 @@ const carouselImages = [
           <!-- Welfare contacts -->
           <InfoCard title="Welfare Contacts" icon="fa-hands-helping">
             <InfoLink
-              href="https://www.kings.cam.ac.uk/study/life-at-kings/student-support"
+              href="https://docs.google.com/document/d/1c6rFJkM2zboboTry1BjkvWEbXmZaCi6u/edit"
+              label="Financial & Psychological Support Info Sheet"
+              icon="fa-regular fa-file"
+            />
+            <InfoLink
+              href="https://nicholas.kings.cam.ac.uk/study/life-at-kings/student-support"
               label="King's Student Support"
             />
             <InfoLink
@@ -93,23 +99,27 @@ const carouselImages = [
             />
           </InfoCard>
 
-          <!-- College websites -->
+          <!-- Websites -->
           <InfoCard title="Websites" icon="fa-globe">
             <InfoLink
               href="https://store.kcsu.org.uk/"
               label="Formal Booking (KiFoMaSy)"
             />
             <InfoLink
+              href="https://library.kcsu.org.uk/"
+              label="Library of Things"
+            />
+            <InfoLink
               href="https://www.casc.cam.ac.uk/"
               label="Accommodation View"
             />
             <InfoLink
-              href="https://kings.cam.ac.uk/intranet"
+              href="https://nicholas.kings.cam.ac.uk/"
               label="College Intranet"
             />
             <InfoLink
-              href="https://fms.kings.cam.ac.uk/"
-              label="Facility Management System (FMS)"
+              href="https://plms.kings.cam.ac.uk/"
+              label="Porter's Lodge Management System (PLMS)"
             />
             <InfoLink
               href="https://app.casc.cam.ac.uk/rms_live/InstHome.aspx"
@@ -118,6 +128,10 @@ const carouselImages = [
             <InfoLink
               href="https://kcgs.org.uk/"
               label="King's Graduate Society"
+            />
+            <InfoLink
+              href="https://apps.casc.cam.ac.uk/ors"
+              label="CamCORS Supervision Reports"
             />
           </InfoCard>
         </InfoGridColumn>
@@ -133,18 +147,24 @@ const carouselImages = [
             <InfoLink
               href="mailto:it.support@kings.cam.ac.uk"
               label="College IT Support"
-              isEmail={true}
+              icon="far fa-envelope"
+            />
+            <InfoLink
+              href="https://www.lookup.cam.ac.uk/"
+              label="CRSid Lookup"
             />
           </InfoCard>
 
           <!-- Maintenance -->
           <InfoCard title="Maintenance" icon="fa-tools">
             <InfoLink
+              href="https://nicholas.kings.cam.ac.uk/intranet/maintenance-ticket-system"
+              label="Report a Maintenance Issue"
+            />
+            <InfoLink
               href="/resources/period-vend"
               label="Request a Period Vending Machine Restock"
             />
-            <!-- <InfoLink href="#" label="check back later!" disabled={true}/> -->
-            <!-- <InfoLink href="#" label="who do i email if my room is broken" isEmail={true} disabled={true} /> -->
           </InfoCard>
 
           <!-- KCSU forms -->
