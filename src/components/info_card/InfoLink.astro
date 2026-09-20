@@ -3,7 +3,6 @@ interface Props {
   href: string;
   label: string;
   icon?: string;
-  isEmail?: boolean;
   disabled?: boolean;
 }
 
@@ -11,7 +10,6 @@ const {
   href,
   label,
   icon = "fas fa-external-link-alt",
-  isEmail = false,
   disabled = false,
 } = Astro.props;
 ---
