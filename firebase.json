@@ -5,6 +5,18 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/about-us/constitution{,/}",
+        "destination": "https://docs.google.com/document/d/1yzBEGyGVGohqKL7Woxnf0zJ8EAfA31mBKjmVxNv5wg8",
+        "type": 301
+      },
+      {
+        "source": "/about-us/standing-orders{,/}",
+        "destination": "https://docs.google.com/document/d/1izkmCH05plGgLAjIcfJlkFFyhPhyTBwxBygc3YXoc8Y",
+        "type": 301
+      }
     ]
   }
 }
