@@ -28,8 +28,8 @@ const teamMembers: TeamMember[] = execData;
 
       <!-- Toggle buttons -->
       <div class="flex justify-end mb-6">
-        <div class="inline-flex items-center bg-gray-100 rounded-lg p-1 shadow-sm">
-          <button id="cardViewButton" class="flex items-center px-4 py-2 rounded-md bg-white text-purple-800 shadow-sm font-medium transition-all duration-0">
+        <div class="inline-flex items-center bg-gray-100 rounded-lg p-1 shadow-xs">
+          <button id="cardViewButton" class="flex items-center px-4 py-2 rounded-md bg-white text-purple-800 shadow-xs font-medium transition-all duration-0">
             <i class="fas fa-th text-lg mr-2"></i>
             <span>Cards</span>
           </button>
@@ -131,7 +131,7 @@ const teamMembers: TeamMember[] = execData;
     const $tableView = $('#tableView');
     
     // Classes to be toggled
-    const classes = "bg-white text-purple-800 shadow-sm text-gray-600 hover:text-gray-800";
+    const classes = "bg-white text-purple-800 shadow-xs text-gray-600 hover:text-gray-800";
 
     const toggleView = () => {
       // Toggle views

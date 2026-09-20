@@ -1,5 +1,5 @@
 ---
-import "../styles/global.scss";
+import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import NavigationBar from "../components/NavigationBar.astro";
 
@@ -74,7 +74,7 @@ const { title } = Astro.props;
 
   <body class="flex flex-col min-h-screen">
     <NavigationBar />
-    <main class="flex-grow -mt-16 pt-16">
+    <main class="grow -mt-16 pt-16">
       <slot />	
     </main>
     <Footer />

@@ -9,13 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
     "@types/jquery": "^3.5.32",
-    "astro": "^5.0.5",
+    "astro": "^7.3.3",
     "sass-embedded": "^1.85.1"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^6.0.0",
+    "@tailwindcss/vite": "^4.3.3",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3"
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.3.3"
   }
 }
