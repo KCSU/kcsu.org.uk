@@ -16,7 +16,7 @@ interface Props {
 const { images, logo, title, subtitle } = Astro.props;
 ---
 
-<section id="carousel-section" class="relative h-[75vh] group"> <!-- adjust height of carousel here -->
+<section id="carousel-section" class="relative h-[60vh] group"> <!-- adjust height of carousel here -->
   <div class="relative w-full h-full overflow-hidden pointer-events-none">
     <div class="flex h-full transition-transform duration-500 ease-in-out" id="carousel-image-container">
       {images.map((image) => (
