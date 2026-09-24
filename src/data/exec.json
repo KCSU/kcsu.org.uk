@@ -8,7 +8,7 @@
       "president@kcsu.org.uk"
     ],
     "image": "/images/exec/president.webp",
-    "description": ""
+    "description": "Hi, I’m John, a third-year maths student from Liverpool and your KCSU President. I represent students in discussions with College and help coordinate the committee’s work. Outside maths and KCSU, I enjoy rowing and caving. Feel free to say hello or get in touch with any questions, concerns or ideas for life at King’s!"
   },
   {
     "role": "Vice-President",
@@ -61,6 +61,7 @@
   },
   {
     "role": "Gender Equalities",
+    "vacant": true,
     "names": [],
     "emails": [
       "genderequality@kcsu.org.uk"
@@ -115,7 +116,8 @@
     "socials": {
       "instagram": ["kings.access"]
     },
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=JB"
+    "image": "/images/exec/access.webp",
+    "description": "Hey! We’re Jasmine (MML) and Maya (PBS), your Access Officers. Within our role, we focus on widening outreach and participation to prospective students as well as supporting the current student body with anything access related. We support initiatives such as the Access Bus, open days, and organise events for those who are part of the Turing Support Scheme. Overall, our goal is to make sure all students at King’s feel comfortable and welcome here! Outside of the KCSU, we both love art and fashion. Please don't hesitate to reach out to us if you have any questions, ideas or even if you just fancy a chat! :)"
   },
   {
     "role": "Education",
@@ -125,10 +127,12 @@
     "emails": [
       "education@kcsu.org.uk"
     ],
-    "image": "https://placehold.co/100x100/EEE/31343C?font=lato&text=MW"
+    "image": "/images/exec/education.webp",
+    "description": "Hi! I'm Mare, a second year Psychological and Behavioural Sciences student and your Education Officer! I'm a point of contact for any education-related queries and represent undergraduate students on the Library, E-lab and Education Committees. I am working on creating intermission packages and optimising study spaces. Please don't hesitate to get in touch with any issues or questions related to education, I am always available to help!"
   },
   {
     "role": "Charities",
+    "vacant": true,
     "names": [],
     "emails": [
       "charities@kcsu.org.uk"
