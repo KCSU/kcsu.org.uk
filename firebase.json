@@ -6,6 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [
+      {
+        "source": "/healthz",
+        "headers": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      }
+    ],
     "redirects": [
       {
         "source": "/about-us/constitution{,/}",
